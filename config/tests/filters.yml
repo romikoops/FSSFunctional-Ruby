@@ -1,0 +1,3657 @@
+:promo:
+- :filter:
+    :is_on_sale: 1
+  :label: On Sale
+- :filter:
+    :is_closeout: 1
+  :label: Closeouts
+- :filter:
+    :is_free_shipping: 1
+  :label: Free Shipping
+- :filter:
+    :has_offer: 1
+  :label: Special Offer
+:brand:
+- :filter:
+    :brand_code: DVO
+  :label: "Davidoff Puro D'Oro"
+- :filter:
+    :brand_code: FD4
+  :label: Famous Dominican Selection 4000
+- :filter:
+    :brand_code: C4K
+  :label: Four Kicks By Crowned Heads
+- :filter:
+    :brand_code: GCI
+  :label: Garcia y Vega Game Cigarillos
+- :filter:
+    :brand_code: GFP
+  :label: General Cigar Freshness Pack
+- :filter:
+    :brand_code: HHV
+  :label: H. Upmann Havoc
+- :filter:
+    :brand_code: LIQ
+  :label: Liquidation Samplers
+- :filter:
+    :brand_code: MRF
+  :label: Maroma Fuerte
+- :filter:
+    :brand_code: MIO
+  :label: Miro
+- :filter:
+    :brand_code: PGU
+  :label: Perdomo Grand Cru 2006
+- :filter:
+    :brand_code: 1NE
+  :label: Room 101 Ltd Namakubi edition
+- :filter:
+    :brand_code: TRS
+  :label: Tatuaje Reserva Nicaragua
+- :filter:
+    :brand_code: HFA
+  :label: "# Famous"
+- :filter:
+    :brand_code: GHD
+  :label: "Good Times #HD"
+- :filter:
+    :brand_code: BOF
+  :label: Best Of Cigar Samplers
+- :filter:
+    :brand_code: INF
+  :label: Inferno by Oliva
+- :filter:
+    :brand_code: ZGR
+  :label: Groupon Deals
+- :filter:
+    :brand_code: ZLS
+  :label: Living Social Deals
+- :filter:
+    :brand_code: 15B
+  :label: 1502 Black Gold
+- :filter:
+    :brand_code: 15E
+  :label: 1502 Emerald
+- :filter:
+    :brand_code: 15R
+  :label: 1502 Ruby
+- :filter:
+    :brand_code: L94
+  :label: 1994 By La Flor Dominicana
+- :filter:
+    :brand_code: 2AL
+  :label: 262 Allegiance
+- :filter:
+    :brand_code: 2ID
+  :label: 262 Ideology
+- :filter:
+    :brand_code: 2PM
+  :label: 262 Paradigm
+- :filter:
+    :brand_code: 2RV
+  :label: 262 Revere
+- :filter:
+    :brand_code: 6MB
+  :label: 601 Blue Label
+- :filter:
+    :brand_code: 6BM
+  :label: 601 Brass Monkey
+- :filter:
+    :brand_code: 6HG
+  :label: 601 Green Label Oscuro
+- :filter:
+    :brand_code: 6LB
+  :label: 601 La Bomba
+- :filter:
+    :brand_code: 6HR
+  :label: 601 Red Label Habano
+- :filter:
+    :brand_code: 601
+  :label: 601 Accesories And Samplers
+- :filter:
+    :brand_code: 6ST
+  :label: 601 Steel
+- :filter:
+    :brand_code: 7DS
+  :label: 7 Deadly Sins
+- :filter:
+    :brand_code: 724
+  :label: 7-20-4
+- :filter:
+    :brand_code: F57
+  :label: Factory 57
+- :filter:
+    :brand_code: 72H
+  :label: 7-20-4 Hustler
+- :filter:
+    :brand_code: TDP
+  :label: Top Rated Pairings
+- :filter:
+    :brand_code: AFS
+  :label: Arturo Fuente Sun Grown
+- :filter:
+    :brand_code: PER
+  :label: Perdomo Accessories And Samplers
+- :filter:
+    :brand_code: AFG
+  :label: A Flores Gran Reserva
+- :filter:
+    :brand_code: AFP
+  :label: A Flores Serie Privada
+- :filter:
+    :brand_code: AF
+  :label: Arturo Fuente
+- :filter:
+    :brand_code: AFE
+  :label: Arturo Fuente Especiales
+- :filter:
+    :brand_code: HEM
+  :label: Arturo Fuente Hemingway
+- :filter:
+    :brand_code: OPU
+  :label: Arturo Fuente Opus X
+- :filter:
+    :brand_code: CXC
+  :label: Exclusive Feature Samplers
+- :filter:
+    :brand_code: POP
+  :label: A-Crop
+- :filter:
+    :brand_code: AMS
+  :label: Alec Bradley American Sun Grown
+- :filter:
+    :brand_code: BMK
+  :label: Alec Bradley Black Market
+- :filter:
+    :brand_code: ANP
+  :label: Alec Bradley Nica Puro
+- :filter:
+    :brand_code: TEN
+  :label: Alec Bradley Tempus Nicaragua
+- :filter:
+    :brand_code: ACI
+  :label: Acid
+- :filter:
+    :brand_code: ACG
+  :label: Acid Cigarillos
+- :filter:
+    :brand_code: AGF
+  :label: Acid G-Fresh
+- :filter:
+    :brand_code: ACS
+  :label: Acid Subculture
+- :filter:
+    :brand_code: P75
+  :label: AFR-75 San Andres Maduro
+- :filter:
+    :brand_code: AR1
+  :label: "Aging Room Bin #1"
+- :filter:
+    :brand_code: AGH
+  :label: Aging Room Havao
+- :filter:
+    :brand_code: AGR
+  :label: Aging Room Small Batch
+- :filter:
+    :brand_code: AGM
+  :label: Aging Room Maduro
+- :filter:
+    :brand_code: AGQ
+  :label: Aging Room Quattro F55
+- :filter:
+    :brand_code: AGI
+  :label: Agio Meharis
+- :filter:
+    :brand_code: ENC
+  :label: Enclave
+- :filter:
+    :brand_code: ALC
+  :label: Al Capone
+- :filter:
+    :brand_code: A60
+  :label: Alec Bradley 1600
+- :filter:
+    :brand_code: A63
+  :label: Alec Bradley 1633
+- :filter:
+    :brand_code: ACB
+  :label: Alec Bradley American Classic Blend
+- :filter:
+    :brand_code: ABC
+  :label: Alec Bradley Connecticut
+- :filter:
+    :brand_code: ACO
+  :label: Alec Bradley Coyol
+- :filter:
+    :brand_code: ABP
+  :label: Alec Bradley Prensado
+- :filter:
+    :brand_code: AB
+  :label: Alec Bradley Accessories And Samplers
+- :filter:
+    :brand_code: AB1
+  :label: Alec Bradley Factory Selects AB1 Habano
+- :filter:
+    :brand_code: AB3
+  :label: Alec Bradley Factory Selects AB3 Connecticut
+- :filter:
+    :brand_code: AB5
+  :label: Alec Bradley Factory Selects AB5 Maduro
+- :filter:
+    :brand_code: AB7
+  :label: Alec Bradley Factory Selects AB7 Corojo
+- :filter:
+    :brand_code: AB9
+  :label: Alec Bradley Factory Selects AB9 Sumatra
+- :filter:
+    :brand_code: AFB
+  :label: Alec Bradley Family Blend
+- :filter:
+    :brand_code: ABX
+  :label: Alec Bradley The MAXX
+- :filter:
+    :brand_code: MAX
+  :label: Alec Bradley MAXX Original
+- :filter:
+    :brand_code: AMD
+  :label: Alec Bradley Mundial Punta Lanza
+- :filter:
+    :brand_code: ABG
+  :label: Alec Bradley New Baby
+- :filter:
+    :brand_code: ANR
+  :label: Alec Bradley Nica Puro Rosado
+- :filter:
+    :brand_code: ABO
+  :label: Alec Bradley Overture
+- :filter:
+    :brand_code: ABE
+  :label: Alec Bradley Post Embargo
+- :filter:
+    :brand_code: RAC
+  :label: Alec Bradley Raices Cubanas
+- :filter:
+    :brand_code: ASN
+  :label: Alec Bradley Sanctum
+- :filter:
+    :brand_code: ABS
+  :label: Alec Bradley Sun Grown
+- :filter:
+    :brand_code: MSS
+  :label: Alec Bradley Supervisor Selection
+- :filter:
+    :brand_code: BSS
+  :label: Alec Bradley Supervisor Selection Jalapa
+- :filter:
+    :brand_code: TEP
+  :label: Alec Bradley Tempus
+- :filter:
+    :brand_code: ABT
+  :label: Alec Bradley Texas Lancero
+- :filter:
+    :brand_code: ABL
+  :label: Alec Bradley The Lineage
+- :filter:
+    :brand_code: CDV
+  :label: Cigar Advisor
+- :filter:
+    :brand_code: ALT
+  :label: Altadis Accessories And Samplers
+- :filter:
+    :brand_code: ABM
+  :label: Ambos Mundos
+- :filter:
+    :brand_code: AMB
+  :label: Ambrosia
+- :filter:
+    :brand_code: AML
+  :label: American Legion
+- :filter:
+    :brand_code: AMC
+  :label: Amilcar Perez Castro
+- :filter:
+    :brand_code: FFX
+  :label: Fuente Fuente Opus X
+- :filter:
+    :brand_code: ECO
+  :label: East Coast Rollers
+- :filter:
+    :brand_code: ANZ
+  :label: Anoranzas
+- :filter:
+    :brand_code: ANT
+  :label: Antonio Y Cleopatra
+- :filter:
+    :brand_code: JOA
+  :label: Joya De Nicaragua Antano 1970
+- :filter:
+    :brand_code: ARF
+  :label: Augusto Reyes Family Reserve
+- :filter:
+    :brand_code: ARJ
+  :label: Augusto Reyes Junior
+- :filter:
+    :brand_code: ARB
+  :label: Arandoza Blue Label
+- :filter:
+    :brand_code: ARR
+  :label: Arandoza Red Label
+- :filter:
+    :brand_code: ARW
+  :label: Arandoza White Label
+- :filter:
+    :brand_code: ATH
+  :label: Artisan Honduran
+- :filter:
+    :brand_code: ATN
+  :label: Artisan Nicaraguan
+- :filter:
+    :brand_code: AFA
+  :label: Arturo Fuente Anejo
+- :filter:
+    :brand_code: AFO
+  :label: "Arturo Fuente Seleccion D'Oro"
+- :filter:
+    :brand_code: FDS
+  :label: Arturo Fuente Destino al Siglo
+- :filter:
+    :brand_code: AFD
+  :label: Arturo Fuente Don Carlos
+- :filter:
+    :brand_code: FBG
+  :label: Arturo Fuente New Baby
+- :filter:
+    :brand_code: ASH
+  :label: Ashton Classic
+- :filter:
+    :brand_code: ASM
+  :label: Ashton Aged Maduro
+- :filter:
+    :brand_code: ASC
+  :label: Ashton Cabinet Selection
+- :filter:
+    :brand_code: ACT
+  :label: Ashton Small Cigars Connecticut
+- :filter:
+    :brand_code: AGB
+  :label: Ashton Classic New Baby
+- :filter:
+    :brand_code: ASE
+  :label: Ashton Estate Sun Grown
+- :filter:
+    :brand_code: APS
+  :label: Ashton Heritage Puro Sol
+- :filter:
+    :brand_code: ASS
+  :label: Ashton Symmetry
+- :filter:
+    :brand_code: ASG
+  :label: Ashton Virgin Sun Grown
+- :filter:
+    :brand_code: APN
+  :label: Aspira
+- :filter:
+    :brand_code: APC
+  :label: Aspira Corojo
+- :filter:
+    :brand_code: A13
+  :label: Asylum 13
+- :filter:
+    :brand_code: AAC
+  :label: Asylum 13 Corojo
+- :filter:
+    :brand_code: AYC
+  :label: Asylum 13 Connecticut
+- :filter:
+    :brand_code: ASO
+  :label: Asylum 13 The OGRE
+- :filter:
+    :brand_code: A33
+  :label: Asylum 33
+- :filter:
+    :brand_code: ASI
+  :label: Asylum Insidious
+- :filter:
+    :brand_code: ALO
+  :label: Asylum Lobotomy
+- :filter:
+    :brand_code: ASY
+  :label: Asylum Premium
+- :filter:
+    :brand_code: ASJ
+  :label: Asylum Straight Jacket
+- :filter:
+    :brand_code: AVI
+  :label: Avanti
+- :filter:
+    :brand_code: AVL
+  :label: Avo Limited Editions
+- :filter:
+    :brand_code: AVO
+  :label: Avo Classic
+- :filter:
+    :brand_code: AVD
+  :label: Avo Domaine
+- :filter:
+    :brand_code: AHS
+  :label: Avo Heritage
+- :filter:
+    :brand_code: AVS
+  :label: Avo Signature
+- :filter:
+    :brand_code: AVN
+  :label: Avo Syncro Nicaragua
+- :filter:
+    :brand_code: AVX
+  :label: Avo XO
+- :filter:
+    :brand_code: BAC
+  :label: Baccarat
+- :filter:
+    :brand_code: BCI
+  :label: Baccarat Cigarillos
+- :filter:
+    :brand_code: BAK
+  :label: Backwoods
+- :filter:
+    :brand_code: BXO
+  :label: Balmoral Anejo XO
+- :filter:
+    :brand_code: BGR
+  :label: Barracuda STK by George Rico
+- :filter:
+    :brand_code: BAY
+  :label: Bayamo
+- :filter:
+    :brand_code: BBB
+  :label: Black Belt Buckle
+- :filter:
+    :brand_code: CAF
+  :label: CAO Flavours
+- :filter:
+    :brand_code: NUB
+  :label: Nub Accessories And Samplers
+- :filter:
+    :brand_code: BGY
+  :label: Camacho BG Meyer Standard Issue
+- :filter:
+    :brand_code: MID
+  :label: Black and Mild By Middleton
+- :filter:
+    :brand_code: BLK
+  :label: Blackstone By Swisher
+- :filter:
+    :brand_code: BNP
+  :label: Bold By Nish Patel
+- :filter:
+    :brand_code: BRA
+  :label: Braniff
+- :filter:
+    :brand_code: BRK
+  :label: Brick House
+- :filter:
+    :brand_code: BSB
+  :label: BSB No.1 by Bernie Parent
+- :filter:
+    :brand_code: CNC
+  :label: C &amp; C Samplers
+- :filter:
+    :brand_code: CCO
+  :label: C &amp; C Connecticut
+- :filter:
+    :brand_code: CCJ
+  :label: C &amp; C Corojo
+- :filter:
+    :brand_code: CCM
+  :label: C &amp; C LRMD
+- :filter:
+    :brand_code: CBG
+  :label: Cabaiguan
+- :filter:
+    :brand_code: CIC
+  :label: Cabal Classic Line
+- :filter:
+    :brand_code: CCB
+  :label: Cain Accessories And Samplers
+- :filter:
+    :brand_code: BMB
+  :label: "Blind Man's Bluff"
+- :filter:
+    :brand_code: CAB
+  :label: Camacho American Barrel Aged
+- :filter:
+    :brand_code: BGG
+  :label: Camacho BG Meyer Gigantes
+- :filter:
+    :brand_code: CAM
+  :label: Camacho Mini Cigarillos
+- :filter:
+    :brand_code: CCT
+  :label: Camacho Connecticut
+- :filter:
+    :brand_code: CMC
+  :label: Camacho Corojo
+- :filter:
+    :brand_code: CLL
+  :label: Camacho Criollo
+- :filter:
+    :brand_code: CMD
+  :label: Camacho Mike Ditka Edition
+- :filter:
+    :brand_code: CEU
+  :label: Camacho Ecuador
+- :filter:
+    :brand_code: CSB
+  :label: Camacho Shellback
+- :filter:
+    :brand_code: CTM
+  :label: Camacho Triple Maduro
+- :filter:
+    :brand_code: CXF
+  :label: CAO X-Factor
+- :filter:
+    :brand_code: CAO
+  :label: CAO Accessories And Samplers
+- :filter:
+    :brand_code: CAE
+  :label: CAO America
+- :filter:
+    :brand_code: CBR
+  :label: CAO Brazilia
+- :filter:
+    :brand_code: CAA
+  :label: CAO Cameroon
+- :filter:
+    :brand_code: CCL
+  :label: CAO Colombia
+- :filter:
+    :brand_code: CAC
+  :label: CAO Concert
+- :filter:
+    :brand_code: CX2
+  :label: CAO Cx2
+- :filter:
+    :brand_code: CFS
+  :label: CAO Flathead Steel Horse
+- :filter:
+    :brand_code: CFH
+  :label: CAO Flathead
+- :filter:
+    :brand_code: CAG
+  :label: CAO Gold
+- :filter:
+    :brand_code: CGM
+  :label: CAO Gold Maduro
+- :filter:
+    :brand_code: CHD
+  :label: CAO Havana Daydreamin
+- :filter:
+    :brand_code: CAI
+  :label: CAO Italia
+- :filter:
+    :brand_code: LTV
+  :label: CAO La Traviata
+- :filter:
+    :brand_code: CLT
+  :label: CAO Limited Edition
+- :filter:
+    :brand_code: LX2
+  :label: CAO LX2
+- :filter:
+    :brand_code: CMV
+  :label: CAO Margaritaville
+- :filter:
+    :brand_code: CM2
+  :label: CAO MX2
+- :filter:
+    :brand_code: OSA
+  :label: CAO OSA Sol
+- :filter:
+    :brand_code: CPI
+  :label: CAO Pilon
+- :filter:
+    :brand_code: CAV
+  :label: CAO Vision
+- :filter:
+    :brand_code: CDC
+  :label: Caridad Connecticut
+- :filter:
+    :brand_code: CDS
+  :label: Caridad Sumatra
+- :filter:
+    :brand_code: CRN
+  :label: Carinos
+- :filter:
+    :brand_code: CAR
+  :label: Carlos Torano 1916
+- :filter:
+    :brand_code: BRG
+  :label: Carlos Torano Brigade
+- :filter:
+    :brand_code: TCA
+  :label: Carlos Torano Captiva
+- :filter:
+    :brand_code: CT5
+  :label: Carlos Torano Exodus 1959 50 Years
+- :filter:
+    :brand_code: CTE
+  :label: Carlos Torano Exodus 1959
+- :filter:
+    :brand_code: CTS
+  :label: Carlos Torano Exodus 1959 Silver
+- :filter:
+    :brand_code: RDP
+  :label: Carlos Torano Reserva Decadencia
+- :filter:
+    :brand_code: CSC
+  :label: Carlos Torano Signature
+- :filter:
+    :brand_code: CNG
+  :label: Carnage
+- :filter:
+    :brand_code: CDG
+  :label: Casa De Garcia
+- :filter:
+    :brand_code: CMG
+  :label: Casa Magna Colorado
+- :filter:
+    :brand_code: CMM
+  :label: Casa Magna Oscuro
+- :filter:
+    :brand_code: CST
+  :label: Casa Torano
+- :filter:
+    :brand_code: CTU
+  :label: Casa Turrent
+- :filter:
+    :brand_code: CGD
+  :label: Casino Gold HRS
+- :filter:
+    :brand_code: CEM
+  :label: Compounds, Elements, And Musings
+- :filter:
+    :brand_code: PCH
+  :label: Perdomo Champagne Sun Grown
+- :filter:
+    :brand_code: CHY
+  :label: Cheyenne
+- :filter:
+    :brand_code: CHW
+  :label: Cheyenne Heavy Weights
+- :filter:
+    :brand_code: CMS
+  :label: "Chillin' Moose"
+- :filter:
+    :brand_code: CPR
+  :label: Chinnock Cellars Pressoir
+- :filter:
+    :brand_code: DLX
+  :label: Deluxe
+- :filter:
+    :brand_code: CLC
+  :label: CLE Connecticut
+- :filter:
+    :brand_code: CLO
+  :label: CLE Corojo
+- :filter:
+    :brand_code: CLU
+  :label: CLE Cuarenta
+- :filter:
+    :brand_code: CP5
+  :label: CLE Plus 2015
+- :filter:
+    :brand_code: CLP
+  :label: CLE Plus
+- :filter:
+    :brand_code: CLG
+  :label: CLE Signature Series
+- :filter:
+    :brand_code: CRH
+  :label: CroMagnon Aquitaine
+- :filter:
+    :brand_code: CBL
+  :label: Cohiba Black
+- :filter:
+    :brand_code: COH
+  :label: Cohiba
+- :filter:
+    :brand_code: CXV
+  :label: Cohiba Extra Vigoroso
+- :filter:
+    :brand_code: CNI
+  :label: Cohiba Nicaragua
+- :filter:
+    :brand_code: CPD
+  :label: Cohiba Puro Dominicana
+- :filter:
+    :brand_code: GEN
+  :label: General Cigar Company Accessories And Samplers
+- :filter:
+    :brand_code: CJF
+  :label: Connecticut By J Fuego
+- :filter:
+    :brand_code: COC
+  :label: Conuco
+- :filter:
+    :brand_code: WCR
+  :label: Corto By Warped Cigars
+- :filter:
+    :brand_code: JCN
+  :label: JC Newman Accessories And Samplers
+- :filter:
+    :brand_code: CRW
+  :label: Criss Cross Heavy Weights
+- :filter:
+    :brand_code: CRO
+  :label: CroMagnon
+- :filter:
+    :brand_code: CRZ
+  :label: Cruz Real
+- :filter:
+    :brand_code: CUR
+  :label: Cuban Rounds
+- :filter:
+    :brand_code: CBC
+  :label: Cubanacan Connecticut
+- :filter:
+    :brand_code: CBH
+  :label: Cubanacan Habano
+- :filter:
+    :brand_code: CBD
+  :label: Cubanacan Maduro
+- :filter:
+    :brand_code: CBA
+  :label: Cubao
+- :filter:
+    :brand_code: CUE
+  :label: Cuesta Rey
+- :filter:
+    :brand_code: CUC
+  :label: Cuesta Rey Centenario
+- :filter:
+    :brand_code: CCF
+  :label: Cuesta Rey Centro Fino
+- :filter:
+    :brand_code: CNN
+  :label: Cunning By Joya De Nicaragua
+- :filter:
+    :brand_code: C18
+  :label: Cusano 18
+- :filter:
+    :brand_code: CUS
+  :label: Cusano Assorted
+- :filter:
+    :brand_code: CCC
+  :label: Cusano CC
+- :filter:
+    :brand_code: CCD
+  :label: Cusano Corojo Dominicano
+- :filter:
+    :brand_code: CM1
+  :label: Cusano M1
+- :filter:
+    :brand_code: CMT
+  :label: Cusano MC
+- :filter:
+    :brand_code: CP1
+  :label: Cusano P1
+- :filter:
+    :brand_code: CYB
+  :label: CyB
+- :filter:
+    :brand_code: DAN
+  :label: Dannemann
+- :filter:
+    :brand_code: DVK
+  :label: Davidoff Thousand Series
+- :filter:
+    :brand_code: DVX
+  :label: Davidoff Accessories And Samplers
+- :filter:
+    :brand_code: DVC
+  :label: Davidoff Classic Series
+- :filter:
+    :brand_code: DVA
+  :label: Davidoff Aniversario
+- :filter:
+    :brand_code: DVL
+  :label: Davidoff Limited Edition
+- :filter:
+    :brand_code: DAV
+  :label: Davidoff
+- :filter:
+    :brand_code: DCL
+  :label: Davidoff Colorado Claro
+- :filter:
+    :brand_code: DVS
+  :label: Davidoff Special Series
+- :filter:
+    :brand_code: DAE
+  :label: Davidoff Escurio
+- :filter:
+    :brand_code: DVG
+  :label: Davidoff Grand Cru Series
+- :filter:
+    :brand_code: DAM
+  :label: Davidoff Maduro
+- :filter:
+    :brand_code: DVM
+  :label: Davidoff Millennium
+- :filter:
+    :brand_code: DVN
+  :label: Davidoff Nicaragua
+- :filter:
+    :brand_code: DAP
+  :label: Davidoff Primeros
+- :filter:
+    :brand_code: DNI
+  :label: De Nobili
+- :filter:
+    :brand_code: DEL
+  :label: Delicados
+- :filter:
+    :brand_code: DMD
+  :label: Diamond Crown
+- :filter:
+    :brand_code: DMX
+  :label: Diamond Crown Maximus
+- :filter:
+    :brand_code: DJM
+  :label: Djarum Little
+- :filter:
+    :brand_code: DCA
+  :label: Don Carlos Edicion De Aniversario
+- :filter:
+    :brand_code: DOD
+  :label: Don Diego
+- :filter:
+    :brand_code: DFL
+  :label: Don Felo
+- :filter:
+    :brand_code: D89
+  :label: Don Lino 1989
+- :filter:
+    :brand_code: DLC
+  :label: Don Lino Colorado
+- :filter:
+    :brand_code: DLH
+  :label: Don Lino Habanitos
+- :filter:
+    :brand_code: DMB
+  :label: Don Mateo
+- :filter:
+    :brand_code: DPK
+  :label: Don Pepin Garcia Cuban Classic
+- :filter:
+    :brand_code: DPG
+  :label: Don Pepin Garcia Original
+- :filter:
+    :brand_code: DPJ
+  :label: Don Pepin Garcia Series JJ
+- :filter:
+    :brand_code: WDR
+  :label: Don Reynaldo By Warped Cigars
+- :filter:
+    :brand_code: DTA
+  :label: Don Tomas Clasico
+- :filter:
+    :brand_code: DSC
+  :label: Don Tomas SE Corojo
+- :filter:
+    :brand_code: DTC
+  :label: Don Tomas Special Edition Connecticut
+- :filter:
+    :brand_code: DSG
+  :label: Don Tomas Sun Grown
+- :filter:
+    :brand_code: DRM
+  :label: Dram
+- :filter:
+    :brand_code: DRW
+  :label: Drew Estate Accessories And Samplers
+- :filter:
+    :brand_code: DUK
+  :label: Duck Commander
+- :filter:
+    :brand_code: D07
+  :label: Dunhill 1907
+- :filter:
+    :brand_code: DUN
+  :label: Dunhill Aged Dominican
+- :filter:
+    :brand_code: DSR
+  :label: Dunhill Signed Range
+- :filter:
+    :brand_code: DUD
+  :label: Dutch By Dutch Masters
+- :filter:
+    :brand_code: DUC
+  :label: Dutch Masters Cigarillos
+- :filter:
+    :brand_code: DUT
+  :label: Dutch Masters
+- :filter:
+    :brand_code: EEH
+  :label: E.H. Every Day Hustle
+- :filter:
+    :brand_code: EST
+  :label: Eastern Standard
+- :filter:
+    :brand_code: EGH
+  :label: Edgar Hoill
+- :filter:
+    :brand_code: ERO
+  :label: Eiroa
+- :filter:
+    :brand_code: E20
+  :label: Eiroa The First 20 Years
+- :filter:
+    :brand_code: ERM
+  :label: Eiroa Maduro
+- :filter:
+    :brand_code: ELB
+  :label: El Baton
+- :filter:
+    :brand_code: ECN
+  :label: El Centurion
+- :filter:
+    :brand_code: ECB
+  :label: El Cobre By Oliva
+- :filter:
+    :brand_code: ECC
+  :label: El Credito
+- :filter:
+    :brand_code: LEG
+  :label: Leccia Luchador El Gringo
+- :filter:
+    :brand_code: ELG
+  :label: El Gueguense
+- :filter:
+    :brand_code: 1EM
+  :label: Room 101 El Mas Chingon
+- :filter:
+    :brand_code: WCO
+  :label: EL OSO By Warped Cigars
+- :filter:
+    :brand_code: ELP
+  :label: El Producto
+- :filter:
+    :brand_code: RIC
+  :label: El Rico Habano
+- :filter:
+    :brand_code: ELS
+  :label: El Suelo
+- :filter:
+    :brand_code: ELT
+  :label: El Triunfador
+- :filter:
+    :brand_code: EPL
+  :label: EP Carrillo Edicion Limitada
+- :filter:
+    :brand_code: ECD
+  :label: EP Carrillo Cardinal
+- :filter:
+    :brand_code: EPC
+  :label: EP Carrillo Core Line
+- :filter:
+    :brand_code: EES
+  :label: EP Carrillo E-Stunner
+- :filter:
+    :brand_code: EPH
+  :label: EP Carrillo La Historia
+- :filter:
+    :brand_code: ENW
+  :label: EP Carrillo New Wave Connecticut
+- :filter:
+    :brand_code: ENR
+  :label: EP Carrillo New Wave Reserva
+- :filter:
+    :brand_code: ESO
+  :label: EP Carrillo Seleccion Oscuro
+- :filter:
+    :brand_code: E15
+  :label: EP Carrillo Short Run 2015
+- :filter:
+    :brand_code: E16
+  :label: EP Carrillo Short Run 2016
+- :filter:
+    :brand_code: EPO
+  :label: Epoca By Nat Sherman
+- :filter:
+    :brand_code: ERE
+  :label: Erte
+- :filter:
+    :brand_code: ESP
+  :label: Espinosa Especial
+- :filter:
+    :brand_code: EHA
+  :label: Espinosa Habano
+- :filter:
+    :brand_code: EMA
+  :label: Espinosa Maduro
+- :filter:
+    :brand_code: ESA
+  :label: Espinosa Accessories And Samplers
+- :filter:
+    :brand_code: EUR
+  :label: Euro Sticks
+- :filter:
+    :brand_code: ETM
+  :label: Evil Genius Time Machine
+- :filter:
+    :brand_code: EXS
+  :label: Exactus
+- :filter:
+    :brand_code: HXN
+  :label: Excalibur Dark Knight
+- :filter:
+    :brand_code: HXC
+  :label: Excalibur Cameroon
+- :filter:
+    :brand_code: HOX
+  :label: Excalibur
+- :filter:
+    :brand_code: HEL
+  :label: Excalibur Legend by Hoyo de Monterrey
+- :filter:
+    :brand_code: EZK
+  :label: Ezra Zion FHK
+- :filter:
+    :brand_code: EZR
+  :label: Ezra Zion Tantrum
+- :filter:
+    :brand_code: FDL
+  :label: Fernando Leon Family Reserve
+- :filter:
+    :brand_code: FTO
+  :label: Factory Throwouts
+- :filter:
+    :brand_code: 365
+  :label: Famous 365
+- :filter:
+    :brand_code: FPA
+  :label: Famous 75th Anniversary by Padron
+- :filter:
+    :brand_code: FEX
+  :label: Famous Exclusives
+- :filter:
+    :brand_code: FD1
+  :label: Famous Dominican Selection 1000
+- :filter:
+    :brand_code: FD5
+  :label: Famous Dominican Selection 5000
+- :filter:
+    :brand_code: FN2
+  :label: Famous Nicaraguan Selection 2000
+- :filter:
+    :brand_code: FN4
+  :label: Famous Nicaraguan Selection 4000
+- :filter:
+    :brand_code: FN6
+  :label: Famous Nicaraguan Selection 6000
+- :filter:
+    :brand_code: FN5
+  :label: Famous Nicaraguan Selection 5000
+- :filter:
+    :brand_code: FN1
+  :label: Famous Nicaraguan Selection 1000
+- :filter:
+    :brand_code: FN3
+  :label: Famous Nicaraguan Selection 3000
+- :filter:
+    :brand_code: VSN
+  :label: Famous VSL Nicaragua
+- :filter:
+    :brand_code: FIN
+  :label: Final Blend
+- :filter:
+    :brand_code: IN3
+  :label: Inferno 3rd Degree
+- :filter:
+    :brand_code: FDA
+  :label: Flor De Las Antillas
+- :filter:
+    :brand_code: FCR
+  :label: "Flor De D'Crossier Selection 512"
+- :filter:
+    :brand_code: FDG
+  :label: Flor De Gonzalez Bundles
+- :filter:
+    :brand_code: FDO
+  :label: Flor De Oliva
+- :filter:
+    :brand_code: FDC
+  :label: Flor De Oliva Corojo
+- :filter:
+    :brand_code: FOG
+  :label: Flor De Oliva Gold
+- :filter:
+    :brand_code: SLV
+  :label: Flor De Selva
+- :filter:
+    :brand_code: WCF
+  :label: Flor Del Valle By Warped Cigars
+- :filter:
+    :brand_code: FYR
+  :label: Flores Y Rodriguez
+- :filter:
+    :brand_code: FON
+  :label: Fonseca
+- :filter:
+    :brand_code: FOE
+  :label: Fonseca Cubano Exclusivo
+- :filter:
+    :brand_code: FOC
+  :label: Fonseca Cubano Limitado
+- :filter:
+    :brand_code: FOF
+  :label: "Fonseca Serie 'F'"
+- :filter:
+    :brand_code: FOV
+  :label: Fonseca Vintage Selection
+- :filter:
+    :brand_code: FRB
+  :label: Fratello Bianco
+- :filter:
+    :brand_code: FRT
+  :label: Fratello
+- :filter:
+    :brand_code: FFA
+  :label: Fuente Fuente Opus X Angels Share
+- :filter:
+    :brand_code: WFS
+  :label: Futuro By Warped Cigars
+- :filter:
+    :brand_code: OPI
+  :label: Opium
+- :filter:
+    :brand_code: G82
+  :label: Garcia Y Vega 1882
+- :filter:
+    :brand_code: GYV
+  :label: Garcia Y Vega
+- :filter:
+    :brand_code: GYG
+  :label: Garcia Y Vega Game
+- :filter:
+    :brand_code: GCL
+  :label: Garcia y Vega Game Leaf Cigarillos
+- :filter:
+    :brand_code: HON
+  :label: General Honduran Bundles
+- :filter:
+    :brand_code: GAP
+  :label: George Rico Miami STK American Puro
+- :filter:
+    :brand_code: GOR
+  :label: Georges Reserve
+- :filter:
+    :brand_code: GH5
+  :label: "Gran Habano #5 Corojo"
+- :filter:
+    :brand_code: GH3
+  :label: "Gran Habano #3 Habano"
+- :filter:
+    :brand_code: GIS
+  :label: Gispert
+- :filter:
+    :brand_code: GLE
+  :label: The Glen Single Malt
+- :filter:
+    :brand_code: GDS
+  :label: Gold Strike
+- :filter:
+    :brand_code: GDR
+  :label: Good Days Factory Rejects
+- :filter:
+    :brand_code: GDT
+  :label: Good Times Cigarillos
+- :filter:
+    :brand_code: GSW
+  :label: Good Times Sweet Woods
+- :filter:
+    :brand_code: GH1
+  :label: "Gran Habano #1 Connecticut"
+- :filter:
+    :brand_code: GHT
+  :label: "Gran Habano 'Triple'"
+- :filter:
+    :brand_code: GHA
+  :label: Gran Habano Azteca
+- :filter:
+    :brand_code: GH2
+  :label: GH2 By Gran Habano
+- :filter:
+    :brand_code: GR3
+  :label: "Gran Habano Gran Reserva #3"
+- :filter:
+    :brand_code: GR5
+  :label: "Gran Habano Gran Reserva #5 2010"
+- :filter:
+    :brand_code: TSS
+  :label: Top Shelf Samplers
+- :filter:
+    :brand_code: GRM
+  :label: Grand Marnier
+- :filter:
+    :brand_code: GRI
+  :label: "Griffin's"
+- :filter:
+    :brand_code: GRN
+  :label: "Griffin's Nicaragua"
+- :filter:
+    :brand_code: GYH
+  :label: Guayacan Habano
+- :filter:
+    :brand_code: GYM
+  :label: Guayacan Maduro
+- :filter:
+    :brand_code: GLN
+  :label: Guillermo Leon
+- :filter:
+    :brand_code: GAV
+  :label: Gurkha 125th Anniversary
+- :filter:
+    :brand_code: GUR
+  :label: Gurkha Regent
+- :filter:
+    :brand_code: GSA
+  :label: Gurkha Accessories And Samplers
+- :filter:
+    :brand_code: EVL
+  :label: Gurkha Evil
+- :filter:
+    :brand_code: GGC
+  :label: Gurkha Grand Reserve Cognac
+- :filter:
+    :brand_code: NIJ
+  :label: Gurkha Ninja
+- :filter:
+    :brand_code: GSD
+  :label: Gurkha Seduction
+- :filter:
+    :brand_code: GSE
+  :label: Gurkha Special Edition
+- :filter:
+    :brand_code: TMP
+  :label: Gurkha Templar
+- :filter:
+    :brand_code: GWI
+  :label: Gurkha Wicked Indie
+- :filter:
+    :brand_code: GXT
+  :label: Gurkha Xtreme
+- :filter:
+    :brand_code: HUL
+  :label: H. Upmann Legacy
+- :filter:
+    :brand_code: HUR
+  :label: H. Upmann 1844 Reserve
+- :filter:
+    :brand_code: HRM
+  :label: H Upmann Reserve Maduro
+- :filter:
+    :brand_code: HUV
+  :label: H. Upmann Vintage Cameroon
+- :filter:
+    :brand_code: BKR
+  :label: H.Upmann Banker
+- :filter:
+    :brand_code: HYA
+  :label: H.Upmann Yarguera
+- :filter:
+    :brand_code: NRT
+  :label: Herrera Esteli Norteno
+- :filter:
+    :brand_code: HUS
+  :label: H.Upmann Sun Grown
+- :filter:
+    :brand_code: HAS
+  :label: Hammer &amp; Sickle
+- :filter:
+    :brand_code: HAV
+  :label: Hav-A-Tampa
+- :filter:
+    :brand_code: HAH
+  :label: Havana Honeys Dominican
+- :filter:
+    :brand_code: HHO
+  :label: Havana Honeys
+- :filter:
+    :brand_code: CHG
+  :label: Headley Grange By Crowned Heads
+- :filter:
+    :brand_code: HEI
+  :label: Heisenberg By Quesada
+- :filter:
+    :brand_code: HLX
+  :label: Helix
+- :filter:
+    :brand_code: HEN
+  :label: Henry Clay
+- :filter:
+    :brand_code: HCC
+  :label: Henry Clay Stalk Cut
+- :filter:
+    :brand_code: HET
+  :label: Henry Clay Tattoo
+- :filter:
+    :brand_code: DUH
+  :label: Heritage By Dunhill
+- :filter:
+    :brand_code: HES
+  :label: Herrera Esteli
+- :filter:
+    :brand_code: RYC
+  :label: Romeo Y Julieta House of Capulet
+- :filter:
+    :brand_code: RYM
+  :label: Romeo Y Julieta House of Montague
+- :filter:
+    :brand_code: HOY
+  :label: Hoyo De Monterrey
+- :filter:
+    :brand_code: HML
+  :label: Hoyo De Monterrey Limited Edition
+- :filter:
+    :brand_code: HDT
+  :label: Hoyo De Tradicion
+- :filter:
+    :brand_code: HRH
+  :label: Cubanacan HR
+- :filter:
+    :brand_code: ILL
+  :label: Illusione
+- :filter:
+    :brand_code: ILE
+  :label: Illusione Epernay
+- :filter:
+    :brand_code: IMM
+  :label: Immortal
+- :filter:
+    :brand_code: IMP
+  :label: Imperial Stout By Gran Habano
+- :filter:
+    :brand_code: EPI
+  :label: INCH By EP Carrillo
+- :filter:
+    :brand_code: E99
+  :label: INCH C-99 By EP Carrillo
+- :filter:
+    :brand_code: ITF
+  :label: Indian Tabac Super Fuerte
+- :filter:
+    :brand_code: INP
+  :label: Inferno Flashpoint
+- :filter:
+    :brand_code: INM
+  :label: Inferno Flashpoint Maduro
+- :filter:
+    :brand_code: IBA
+  :label: Intemperance BA XXI
+- :filter:
+    :brand_code: IEC
+  :label: Intemperance EC XVIII
+- :filter:
+    :brand_code: IRH
+  :label: Iron Horse
+- :filter:
+    :brand_code: IDS
+  :label: Isla Del Sol
+- :filter:
+    :brand_code: JFA
+  :label: J Fuego Americana
+- :filter:
+    :brand_code: JCO
+  :label: J Fuego Connoisseur
+- :filter:
+    :brand_code: JFC
+  :label: "J Fuego Gran Reserva Corojo #1"
+- :filter:
+    :brand_code: JFH
+  :label: J Fuego Heat Corojo
+- :filter:
+    :brand_code: JFO
+  :label: J Fuego Origen
+- :filter:
+    :brand_code: JFU
+  :label: J Fuego Accessories And Samplers
+- :filter:
+    :brand_code: JFS
+  :label: J Fuego Sangre De Toro
+- :filter:
+    :brand_code: JCP
+  :label: Jackpot
+- :filter:
+    :brand_code: JAG
+  :label: Jaime Garcia Reserva Especial
+- :filter:
+    :brand_code: JAV
+  :label: Java By Drew Estate
+- :filter:
+    :brand_code: JAC
+  :label: Java Latte
+- :filter:
+    :brand_code: JVM
+  :label: Java Mint
+- :filter:
+    :brand_code: JDR
+  :label: JD Howard Reserve
+- :filter:
+    :brand_code: CCI
+  :label: Cuatro Cinco
+- :filter:
+    :brand_code: J68
+  :label: JDN Factory Selects J68
+- :filter:
+    :brand_code: JRH
+  :label: Jericho Hill
+- :filter:
+    :brand_code: JMC
+  :label: "JM's Dominican Connecticut"
+- :filter:
+    :brand_code: JMD
+  :label: "JM's Dominican"
+- :filter:
+    :brand_code: JMO
+  :label: "JM's Dominican Corojo"
+- :filter:
+    :brand_code: JMN
+  :label: "JM's Nicaraguan"
+- :filter:
+    :brand_code: NLE
+  :label: Nat Sherman Limited Edition
+- :filter:
+    :brand_code: LM3
+  :label: Legend Maduro
+- :filter:
+    :brand_code: LC3
+  :label: Legend Connecticut
+- :filter:
+    :brand_code: JOB
+  :label: Jose Benito
+- :filter:
+    :brand_code: JDC
+  :label: Joya de Nicaragua Antano Dark Corojo
+- :filter:
+    :brand_code: JCS
+  :label: Joya De Nicaragua Cabinetta Serie
+- :filter:
+    :brand_code: JOC
+  :label: Joya De Nicaragua Celebracion
+- :filter:
+    :brand_code: JOR
+  :label: Joya Red
+- :filter:
+    :brand_code: JUL
+  :label: Juan Lopez
+- :filter:
+    :brand_code: DJC
+  :label: Diamond Crown Julius Caeser
+- :filter:
+    :brand_code: KFU
+  :label: Kentucky Fire Cured
+- :filter:
+    :brand_code: KIN
+  :label: King Edward
+- :filter:
+    :brand_code: KID
+  :label: King Is Dead
+- :filter:
+    :brand_code: KIS
+  :label: Kismet
+- :filter:
+    :brand_code: KBR
+  :label: Kristoff Brittania
+- :filter:
+    :brand_code: KCP
+  :label: Kristoff Galerones Ceniza De Plata
+- :filter:
+    :brand_code: KCL
+  :label: Kristoff Corojo Limitada
+- :filter:
+    :brand_code: KRM
+  :label: Kristoff Maduro
+- :filter:
+    :brand_code: KRC
+  :label: Kristoff Criollo
+- :filter:
+    :brand_code: KDR
+  :label: Kristoff Galerones DR4
+- :filter:
+    :brand_code: KIT
+  :label: Kristoff Galerones Intensivo
+- :filter:
+    :brand_code: KGC
+  :label: Kristoff GC Signature Series
+- :filter:
+    :brand_code: KLC
+  :label: Kristoff Ligero Criollo
+- :filter:
+    :brand_code: KLM
+  :label: Kristoff Ligero Maduro
+- :filter:
+    :brand_code: KRS
+  :label: Kristoff Sumatra
+- :filter:
+    :brand_code: KUT
+  :label: Kuuts Samplers
+- :filter:
+    :brand_code: KUN
+  :label: Kuuts Nicaraguan Blend
+- :filter:
+    :brand_code: LMI
+  :label: "L'Atelier La Mission"
+- :filter:
+    :brand_code: LTL
+  :label: "L'Atelier"
+- :filter:
+    :brand_code: LAD
+  :label: La Antiguedad
+- :filter:
+    :brand_code: ADC
+  :label: La Aroma De Cuba
+- :filter:
+    :brand_code: ACE
+  :label: La Aroma De Cuba Edicion Especial
+- :filter:
+    :brand_code: ADM
+  :label: La Aroma De Cuba Mi Amor
+- :filter:
+    :brand_code: AMR
+  :label: La Aroma De Cuba Mi Amor Reserva
+- :filter:
+    :brand_code: ADL
+  :label: La Aroma De Cuba Limited Edition
+- :filter:
+    :brand_code: LA7
+  :label: La Aurora 107
+- :filter:
+    :brand_code: LC1
+  :label: La Aurora 110th Anniversary Cameroon
+- :filter:
+    :brand_code: LO1
+  :label: La Aurora 110th Anniversary Corojo
+- :filter:
+    :brand_code: A95
+  :label: La Aurora 1495
+- :filter:
+    :brand_code: LAA
+  :label: La Aurora Cameroon
+- :filter:
+    :brand_code: LAO
+  :label: La Aurora Corojo
+- :filter:
+    :brand_code: LES
+  :label: La Aurora Escogidos
+- :filter:
+    :brand_code: LCT
+  :label: La Aurora Preferidos Connecticut
+- :filter:
+    :brand_code: LAE
+  :label: La Aurora Preferido Ecuador
+- :filter:
+    :brand_code: LPF
+  :label: La Aurora Preferido Accessories And Samplers
+- :filter:
+    :brand_code: LCA
+  :label: La Aurora Preferidos Cameroon
+- :filter:
+    :brand_code: LCJ
+  :label: La Aurora Preferidos Corojo
+- :filter:
+    :brand_code: LPM
+  :label: La Aurora Preferidos Maduro
+- :filter:
+    :brand_code: BOH
+  :label: La Boheme
+- :filter:
+    :brand_code: LAS
+  :label: Las Cabrillas
+- :filter:
+    :brand_code: LCP
+  :label: La Campina
+- :filter:
+    :brand_code: VLC
+  :label: La Capitana
+- :filter:
+    :brand_code: TLC
+  :label: Tatuaje La Casita Criolla
+- :filter:
+    :brand_code: WCL
+  :label: La Colmena By Warped Cigars
+- :filter:
+    :brand_code: LDN
+  :label: La Duena
+- :filter:
+    :brand_code: COR
+  :label: La Flor Dominicana Coronado
+- :filter:
+    :brand_code: LFC
+  :label: La Flor Dominicana Ligero Cabinet Oscuro
+- :filter:
+    :brand_code: LDC
+  :label: La Flor Dominicana Double Claro
+- :filter:
+    :brand_code: LFA
+  :label: La Flor Dominicana Air Bender
+- :filter:
+    :brand_code: LCB
+  :label: La Flor Dominicana Cameroon Cabinet
+- :filter:
+    :brand_code: FLS
+  :label: La Flor Dominicana Accessories And Samplers
+- :filter:
+    :brand_code: LFD
+  :label: La Flor Dominicana Double Ligero
+- :filter:
+    :brand_code: FLO
+  :label: La Flor Dominicana Limited Production
+- :filter:
+    :brand_code: LFU
+  :label: La Flor Dominicana Fumas
+- :filter:
+    :brand_code: LFN
+  :label: La Flor Dominicana La Nox
+- :filter:
+    :brand_code: LFG
+  :label: La Flor Dominicana Ligero
+- :filter:
+    :brand_code: FLL
+  :label: La Flor Dominicana Little Cigars
+- :filter:
+    :brand_code: LDO
+  :label: La Flor Dominicana Oro Tubo
+- :filter:
+    :brand_code: LFR
+  :label: La Flor Dominicana Reserva Especial
+- :filter:
+    :brand_code: LFP
+  :label: La Flor Dominicana Suave
+- :filter:
+    :brand_code: LFL
+  :label: La Floridita
+- :filter:
+    :brand_code: LFF
+  :label: La Floridita Fuerte
+- :filter:
+    :brand_code: LGD
+  :label: La Floridita Gold
+- :filter:
+    :brand_code: LFE
+  :label: La Floridita Limited Edition
+- :filter:
+    :brand_code: LAF
+  :label: La Fontana Vintage
+- :filter:
+    :brand_code: LGC
+  :label: La Galera Connecticut
+- :filter:
+    :brand_code: LGH
+  :label: La Galera Habano
+- :filter:
+    :brand_code: LAG
+  :label: La Gloria Cubana
+- :filter:
+    :brand_code: LRE
+  :label: La Gloria Cubana Artesanos Retro Especiale
+- :filter:
+    :brand_code: LGI
+  :label: La Gloria Cubana Gilded Age
+- :filter:
+    :brand_code: LGN
+  :label: La Gloria Cubana Serie N
+- :filter:
+    :brand_code: LGR
+  :label: La Gloria Cubana Serie R
+- :filter:
+    :brand_code: LBK
+  :label: La Gloria Cubana Serie R Black
+- :filter:
+    :brand_code: SRF
+  :label: La Gloria Cubana Serie RF
+- :filter:
+    :brand_code: WHA
+  :label: La Hacienda By Warped Cigars
+- :filter:
+    :brand_code: LHA
+  :label: La Hoja Autentico Maduro
+- :filter:
+    :brand_code: LHL
+  :label: La Hoja Black Label
+- :filter:
+    :brand_code: LHC
+  :label: La Hoja Edicion Clasica 1962
+- :filter:
+    :brand_code: LEC
+  :label: La Hoja Edicion Crema 1962
+- :filter:
+    :brand_code: LHM
+  :label: La Hoja Edicion Maduro 1962
+- :filter:
+    :brand_code: LHO
+  :label: La Hoja Original
+- :filter:
+    :brand_code: LHR
+  :label: La Hoja Reserva Limitada 1962
+- :filter:
+    :brand_code: LAI
+  :label: La Imperiosa
+- :filter:
+    :brand_code: LJH
+  :label: La Jugada Habano
+- :filter:
+    :brand_code: LJP
+  :label: La Jugada Prieto
+- :filter:
+    :brand_code: LIB
+  :label: La Libertad
+- :filter:
+    :brand_code: PBB
+  :label: La Palina Black Label
+- :filter:
+    :brand_code: PAC
+  :label: La Palina Classic
+- :filter:
+    :brand_code: PED
+  :label: La Palina El Diario
+- :filter:
+    :brand_code: PMD
+  :label: La Palina Maduro
+- :filter:
+    :brand_code: PSA
+  :label: La Palina Mr Sam
+- :filter:
+    :brand_code: PRB
+  :label: La Palina Red Label
+- :filter:
+    :brand_code: LRZ
+  :label: La Riqueza
+- :filter:
+    :brand_code: LSJ
+  :label: La Sirena Jaxx
+- :filter:
+    :brand_code: LST
+  :label: Jaxx LT By La Sirena
+- :filter:
+    :brand_code: LSO
+  :label: La Sirena Original
+- :filter:
+    :brand_code: LSM
+  :label: La Sirena Merlion
+- :filter:
+    :brand_code: LSN
+  :label: La Sirena Oceano
+- :filter:
+    :brand_code: LSS
+  :label: Stixx By La Sirena
+- :filter:
+    :brand_code: LAU
+  :label: La Unica Cabinet
+- :filter:
+    :brand_code: LCS
+  :label: La Vieja Habana Connecticut Shade
+- :filter:
+    :brand_code: LCC
+  :label: La Vieja Habana Corojo
+- :filter:
+    :brand_code: LBM
+  :label: La Vieja Habana Brazilian Maduro
+- :filter:
+    :brand_code: LZF
+  :label: La Zona Factory Selects by Espinosa
+- :filter:
+    :brand_code: SAC
+  :label: San Cristobal
+- :filter:
+    :brand_code: LAR
+  :label: Laranja Reserva
+- :filter:
+    :brand_code: LC6
+  :label: Las Calaveras Edicion Limitada 2016
+- :filter:
+    :brand_code: LBO
+  :label: Leaf By Oscar
+- :filter:
+    :brand_code: LEA
+  :label: Leccia Accessories And Samplers
+- :filter:
+    :brand_code: LEB
+  :label: Leccia Black
+- :filter:
+    :brand_code: LEL
+  :label: Leccia Luchador
+- :filter:
+    :brand_code: LEW
+  :label: Leccia White
+- :filter:
+    :brand_code: LEO
+  :label: Leon Jimenes
+- :filter:
+    :brand_code: LIM
+  :label: Leon Jimenes Imperiales
+- :filter:
+    :brand_code: LJM
+  :label: Leon Jimenes Maduro
+- :filter:
+    :brand_code: LX7
+  :label: "Lex 12 Blend #7"
+- :filter:
+    :brand_code: LEX
+  :label: Lex12
+- :filter:
+    :brand_code: LXW
+  :label: Lex12 Wides
+- :filter:
+    :brand_code: LH1
+  :label: LH Premium Cigars Claro
+- :filter:
+    :brand_code: LH2
+  :label: LH Premium Cigars Colorado
+- :filter:
+    :brand_code: LH3
+  :label: LH Premium Cigars Maduro
+- :filter:
+    :brand_code: LP9
+  :label: Liga Privada No. 9
+- :filter:
+    :brand_code: LPU
+  :label: Liga Privada Unico Serie
+- :filter:
+    :brand_code: L52
+  :label: Liga Privada T52
+- :filter:
+    :brand_code: LUN
+  :label: Liga Undercrown
+- :filter:
+    :brand_code: GLW
+  :label: Little N Wild
+- :filter:
+    :brand_code: FLG
+  :label: Litto Gomez Diez
+- :filter:
+    :brand_code: LLK
+  :label: Long Live The King
+- :filter:
+    :brand_code: LBB
+  :label: Lord Blackburn Black
+- :filter:
+    :brand_code: LBN
+  :label: Lord Blackburn
+- :filter:
+    :brand_code: LBG
+  :label: Lord Blackburn Gold
+- :filter:
+    :brand_code: LBR
+  :label: Lord Blackburn Red
+- :filter:
+    :brand_code: CTL
+  :label: Torano Loyal
+- :filter:
+    :brand_code: MAC
+  :label: Macanudo Cafe
+- :filter:
+    :brand_code: MRO
+  :label: Macanudo Cru Royale
+- :filter:
+    :brand_code: MER
+  :label: Macanudo Estate Reserve
+- :filter:
+    :brand_code: MGL
+  :label: Macanudo Gold Label
+- :filter:
+    :brand_code: MAI
+  :label: Macanudo Inspirado
+- :filter:
+    :brand_code: MAM
+  :label: Macanudo Maduro
+- :filter:
+    :brand_code: MAV
+  :label: Macanudo Vintage 1997
+- :filter:
+    :brand_code: MV6
+  :label: Macanudo Vintage 2006
+- :filter:
+    :brand_code: MAK
+  :label: "Maker's Mark"
+- :filter:
+    :brand_code: MES
+  :label: Manolo Estate
+- :filter:
+    :brand_code: MCF
+  :label: Maroma Cafe
+- :filter:
+    :brand_code: MRA
+  :label: Maroma Natural
+- :filter:
+    :brand_code: MRD
+  :label: Maroma Dulce
+- :filter:
+    :brand_code: MRM
+  :label: Maroma Maduro
+- :filter:
+    :brand_code: MDP
+  :label: Mason Dixon Project
+- :filter:
+    :brand_code: MTO
+  :label: Matilde Oscura
+- :filter:
+    :brand_code: MRE
+  :label: Matilde Renacer
+- :filter:
+    :brand_code: MRC
+  :label: Mederos Connecticut
+- :filter:
+    :brand_code: MRH
+  :label: Mederos Habano
+- :filter:
+    :brand_code: MRS
+  :label: Mederos Oscuro
+- :filter:
+    :brand_code: MEL
+  :label: Merciless by Joya De Nicaragua
+- :filter:
+    :brand_code: LME
+  :label: Mermaid By La Sirena
+- :filter:
+    :brand_code: MBA
+  :label: Mi Barrio
+- :filter:
+    :brand_code: MBM
+  :label: Monte By Montecristo
+- :filter:
+    :brand_code: M80
+  :label: Montecristo 80th
+- :filter:
+    :brand_code: MTC
+  :label: Montecristo
+- :filter:
+    :brand_code: MTW
+  :label: Montecristo White
+- :filter:
+    :brand_code: MCC
+  :label: Montecristo Classic
+- :filter:
+    :brand_code: MCY
+  :label: Montecristo Crystal Seleccion
+- :filter:
+    :brand_code: MTE
+  :label: Montecristo Epic
+- :filter:
+    :brand_code: MTN
+  :label: Montecristo Espada
+- :filter:
+    :brand_code: MTH
+  :label: Montecristo Platinum
+- :filter:
+    :brand_code: MTR
+  :label: Montecristo Relentless
+- :filter:
+    :brand_code: MOV
+  :label: Montecristo White Vintage
+- :filter:
+    :brand_code: MON
+  :label: Montesino
+- :filter:
+    :brand_code: MOS
+  :label: Moscato
+- :filter:
+    :brand_code: MUN
+  :label: Muniemaker
+- :filter:
+    :brand_code: MUL
+  :label: Murcielago
+- :filter:
+    :brand_code: MUR
+  :label: Muriel
+- :filter:
+    :brand_code: UZI
+  :label: MUWAT
+- :filter:
+    :brand_code: M22
+  :label: My Father Le Bijou 1922
+- :filter:
+    :brand_code: MF
+  :label: My Father
+- :filter:
+    :brand_code: MFC
+  :label: My Father Connecticut
+- :filter:
+    :brand_code: N30
+  :label: Nat Sherman 1930
+- :filter:
+    :brand_code: N85
+  :label: Nat Sherman 85th Anniversary
+- :filter:
+    :brand_code: NSH
+  :label: Nat Sherman Host
+- :filter:
+    :brand_code: NSM
+  :label: Nat Sherman Metropolitan
+- :filter:
+    :brand_code: NSL
+  :label: Nat Sherman Sterling
+- :filter:
+    :brand_code: NAT
+  :label: National Brand
+- :filter:
+    :brand_code: NAD
+  :label: Natural By Drew Estate
+- :filter:
+    :brand_code: NAN
+  :label: Neanderthal
+- :filter:
+    :brand_code: NMC
+  :label: Nestor Miranda Connecticut Collection
+- :filter:
+    :brand_code: NMH
+  :label: Nestor Miranda Habano Collection
+- :filter:
+    :brand_code: NMM
+  :label: Nestor Miranda Maduro Collection
+- :filter:
+    :brand_code: NES
+  :label: Nestor Miranda Special Selection
+- :filter:
+    :brand_code: ANW
+  :label: New World By AJ Fernandez
+- :filter:
+    :brand_code: AWC
+  :label: New World Connecticut by AJF
+- :filter:
+    :brand_code: NRS
+  :label: Nica Rustica by Drew Estate
+- :filter:
+    :brand_code: NIR
+  :label: NicaRoma
+- :filter:
+    :brand_code: NMD
+  :label: Nimmy-D
+- :filter:
+    :brand_code: NRV
+  :label: Nirvana by Drew Estate
+- :filter:
+    :brand_code: NOC
+  :label: Nomad C-276
+- :filter:
+    :brand_code: CNF
+  :label: Nomad Connecticut Fuerte
+- :filter:
+    :brand_code: NOD
+  :label: Nomad DR Classic
+- :filter:
+    :brand_code: EL8
+  :label: Nomad Esteli Lot 8613
+- :filter:
+    :brand_code: NOS
+  :label: Nomad S-307
+- :filter:
+    :brand_code: NOT
+  :label: Nomad Therapy
+- :filter:
+    :brand_code: NCP
+  :label: Nub Cafe Cappuccino
+- :filter:
+    :brand_code: NEP
+  :label: Nub Cafe Espresso
+- :filter:
+    :brand_code: NMA
+  :label: Nub Cafe Macchiato
+- :filter:
+    :brand_code: NCM
+  :label: Nub Cameroon
+- :filter:
+    :brand_code: NCT
+  :label: Nub Connecticut
+- :filter:
+    :brand_code: NHA
+  :label: Nub Habano
+- :filter:
+    :brand_code: NUM
+  :label: Nub Maduro
+- :filter:
+    :brand_code: OCC
+  :label: Occidental Reserve Connecticut
+- :filter:
+    :brand_code: OGO
+  :label: OG OSOK
+- :filter:
+    :brand_code: O15
+  :label: Oktoberfest 2015
+- :filter:
+    :brand_code: OVA
+  :label: Oliva Accessories And Samplers
+- :filter:
+    :brand_code: BPT
+  :label: Baptiste
+- :filter:
+    :brand_code: OCN
+  :label: Oliva Cain
+- :filter:
+    :brand_code: OCD
+  :label: Oliva Cain Daytona
+- :filter:
+    :brand_code: OCF
+  :label: Oliva Cain F
+- :filter:
+    :brand_code: OCB
+  :label: Oliva Cain Nub
+- :filter:
+    :brand_code: OFC
+  :label: Oliva Factory Selects Cameroon
+- :filter:
+    :brand_code: OCR
+  :label: Oliva Connecticut Reserve
+- :filter:
+    :brand_code: OFH
+  :label: Oliva Factory Selects Habano
+- :filter:
+    :brand_code: OFT
+  :label: Oliva Factory Selects Connecticut
+- :filter:
+    :brand_code: OFM
+  :label: Oliva Factory Selects Maduro
+- :filter:
+    :brand_code: OM3
+  :label: Oliva Master Blends 3
+- :filter:
+    :brand_code: OSV
+  :label: Oliva Serie V
+- :filter:
+    :brand_code: OSM
+  :label: Oliva Serie V Melanio
+- :filter:
+    :brand_code: OGN
+  :label: Oliva Serie G
+- :filter:
+    :brand_code: OGM
+  :label: Oliva Serie G Maduro
+- :filter:
+    :brand_code: OON
+  :label: Oliva Serie O
+- :filter:
+    :brand_code: OOM
+  :label: Oliva Serie O Maduro
+- :filter:
+    :brand_code: VJM
+  :label: Oliva Viejo Mundo
+- :filter:
+    :brand_code: OLH
+  :label: Oliveros Gran Retorno Habano
+- :filter:
+    :brand_code: OFL
+  :label: Oliveros Long Lady
+- :filter:
+    :brand_code: OLO
+  :label: Olor by Manuel Quesada
+- :filter:
+    :brand_code: OLF
+  :label: Olor Fuerte
+- :filter:
+    :brand_code: OLN
+  :label: Olor Nicaragua
+- :filter:
+    :brand_code: OOO
+  :label: Omar Ortez Originals
+- :filter:
+    :brand_code: ONR
+  :label: Onyx Reserve
+- :filter:
+    :brand_code: OPM
+  :label: Opium Miami Special Edition
+- :filter:
+    :brand_code: ORT
+  :label: ORTSAC
+- :filter:
+    :brand_code: OSK
+  :label: OSOK By Edgar Hoill
+- :filter:
+    :brand_code: PTW
+  :label: Pacific Twyst
+- :filter:
+    :brand_code: PDL
+  :label: Padilla Accessories And Samplers
+- :filter:
+    :brand_code: PDV
+  :label: Padilla Cava
+- :filter:
+    :brand_code: PCO
+  :label: Padilla Connecticut
+- :filter:
+    :brand_code: C99
+  :label: Padilla Corojo 99
+- :filter:
+    :brand_code: PCR
+  :label: Padilla Crianza
+- :filter:
+    :brand_code: C98
+  :label: Padilla Criollo 98
+- :filter:
+    :brand_code: PLP
+  :label: Padilla La Pilar
+- :filter:
+    :brand_code: PM8
+  :label: Padilla Miami 8/11
+- :filter:
+    :brand_code: PMM
+  :label: Padilla Miami Maduro
+- :filter:
+    :brand_code: PPC
+  :label: Padilla Premier CRU
+- :filter:
+    :brand_code: PRV
+  :label: Padilla Reserva
+- :filter:
+    :brand_code: SAA
+  :label: Padilla San Andres
+- :filter:
+    :brand_code: PVR
+  :label: Padilla Vintage Reserve
+- :filter:
+    :brand_code: PAM
+  :label: Padron 1964 Anniversary Maduro
+- :filter:
+    :brand_code: PAA
+  :label: Padron 1964 Anniversary Natural
+- :filter:
+    :brand_code: PAD
+  :label: Padron
+- :filter:
+    :brand_code: PA6
+  :label: Padron Serie 1926
+- :filter:
+    :brand_code: P50
+  :label: Padron 50th Anniversary
+- :filter:
+    :brand_code: DSO
+  :label: Padron Damaso
+- :filter:
+    :brand_code: PFR
+  :label: Padron Family Reserve
+- :filter:
+    :brand_code: PGW
+  :label: Pai Gow
+- :filter:
+    :brand_code: PAN
+  :label: Panter
+- :filter:
+    :brand_code: PND
+  :label: Panter Dominican
+- :filter:
+    :brand_code: PRT
+  :label: Para Ti
+- :filter:
+    :brand_code: PDI
+  :label: Parodi
+- :filter:
+    :brand_code: PAL
+  :label: Partagas 150 Anniversary
+- :filter:
+    :brand_code: P45
+  :label: Partagas 1845
+- :filter:
+    :brand_code: PEO
+  :label: Partagas 1845 Extra Oscuro
+- :filter:
+    :brand_code: P70
+  :label: Partagas Anniversario
+- :filter:
+    :brand_code: PBL
+  :label: Partagas Black Label
+- :filter:
+    :brand_code: PAR
+  :label: Partagas
+- :filter:
+    :brand_code: PMF
+  :label: Paul Stulac Black Midnight Fire
+- :filter:
+    :brand_code: PCB
+  :label: Paul Stulac Classic Blend
+- :filter:
+    :brand_code: PSS
+  :label: Paul Stulac Red Screaming Sun
+- :filter:
+    :brand_code: PSW
+  :label: Paul Stulac White Blinding Light
+- :filter:
+    :brand_code: P78
+  :label: PDR 1878 Cubano Especial
+- :filter:
+    :brand_code: PRD
+  :label: PDR 1878 Reserva Dominicana
+- :filter:
+    :brand_code: PSB
+  :label: PDR Small Batch Reserve
+- :filter:
+    :brand_code: PS1
+  :label: Perdomo Small Batch Connecticut
+- :filter:
+    :brand_code: P2L
+  :label: Perdomo 2 Limited Edition
+- :filter:
+    :brand_code: P2M
+  :label: Perdomo 20th Anniversary Maduro
+- :filter:
+    :brand_code: P2S
+  :label: Perdomo 20th Anniversary Sun Grown
+- :filter:
+    :brand_code: PXC
+  :label: Perdomo Champagne
+- :filter:
+    :brand_code: PCN
+  :label: Perdomo Champagne Noir
+- :filter:
+    :brand_code: PAE
+  :label: Perdomo Craft Series Amber
+- :filter:
+    :brand_code: PPI
+  :label: Perdomo Craft Series Pilsner
+- :filter:
+    :brand_code: PSU
+  :label: Perdomo Craft Series Stout
+- :filter:
+    :brand_code: ALB
+  :label: Perdomo Cuban Alabao
+- :filter:
+    :brand_code: PCP
+  :label: Perdomo Cuban Parejo
+- :filter:
+    :brand_code: PDN
+  :label: Perdomo Double Aged Connecticut
+- :filter:
+    :brand_code: PDA
+  :label: Perdomo Double Aged
+- :filter:
+    :brand_code: EDS
+  :label: Perdomo Edicion De Silvio
+- :filter:
+    :brand_code: ESV
+  :label: Perdomo Estate Seleccion Vintage 2002
+- :filter:
+    :brand_code: PF1
+  :label: Perdomo Factory Tour Blend Connecticut
+- :filter:
+    :brand_code: PF2
+  :label: Perdomo Factory Tour Blend Sun Grown
+- :filter:
+    :brand_code: PF3
+  :label: Perdomo Factory Tour Blend Maduro
+- :filter:
+    :brand_code: PSF
+  :label: Perdomo Fresco Sun Grown
+- :filter:
+    :brand_code: PFE
+  :label: Perdomo Fresco
+- :filter:
+    :brand_code: PHA
+  :label: Perdomo Habano
+- :filter:
+    :brand_code: PB2
+  :label: Perdomo Habano Original Connecticut
+- :filter:
+    :brand_code: PHC
+  :label: Perdomo Habano Connecticut
+- :filter:
+    :brand_code: PB1
+  :label: Perdomo Habano Original
+- :filter:
+    :brand_code: PCA
+  :label: Perdomo Limited Cameroon Edition
+- :filter:
+    :brand_code: P23
+  :label: Perdomo Lot 23
+- :filter:
+    :brand_code: PAT
+  :label: Perdomo Patriarch
+- :filter:
+    :brand_code: PS2
+  :label: Perdomo Small Batch Sun Grown
+- :filter:
+    :brand_code: PS3
+  :label: Perdomo Small Batch Maduro
+- :filter:
+    :brand_code: PMR
+  :label: Perla Del Mar
+- :filter:
+    :brand_code: PTI
+  :label: Petri
+- :filter:
+    :brand_code: PHI
+  :label: Phillies
+- :filter:
+    :brand_code: PHK
+  :label: Phillies Krome
+- :filter:
+    :brand_code: PDO
+  :label: Pinar Del Rio Habano Oscuro
+- :filter:
+    :brand_code: PSL
+  :label: Pinar Del Rio Seleccion Reserve Limitado
+- :filter:
+    :brand_code: PLT
+  :label: Placeres Humidor Canister
+- :filter:
+    :brand_code: PLS
+  :label: Placeres Reserva
+- :filter:
+    :brand_code: PRJ
+  :label: Placeres Serie Roja
+- :filter:
+    :brand_code: HNC
+  :label: Honduran Bundles
+- :filter:
+    :brand_code: PRO
+  :label: Plasencia Reserva Organica
+- :filter:
+    :brand_code: PHD
+  :label: Primer Mundo La Hermandad
+- :filter:
+    :brand_code: PHF
+  :label: Primer Mundo La Hermandad Costa Fuerte
+- :filter:
+    :brand_code: PLF
+  :label: Principe Long Filler
+- :filter:
+    :brand_code: PRP
+  :label: Principe Palmas
+- :filter:
+    :brand_code: PRI
+  :label: Principes
+- :filter:
+    :brand_code: FPN
+  :label: Private Selection Nicaragua
+- :filter:
+    :brand_code: PST
+  :label: Private Stock
+- :filter:
+    :brand_code: 805
+  :label: Project 805
+- :filter:
+    :brand_code: PS7
+  :label: Psyko Seven
+- :filter:
+    :brand_code: TLR
+  :label: Tatuaje Limited Release
+- :filter:
+    :brand_code: PUN
+  :label: Punch
+- :filter:
+    :brand_code: PUS
+  :label: Punch Deluxe
+- :filter:
+    :brand_code: PGP
+  :label: Punch Gran Puro
+- :filter:
+    :brand_code: PRC
+  :label: Punch Rare Corojo
+- :filter:
+    :brand_code: PSI
+  :label: Punch Signature Blend
+- :filter:
+    :brand_code: SKP
+  :label: Punch Sucker Punch
+- :filter:
+    :brand_code: PSO
+  :label: Pura Soul
+- :filter:
+    :brand_code: PSH
+  :label: Pura Soul Honduras
+- :filter:
+    :brand_code: QF1
+  :label: Quesada Factory Selects Q1 Connecticut
+- :filter:
+    :brand_code: QF5
+  :label: Quesada Factory Selects Q5 Natural
+- :filter:
+    :brand_code: QF8
+  :label: Quesada Factory Selects Q8 Maduro
+- :filter:
+    :brand_code: QUE
+  :label: Quesada
+- :filter:
+    :brand_code: Q40
+  :label: Quesada 40th Anniversary
+- :filter:
+    :brand_code: O14
+  :label: Quesada Oktoberfest 2014
+- :filter:
+    :brand_code: QRP
+  :label: Quesada Reserva Privada
+- :filter:
+    :brand_code: QST
+  :label: Quesada Tributo
+- :filter:
+    :brand_code: QUC
+  :label: Quorum Classic
+- :filter:
+    :brand_code: QUM
+  :label: Quorum Maduro
+- :filter:
+    :brand_code: QUS
+  :label: Quorum Shade
+- :filter:
+    :brand_code: RAF
+  :label: Rafael Gonzalez
+- :filter:
+    :brand_code: RRD
+  :label: Ramrod
+- :filter:
+    :brand_code: RED
+  :label: Red Witch by East India Trading
+- :filter:
+    :brand_code: REM
+  :label: Remington Filter Cigars
+- :filter:
+    :brand_code: CRS
+  :label: Carlos Torano Reserva Selecta
+- :filter:
+    :brand_code: RIG
+  :label: Rigoletto
+- :filter:
+    :brand_code: R15
+  :label: Rocky Patel 15th Anniversary
+- :filter:
+    :brand_code: R20
+  :label: Rocky Patel 20th Anniversary
+- :filter:
+    :brand_code: RP
+  :label: Rocky Patel Accessories And Samplers
+- :filter:
+    :brand_code: RPA
+  :label: Rocky Patel American Market Selection
+- :filter:
+    :brand_code: RBN
+  :label: Rocky Patel Burn
+- :filter:
+    :brand_code: C22
+  :label: Rocky Patel Catch 22
+- :filter:
+    :brand_code: RPC
+  :label: Rocky Patel Cuban Blend
+- :filter:
+    :brand_code: RDC
+  :label: Rocky Patel Decade Cameroon
+- :filter:
+    :brand_code: RPD
+  :label: Rocky Patel Decade
+- :filter:
+    :brand_code: VRE
+  :label: Rocky Patel The Edge
+- :filter:
+    :brand_code: VRL
+  :label: Rocky Patel The Edge Lite
+- :filter:
+    :brand_code: VRS
+  :label: Rocky Patel Sumatra
+- :filter:
+    :brand_code: ERP
+  :label: Rocky Patel Evolution
+- :filter:
+    :brand_code: R72
+  :label: Rocky Patel Factory Selects R72
+- :filter:
+    :brand_code: R90
+  :label: Rocky Patel Factory Selects R90
+- :filter:
+    :brand_code: R69
+  :label: Rocky Patel Factory Selects R69
+- :filter:
+    :brand_code: R80
+  :label: Rocky Patel Factory Selects R80
+- :filter:
+    :brand_code: R87
+  :label: Rocky Patel Factory Selects R87
+- :filter:
+    :brand_code: R95
+  :label: Rocky Patel Factory Selects R95
+- :filter:
+    :brand_code: RPF
+  :label: Rocky Patel Freedom
+- :filter:
+    :brand_code: RHR
+  :label: Rocky Patel HR 500
+- :filter:
+    :brand_code: TBQ
+  :label: Rocky Patel Hamlet Tabaquero
+- :filter:
+    :brand_code: RPH
+  :label: Rocky Patel Honduran Classic
+- :filter:
+    :brand_code: RPJ
+  :label: Rocky Patel Juniors
+- :filter:
+    :brand_code: RBG
+  :label: Rocky Patel New Baby
+- :filter:
+    :brand_code: RPN
+  :label: Rocky Patel Nicaraguan
+- :filter:
+    :brand_code: RPL
+  :label: Rocky Patel Platinum
+- :filter:
+    :brand_code: RCE
+  :label: Rocky Patel Private Cellar
+- :filter:
+    :brand_code: RPO
+  :label: Rocky Patel Prohibition
+- :filter:
+    :brand_code: RPR
+  :label: Rocky Patel Rosado
+- :filter:
+    :brand_code: RRY
+  :label: Rocky Patel Royale
+- :filter:
+    :brand_code: RPS
+  :label: Rocky Patel Sun Grown
+- :filter:
+    :brand_code: RSM
+  :label: Rocky Patel Sun Grown Maduro
+- :filter:
+    :brand_code: RSL
+  :label: Rocky Patel Super Ligero
+- :filter:
+    :brand_code: REH
+  :label: Rocky Patel The Edge Habano
+- :filter:
+    :brand_code: V90
+  :label: Rocky Patel Vintage 1990
+- :filter:
+    :brand_code: V92
+  :label: Rocky Patel Vintage 1992
+- :filter:
+    :brand_code: VRC
+  :label: Rocky Patel Vintage Connecticut 1999
+- :filter:
+    :brand_code: V23
+  :label: Rocky Patel Vintage 2003 Cameroon
+- :filter:
+    :brand_code: RPX
+  :label: Rocky Patel Xtreme
+- :filter:
+    :brand_code: ROU
+  :label: Gurkha Rogue
+- :filter:
+    :brand_code: RRV
+  :label: Rojas Reserve
+- :filter:
+    :brand_code: RBM
+  :label: Roll Back Maduro
+- :filter:
+    :brand_code: RLY
+  :label: Roly Bundles
+- :filter:
+    :brand_code: RJH
+  :label: Romeo Y Julieta Havoc
+- :filter:
+    :brand_code: ROH
+  :label: Romeo Y Julieta Reserve
+- :filter:
+    :brand_code: ROR
+  :label: Romeo Y Julieta 1875
+- :filter:
+    :brand_code: RJM
+  :label: Romeo y Julieta 1875 Reserve Maduro
+- :filter:
+    :brand_code: ROM
+  :label: Romeo Y Julieta Mini
+- :filter:
+    :brand_code: JBG
+  :label: Romeo Y Julieta New Baby
+- :filter:
+    :brand_code: RRC
+  :label: Romeo y Julieta Reserva Real Cabinet Seleccion
+- :filter:
+    :brand_code: RRR
+  :label: Romeo y Julieta Reserva Real
+- :filter:
+    :brand_code: ROV
+  :label: Romeo Y Julieta Vintage
+- :filter:
+    :brand_code: 10C
+  :label: Room 101 Connecticut
+- :filter:
+    :brand_code: 1DG
+  :label: Room 101 Daruma Gold
+- :filter:
+    :brand_code: 1JT
+  :label: Room 101 Johnny Tobacconaut
+- :filter:
+    :brand_code: 1MC
+  :label: Room 101 Master Collection Two
+- :filter:
+    :brand_code: 1EC
+  :label: Room 101 Namakubi Ecuador
+- :filter:
+    :brand_code: 1M1
+  :label: Room 101 Master Collection One
+- :filter:
+    :brand_code: 1HN
+  :label: Room 101 Serie HN
+- :filter:
+    :brand_code: 10S
+  :label: Room 101 San Andres
+- :filter:
+    :brand_code: RYJ
+  :label: RyJ By Romeo Y Julieta
+- :filter:
+    :brand_code: S53
+  :label: Swisher Sweets Cigarillos 5 for 3
+- :filter:
+    :brand_code: SWI
+  :label: Swisher Sweets
+- :filter:
+    :brand_code: SEM
+  :label: Sabor De Esteli Maduro
+- :filter:
+    :brand_code: SLR
+  :label: Saint Luis Rey
+- :filter:
+    :brand_code: SL2
+  :label: Saint Luis Rey Gen 2
+- :filter:
+    :brand_code: SGM
+  :label: Saint Luis Rey Serie G Maduro
+- :filter:
+    :brand_code: SGN
+  :label: Saint Luis Rey Serie G
+- :filter:
+    :brand_code: SAE
+  :label: San Cristobal Elegancia
+- :filter:
+    :brand_code: SRV
+  :label: San Cristobal Revelation
+- :filter:
+    :brand_code: SDC
+  :label: "San'Doro Claro"
+- :filter:
+    :brand_code: SLT
+  :label: San Lotano Connecticut
+- :filter:
+    :brand_code: SLH
+  :label: San Lotano Habano
+- :filter:
+    :brand_code: SLM
+  :label: San Lotano Maduro
+- :filter:
+    :brand_code: SCT
+  :label: San Lotano Oval Connecticut
+- :filter:
+    :brand_code: SOH
+  :label: San Lotano Oval Habano
+- :filter:
+    :brand_code: SOM
+  :label: San Lotano Oval Maduro
+- :filter:
+    :brand_code: SLB
+  :label: San Lotano The Bull
+- :filter:
+    :brand_code: SAP
+  :label: Sancho Panza
+- :filter:
+    :brand_code: SP2
+  :label: Sancho Panza Double Maduro
+- :filter:
+    :brand_code: SPF
+  :label: Sancho Panza Extra Fuerte
+- :filter:
+    :brand_code: SFE
+  :label: Santa Fe Filtered
+- :filter:
+    :brand_code: SCZ
+  :label: Schizo
+- :filter:
+    :brand_code: SHI
+  :label: Schrader Hispaniola
+- :filter:
+    :brand_code: SOB
+  :label: Sobremesa
+- :filter:
+    :brand_code: SOL
+  :label: Soledad
+- :filter:
+    :brand_code: SOC
+  :label: Solo Cafe
+- :filter:
+    :brand_code: SRO
+  :label: Soneros Habano
+- :filter:
+    :brand_code: SRM
+  :label: Soneros Maduro
+- :filter:
+    :brand_code: STN
+  :label: Stonewood
+- :filter:
+    :brand_code: SUR
+  :label: Surrogates
+- :filter:
+    :brand_code: SWB
+  :label: Swag Black
+- :filter:
+    :brand_code: SWC
+  :label: Swag Connecticut
+- :filter:
+    :brand_code: SWG
+  :label: Swag Puro Dominicano
+- :filter:
+    :brand_code: SGS
+  :label: Swag S Maduro
+- :filter:
+    :brand_code: SSB
+  :label: Swisher Sweets Black
+- :filter:
+    :brand_code: ZAP
+  :label: Tabacalera Zapata
+- :filter:
+    :brand_code: TBK
+  :label: Tabak Especial
+- :filter:
+    :brand_code: TMX
+  :label: Tabamex
+- :filter:
+    :brand_code: TFC
+  :label: Talon Filtered Cigars
+- :filter:
+    :brand_code: TTR
+  :label: Tampa Trolleys
+- :filter:
+    :brand_code: TTC
+  :label: Tatiana Classic
+- :filter:
+    :brand_code: TCB
+  :label: Tatiana Coffee Break
+- :filter:
+    :brand_code: TTD
+  :label: Tatiana Dolce
+- :filter:
+    :brand_code: TTL
+  :label: Tatiana La Vita
+- :filter:
+    :brand_code: TMI
+  :label: Tatiana Miniature
+- :filter:
+    :brand_code: TTM
+  :label: Tatiana Mocha
+- :filter:
+    :brand_code: TTN
+  :label: Tatiana
+- :filter:
+    :brand_code: TAT
+  :label: Tatiana Tins
+- :filter:
+    :brand_code: T10
+  :label: Tatuaje 10th Anniversary
+- :filter:
+    :brand_code: TBL
+  :label: Tatuaje Black
+- :filter:
+    :brand_code: TAV
+  :label: Tatuaje Fausto Avion
+- :filter:
+    :brand_code: FAU
+  :label: Tatuaje Fausto
+- :filter:
+    :brand_code: TH6
+  :label: Tatuaje Havana VI
+- :filter:
+    :brand_code: THV
+  :label: Tatuaje Havana Verocu
+- :filter:
+    :brand_code: TAJ
+  :label: Tatuaje
+- :filter:
+    :brand_code: TJM
+  :label: Tatuaje Miami
+- :filter:
+    :brand_code: T22
+  :label: Tatuaje Reserva K222
+- :filter:
+    :brand_code: TSP
+  :label: Tatuaje Series P
+- :filter:
+    :brand_code: TTA
+  :label: Tatuaje Tattoo
+- :filter:
+    :brand_code: TAR
+  :label: Te Amo
+- :filter:
+    :brand_code: TEV
+  :label: Te-Amo Revolution
+- :filter:
+    :brand_code: TES
+  :label: Tesoro
+- :filter:
+    :brand_code: CBK
+  :label: The Brick By Torano
+- :filter:
+    :brand_code: JUD
+  :label: The Judge By J Fuego
+- :filter:
+    :brand_code: JV2
+  :label: The Judge Ver 2
+- :filter:
+    :brand_code: RAK
+  :label: The Rake
+- :filter:
+    :brand_code: THU
+  :label: Thunder By Nimish
+- :filter:
+    :brand_code: TVN
+  :label: Tierra Volcan
+- :filter:
+    :brand_code: TIP
+  :label: Tiparillo
+- :filter:
+    :brand_code: TOB
+  :label: Tobajara
+- :filter:
+    :brand_code: 6PS
+  :label: 6 Pack Samplers
+- :filter:
+    :brand_code: TOH
+  :label: Topper Original Handmade
+- :filter:
+    :brand_code: CRT
+  :label: Carlos Torano Accessories And Samplers
+- :filter:
+    :brand_code: EXF
+  :label: Torano Exodus Finite
+- :filter:
+    :brand_code: TMM
+  :label: Torano Master Maduro
+- :filter:
+    :brand_code: TMA
+  :label: Torano Master
+- :filter:
+    :brand_code: SAL
+  :label: Torano Salutem
+- :filter:
+    :brand_code: CVT
+  :label: Torano Vault Blend A-008
+- :filter:
+    :brand_code: VTD
+  :label: Torano Vault Blend D-042
+- :filter:
+    :brand_code: TSC
+  :label: Toscanello
+- :filter:
+    :brand_code: TOS
+  :label: Toscano
+- :filter:
+    :brand_code: TRJ
+  :label: "Trader Jack's"
+- :filter:
+    :brand_code: TRH
+  :label: Trill Habano
+- :filter:
+    :brand_code: THR
+  :label: Trinidad Habana Reserve
+- :filter:
+    :brand_code: TRP
+  :label: Trinidad Paradox
+- :filter:
+    :brand_code: TRR
+  :label: Trocadero
+- :filter:
+    :brand_code: UGY
+  :label: Ugly Coyote
+- :filter:
+    :brand_code: BGS
+  :label: "Buyer's Guide Samplers"
+- :filter:
+    :brand_code: LUS
+  :label: Undercrown Shade
+- :filter:
+    :brand_code: UTL
+  :label: Untamed By La Aurora
+- :filter:
+    :brand_code: UGR
+  :label: Urban Graffiti Red
+- :filter:
+    :brand_code: VEF
+  :label: Vega Fina
+- :filter:
+    :brand_code: VFN
+  :label: Vega Fina Nicaragua
+- :filter:
+    :brand_code: VFF
+  :label: Vegafina Fortaleza 2
+- :filter:
+    :brand_code: VSM
+  :label: Viaje Small Batch
+- :filter:
+    :brand_code: VLG
+  :label: Villiger
+- :filter:
+    :brand_code: VCO
+  :label: Villiger Colorado
+- :filter:
+    :brand_code: VLE
+  :label: Villiger Export
+- :filter:
+    :brand_code: VTA
+  :label: Villiger Talanga
+- :filter:
+    :brand_code: VTS
+  :label: Villiger Talanga Selecto
+- :filter:
+    :brand_code: VND
+  :label: Vindicator By Oliva
+- :filter:
+    :brand_code: FVE
+  :label: Famous Vitolas Especiales
+- :filter:
+    :brand_code: VRA
+  :label: Viva Republica Advanced Warfare
+- :filter:
+    :brand_code: VRG
+  :label: Viva Republica Guerrilla Warfare
+- :filter:
+    :brand_code: VRP
+  :label: Viva Republica Propaganda
+- :filter:
+    :brand_code: VRR
+  :label: Viva Republica Rapture
+- :filter:
+    :brand_code: VDB
+  :label: Vudu Blood
+- :filter:
+    :brand_code: VDM
+  :label: Vudu Damballa
+- :filter:
+    :brand_code: VDK
+  :label: Vudu Dark
+- :filter:
+    :brand_code: VDP
+  :label: Vudu Priest
+- :filter:
+    :brand_code: VDS
+  :label: Vudu Sacrifice
+- :filter:
+    :brand_code: VUD
+  :label: Vudu
+- :filter:
+    :brand_code: W99
+  :label: White Owl 2 For 99
+- :filter:
+    :brand_code: WHI
+  :label: White Owl
+- :filter:
+    :brand_code: WCH
+  :label: Winston Churchill
+- :filter:
+    :brand_code: WIN
+  :label: Cafe Creme
+- :filter:
+    :brand_code: WYN
+  :label: Wynwood Honduras
+- :filter:
+    :brand_code: XEN
+  :label: Xen By Nish Patel
+- :filter:
+    :brand_code: XCS
+  :label: Xikar HC Series Connecticut Shade
+- :filter:
+    :brand_code: ZIN
+  :label: Zino
+- :filter:
+    :brand_code: ZPS
+  :label: Zino Platinum Scepter
+- :filter:
+    :brand_code: ZPZ
+  :label: Zino Platinum Z-Class
+:type:
+- :filter:
+    :type: Machine Made
+  :label: Machine Made
+- :filter:
+    :type: Premium
+  :label: Premium
+:country:
+- :filter:
+    :country: Belgium
+  :label: Belgium
+- :filter:
+    :country: Brazil
+  :label: Brazil
+- :filter:
+    :country: Costa Rica
+  :label: Costa Rica
+- :filter:
+    :country: Denmark
+  :label: Denmark
+- :filter:
+    :country: Dominican Republic
+  :label: Dominican Republic
+- :filter:
+    :country: Germany
+  :label: Germany
+- :filter:
+    :country: Honduras
+  :label: Honduras
+- :filter:
+    :country: Indonesia
+  :label: Indonesia
+- :filter:
+    :country: Ireland
+  :label: Ireland
+- :filter:
+    :country: Italy
+  :label: Italy
+- :filter:
+    :country: Mexico
+  :label: Mexico
+- :filter:
+    :country: Netherlands
+  :label: Netherlands
+- :filter:
+    :country: Nicaragua
+  :label: Nicaragua
+- :filter:
+    :country: Spain
+  :label: Spain
+- :filter:
+    :country: Switzerland
+  :label: Switzerland
+- :filter:
+    :country: United States
+  :label: United States
+- :filter:
+    :country: Varies
+  :label: Varies
+:strength:
+- :filter:
+    :strength: Full
+  :label: Full
+- :filter:
+    :strength: Medium
+  :label: Medium
+- :filter:
+    :strength: Mild
+  :label: Mild
+- :filter:
+    :strength: Undisclosed
+  :label: Undisclosed
+- :filter:
+    :strength: Varies
+  :label: Varies
+:package_type:
+- :filter:
+    :package_type: Box
+  :label: Box
+- :filter:
+    :package_type: Bundle
+  :label: Bundle
+- :filter:
+    :package_type: Canister
+  :label: Canister
+- :filter:
+    :package_type: Carton
+  :label: Carton
+- :filter:
+    :package_type: Humidor
+  :label: Humidor
+- :filter:
+    :package_type: Jar
+  :label: Jar
+- :filter:
+    :package_type: Pack
+  :label: Pack
+- :filter:
+    :package_type: Pouch
+  :label: Pouch
+- :filter:
+    :package_type: Sampler
+  :label: Sampler
+- :filter:
+    :package_type: Single
+  :label: Single
+- :filter:
+    :package_type: Tin
+  :label: Tin
+- :filter:
+    :package_type: Upright
+  :label: Upright
+:shape:
+- :filter:
+    :shape: Assorted
+  :label: Assorted
+- :filter:
+    :shape: Belicoso
+  :label: Belicoso
+- :filter:
+    :shape: Cheroot
+  :label: Cheroot
+- :filter:
+    :shape: Churchill
+  :label: Churchill
+- :filter:
+    :shape: Cigarillo
+  :label: Cigarillo
+- :filter:
+    :shape: Corona
+  :label: Corona
+- :filter:
+    :shape: Corona Extra
+  :label: Corona Extra
+- :filter:
+    :shape: Corona Gorda
+  :label: Corona Gorda
+- :filter:
+    :shape: Cuban Corona
+  :label: Cuban Corona
+- :filter:
+    :shape: Culebra
+  :label: Culebra
+- :filter:
+    :shape: Diadema
+  :label: Diadema
+- :filter:
+    :shape: Double Corona
+  :label: Double Corona
+- :filter:
+    :shape: Double Toro
+  :label: Double Toro
+- :filter:
+    :shape: Figurado
+  :label: Figurado
+- :filter:
+    :shape: Filtered Cigar
+  :label: Filtered Cigar
+- :filter:
+    :shape: Gran Corona
+  :label: Gran Corona
+- :filter:
+    :shape: Half Cheroot
+  :label: Half Cheroot
+- :filter:
+    :shape: Lancero
+  :label: Lancero
+- :filter:
+    :shape: Large Cigar
+  :label: Large Cigar
+- :filter:
+    :shape: Lonsdale
+  :label: Lonsdale
+- :filter:
+    :shape: Other
+  :label: Other
+- :filter:
+    :shape: Panatela
+  :label: Panatela
+- :filter:
+    :shape: Perfecto
+  :label: Perfecto
+- :filter:
+    :shape: Petite Belicoso
+  :label: Petite Belicoso
+- :filter:
+    :shape: Petite Corona
+  :label: Petite Corona
+- :filter:
+    :shape: Presidente
+  :label: Presidente
+- :filter:
+    :shape: Pyramid
+  :label: Pyramid
+- :filter:
+    :shape: Robusto
+  :label: Robusto
+- :filter:
+    :shape: Rothschild
+  :label: Rothschild
+- :filter:
+    :shape: Short Panatela
+  :label: Short Panatela
+- :filter:
+    :shape: Small Cigar
+  :label: Small Cigar
+- :filter:
+    :shape: Small Panatela
+  :label: Small Panatela
+- :filter:
+    :shape: Toro
+  :label: Toro
+- :filter:
+    :shape: Torpedo
+  :label: Torpedo
+- :filter:
+    :shape: Wafe
+  :label: Wafe
+:wrapper_leaf:
+- :filter:
+    :wrapper_leaf: Arapiraca
+  :label: Arapiraca
+- :filter:
+    :wrapper_leaf: Bahia
+  :label: Bahia
+- :filter:
+    :wrapper_leaf: Brightleaf
+  :label: Brightleaf
+- :filter:
+    :wrapper_leaf: Broadleaf
+  :label: Broadleaf
+- :filter:
+    :wrapper_leaf: Cameroon
+  :label: Cameroon
+- :filter:
+    :wrapper_leaf: Connecticut
+  :label: Connecticut
+- :filter:
+    :wrapper_leaf: Corojo
+  :label: Corojo
+- :filter:
+    :wrapper_leaf: Criollo
+  :label: Criollo
+- :filter:
+    :wrapper_leaf: Dominican
+  :label: Dominican
+- :filter:
+    :wrapper_leaf: Ecuadorian
+  :label: Ecuadorian
+- :filter:
+    :wrapper_leaf: Habano
+  :label: Habano
+- :filter:
+    :wrapper_leaf: Homogenized
+  :label: Homogenized
+- :filter:
+    :wrapper_leaf: Hybrid
+  :label: Hybrid
+- :filter:
+    :wrapper_leaf: Jalapa
+  :label: Jalapa
+- :filter:
+    :wrapper_leaf: Kentucky
+  :label: Kentucky
+- :filter:
+    :wrapper_leaf: Ligero
+  :label: Ligero
+- :filter:
+    :wrapper_leaf: Mata Fina
+  :label: Mata Fina
+- :filter:
+    :wrapper_leaf: Not Available
+  :label: Not Available
+- :filter:
+    :wrapper_leaf: San Andres
+  :label: San Andres
+- :filter:
+    :wrapper_leaf: Sumatra
+  :label: Sumatra
+- :filter:
+    :wrapper_leaf: Sun Grown
+  :label: Sun Grown
+- :filter:
+    :wrapper_leaf: Trojes
+  :label: Trojes
+- :filter:
+    :wrapper_leaf: Varies
+  :label: Varies
+- :filter:
+    :wrapper_leaf: Viso
+  :label: Viso
+- :filter:
+    :wrapper_leaf: Yamasa
+  :label: Yamasa
+- :filter:
+    :wrapper_leaf: Yarguera
+  :label: Yarguera
+- :filter:
+    :wrapper_leaf: Undisclosed
+  :label: Undisclosed
+- :filter:
+    :wrapper_leaf: Maduro
+  :label: Maduro
+- :filter:
+    :wrapper_leaf: Barber Pole
+  :label: Barber Pole
+- :filter:
+    :wrapper_leaf: Natural Leaf
+  :label: Natural Leaf
+- :filter:
+    :wrapper_leaf: Proprietary
+  :label: Proprietary
+:color:
+- :filter:
+    :color: Barber Pole
+  :label: Barber Pole
+- :filter:
+    :color: Claro
+  :label: Claro
+- :filter:
+    :color: Dark Natural
+  :label: Dark Natural
+- :filter:
+    :color: Maduro
+  :label: Maduro
+- :filter:
+    :color: Natural
+  :label: Natural
+- :filter:
+    :color: Not Available
+  :label: Not Available
+- :filter:
+    :color: Oscuro
+  :label: Oscuro
+- :filter:
+    :color: Rosado
+  :label: Rosado
+- :filter:
+    :color: Varies
+  :label: Varies
+:wrapper_origin:
+- :filter:
+    :wrapper_origin: Brazilian
+  :label: Brazilian
+- :filter:
+    :wrapper_origin: Connecticut
+  :label: Connecticut
+- :filter:
+    :wrapper_origin: Costa Rican
+  :label: Costa Rican
+- :filter:
+    :wrapper_origin: Dominican
+  :label: Dominican
+- :filter:
+    :wrapper_origin: Ecuadorian
+  :label: Ecuadorian
+- :filter:
+    :wrapper_origin: Homogenized
+  :label: Homogenized
+- :filter:
+    :wrapper_origin: Honduran
+  :label: Honduran
+- :filter:
+    :wrapper_origin: Indonesian
+  :label: Indonesian
+- :filter:
+    :wrapper_origin: Jalapa
+  :label: Jalapa
+- :filter:
+    :wrapper_origin: Javan
+  :label: Javan
+- :filter:
+    :wrapper_origin: Kentucky-Tennessee
+  :label: Kentucky-Tennessee
+- :filter:
+    :wrapper_origin: Mexican
+  :label: Mexican
+- :filter:
+    :wrapper_origin: Nicaraguan
+  :label: Nicaraguan
+- :filter:
+    :wrapper_origin: Not Available
+  :label: Not Available
+- :filter:
+    :wrapper_origin: Peruvian
+  :label: Peruvian
+- :filter:
+    :wrapper_origin: Varies
+  :label: Varies
+- :filter:
+    :wrapper_origin: Proprietary
+  :label: Proprietary
+- :filter:
+    :wrapper_origin: Pennsylvania
+  :label: Pennsylvania
+- :filter:
+    :wrapper_origin: African
+  :label: African
+- :filter:
+    :wrapper_origin: Barber Pole
+  :label: Barber Pole
+- :filter:
+    :wrapper_origin: Italian
+  :label: Italian
+:flavor:
+- :filter:
+    :flavor: Almond
+  :label: Almond
+- :filter:
+    :flavor: Amaretto
+  :label: Amaretto
+- :filter:
+    :flavor: Apple
+  :label: Apple
+- :filter:
+    :flavor: Apricot
+  :label: Apricot
+- :filter:
+    :flavor: Assortment
+  :label: Assortment
+- :filter:
+    :flavor: Berry
+  :label: Berry
+- :filter:
+    :flavor: Blueberry
+  :label: Blueberry
+- :filter:
+    :flavor: Bourbon
+  :label: Bourbon
+- :filter:
+    :flavor: Cherry
+  :label: Cherry
+- :filter:
+    :flavor: Chocolate
+  :label: Chocolate
+- :filter:
+    :flavor: Cinnamon
+  :label: Cinnamon
+- :filter:
+    :flavor: Cinnamon Whiskey
+  :label: Cinnamon Whiskey
+- :filter:
+    :flavor: Clove
+  :label: Clove
+- :filter:
+    :flavor: Coffee
+  :label: Coffee
+- :filter:
+    :flavor: Cognac
+  :label: Cognac
+- :filter:
+    :flavor: Cream
+  :label: Cream
+- :filter:
+    :flavor: Fire Cured
+  :label: Fire Cured
+- :filter:
+    :flavor: Fruit
+  :label: Fruit
+- :filter:
+    :flavor: Grape
+  :label: Grape
+- :filter:
+    :flavor: Honey
+  :label: Honey
+- :filter:
+    :flavor: Honey Berry
+  :label: Honey Berry
+- :filter:
+    :flavor: Infused
+  :label: Infused
+- :filter:
+    :flavor: Irish Cream
+  :label: Irish Cream
+- :filter:
+    :flavor: Licorice
+  :label: Licorice
+- :filter:
+    :flavor: Liquor
+  :label: Liquor
+- :filter:
+    :flavor: Mango
+  :label: Mango
+- :filter:
+    :flavor: Mango Margarita
+  :label: Mango Margarita
+- :filter:
+    :flavor: Menthol
+  :label: Menthol
+- :filter:
+    :flavor: Mint
+  :label: Mint
+- :filter:
+    :flavor: Mojito
+  :label: Mojito
+- :filter:
+    :flavor: Orange
+  :label: Orange
+- :filter:
+    :flavor: Passion Fruit
+  :label: Passion Fruit
+- :filter:
+    :flavor: Peach
+  :label: Peach
+- :filter:
+    :flavor: Pina Colada
+  :label: Pina Colada
+- :filter:
+    :flavor: Pineapple
+  :label: Pineapple
+- :filter:
+    :flavor: Rum
+  :label: Rum
+- :filter:
+    :flavor: Scotch
+  :label: Scotch
+- :filter:
+    :flavor: Strawberry
+  :label: Strawberry
+- :filter:
+    :flavor: Sweet
+  :label: Sweet
+- :filter:
+    :flavor: Sweet Tip
+  :label: Sweet Tip
+- :filter:
+    :flavor: Vanilla
+  :label: Vanilla
+- :filter:
+    :flavor: Vanilla Fudge
+  :label: Vanilla Fudge
+- :filter:
+    :flavor: White Grape
+  :label: White Grape
+- :filter:
+    :flavor: Wine
+  :label: Wine
+:tube:
+- :filter:
+    :tube: No Tube
+  :label: No Tube
+- :filter:
+    :tube: Wood Coffin
+  :label: Wood Coffin
+- :filter:
+    :tube: Glass
+  :label: Glass
+- :filter:
+    :tube: Metal
+  :label: Metal
+- :filter:
+    :tube: Plastic
+  :label: Plastic
+- :filter:
+    :tube: Wood
+  :label: Wood
