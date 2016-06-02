@@ -3158,6 +3158,12 @@
 - :filter:
     :country: Varies
   :label: Varies
+- :filter:
+    :country: Bahamas
+  :label: Bahamas
+- :filter:
+    :country: Europe
+  :label: Europe
 :strength:
 - :filter:
     :strength: Full

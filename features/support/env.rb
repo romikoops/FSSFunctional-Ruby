@@ -6,11 +6,24 @@ require_relative '../../boot'
 World(Capybara::Settings)
 World(FactoryGirl::Syntax::Methods)
 
+# patched to not validate abstract pages
+class WebPage
+  ABSTRACT_PAGE_NAMES = [BasePage]
+
+  Howitzer::Utils::PageValidator.pages.delete_if {|p| ABSTRACT_PAGE_NAMES.include? p }
+
+  def initialize
+    check_validations_are_defined! unless ABSTRACT_PAGE_NAMES.include?(self.class)
+    page.driver.browser.manage.window.maximize if settings.maximized_window
+  end
+end
+
 log.settings_as_formatted_text
 DataStorage.store('sauce', :start_time, Time.now.utc)
 DataStorage.store('sauce', :status, true)
 
 if sauce_driver?
+
   Capybara.drivers[:sauce][].options[:desired_capabilities][:name] = Capybara::Settings.suite_name
 end
 

@@ -16,6 +16,6 @@ class SearchApi::Result
   end
 
   def items_product_ids
-    @items.map {|i| i[:PRODUCT_ID].to_s}
+    @items.map {|i| i[:PRODUCT_IDd].to_s}
   end
 end

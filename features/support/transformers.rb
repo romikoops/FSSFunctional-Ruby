@@ -1,3 +1,5 @@
+# replace {{'cigar_search' api}} to CigarSearchPage class object
+
 Transform /^table:.*$/ do |table|
   raw = table.raw.map do |array|
     array.map do |element|
@@ -14,10 +16,5 @@ Transform /^table:.*$/ do |table|
 end
 
 Transform /^through '(\w+)' api$/ do |api|
-  apis = ObjectSpace.each_object(Class).select { |c| c < SearchApi::Models::Base }.inject({}) do |res, api_class|
-    res.tap { res[api_class.name.demodulize.underscore.to_sym] = api_class }
-  end
-
-  key = api.gsub(/[^\w]+/, '').downcase.to_sym
-  apis.fetch(key) { |p| raise "Unregistered api model given: '#{p.to_s.camelize}'" }
+  "SearchApi::Models::#{api.camelize}".constantize
 end

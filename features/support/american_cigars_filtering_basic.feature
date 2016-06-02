@@ -1,4 +1,4 @@
-Feature: Cigar search filtering basic
+Feature: American cigars filtering basic
 
   Scenario Outline: Check filters
     When I open 'american_cigars' page
@@ -9,7 +9,6 @@ Feature: Cigar search filtering basic
       | filter_type    |
       | Promo          |
       | Brand          |
-      | Type           |
       | Strength       |
       | Package Type   |
       | Shape          |

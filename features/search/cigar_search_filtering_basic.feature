@@ -1,4 +1,4 @@
-Feature: Cigar search filtering basic
+Feature Cigar search filtering basic
 
   Scenario Outline: Check filters
     When I open 'cigar_search' page
@@ -6,19 +6,19 @@ Feature: Cigar search filtering basic
     Then I should see correctly filtered items on 'cigar_search' page through 'cigar_search' api
 
     Examples:
-    | filter_type    |
-    | Promo          |
-    | Brand          |
-    | Type           |
-    | Country        |
-    | Strength       |
-    | Package Type   |
-    | Shape          |
-    | Wrapper Leaf   |
-    | Color          |
-    | Wrapper Origin |
-    | Flavor         |
-    | Tube           |
+      | filter_type    |
+      | Promo          |
+      | Brand          |
+      | Type           |
+      | Country        |
+      | Strength       |
+      | Package Type   |
+      | Shape          |
+      | Wrapper Leaf   |
+      | Color          |
+      | Wrapper Origin |
+      | Flavor         |
+      | Tube           |
 
 
   Scenario: KEYWORD filter

@@ -4,8 +4,10 @@ def settings
   SexySettings::Base.instance
 end
 
-require 'howitzer'
 require 'rest_client'
+require 'howitzer'
+
+
 
 Dir[File.join(File.dirname(__FILE__), './helpers/**/*.rb')].each { |f| require f }
 

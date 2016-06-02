@@ -1,4 +1,4 @@
-Feature: Cigar search filtering basic
+Feature: Cigar gifts filtering basic
 
   Scenario Outline: Check filters
     When I open 'cigar_gifts' page
@@ -6,8 +6,8 @@ Feature: Cigar search filtering basic
     Then I should see correctly filtered items on 'cigar_gifts' page through 'cigar_gifts' api
 
     Examples:
-    | filter_type    |
-    | Promo          |
-    | Brand          |
+    | filter_type |
+    | Promo       |
+    | Brand       |
 
   Scenario: PRICE filter
