@@ -1,12 +1,15 @@
-When(/^(?:I |)search items by random '([ \w]+)' filter on '(\w+)' page$/) do |type, page|
-  label = page.given.random_filter_label(type)
-  page.given.filter_by(type, label)
-  DataStorage::store('filters', 'params', api_filters_collection.find_filter(type, label))
+When(/^(?:I |)search items by random '([ \w]+)' filter on '(\w+)' page with '([^']*)' filter set$/) do |group, page, filter_set|
+  title = page.given.random_filter_label(group)
+  page.given.filter_by(group, title)
+  selected_filters = SearchApi::CigarSearch.selected_filters(filter_set)
+  filter = SearchApi::CigarSearch.filter_by_title_from_group(filter_set, group, title)
+  DataStorage::store('filters', 'params', selected_filters.merge(filter))
 end
 
-Then(/^(?:I |)should see correctly filtered items on '(\w+)' page (through '\w+' api)$/) do |page, api|
+Then(/^(?:I |)should see correctly filtered items on '(\w+)' page$/) do |page|
   filters_params = DataStorage::extract('filters', 'params')
-  expected_items = api.search(filters_params).items_product_ids
+
+  expected_items = SearchApi::CigarSearch.search(filters_params).items_product_ids
   actual_items = page.given.items_product_ids
 
   expect(actual_items).to eql expected_items

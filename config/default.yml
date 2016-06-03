@@ -7,7 +7,7 @@
 # APPLICATION SETTINGS                                    #
 ###########################################################
  app_base_auth_login:
- app_base_auth_pass: if
+ app_base_auth_pass:
  app_protocol: https
  app_host: testing.famous-smoke.com
 

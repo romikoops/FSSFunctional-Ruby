@@ -1,8 +1,6 @@
 class BasePage < WebPage
   include EmailModalBlockerSection
 
-  # validate :element_presence, locator: :search_field
-
   add_locator :filter_link,  ->(t, f) { { xpath: "//*[*[text()=\"#{t}\"]]//a[translate(text(), ' 0123456789()', '')=translate(\"#{f}\", ' 0123456789()', '')]" } }
   add_locator :filter_links, ->(t) { { xpath: "//*[*[text()=\"#{t}\"]]//a[contains(@class, 'filterlink')][not(contains(@class, 'hidden'))]" } }
   add_locator :items, '.allitems a[data-ihdnum]'

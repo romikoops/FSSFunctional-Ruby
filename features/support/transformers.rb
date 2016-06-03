@@ -1,5 +1,3 @@
-# replace {{'cigar_search' api}} to CigarSearchPage class object
-
 Transform /^table:.*$/ do |table|
   raw = table.raw.map do |array|
     array.map do |element|
@@ -13,8 +11,4 @@ Transform /^table:.*$/ do |table|
   location = Cucumber::Core::Ast::Location.of_caller
   ast_table = Cucumber::Core::Ast::DataTable.new(raw, location)
   Cucumber::MultilineArgument::DataTable.new(ast_table)
-end
-
-Transform /^through '(\w+)' api$/ do |api|
-  "SearchApi::Models::#{api.camelize}".constantize
 end
