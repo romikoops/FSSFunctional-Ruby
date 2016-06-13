@@ -10,5 +10,5 @@ Transform /^table:.*$/ do |table|
 
   location = Cucumber::Core::Ast::Location.of_caller
   ast_table = Cucumber::Core::Ast::DataTable.new(raw, location)
-  Cucumber::MultilineArgument::DataTable.new(ast_table)
+  Cucumber::MultilineArgument::DataTable.new(ast_table).rows_hash.symbolize_keys
 end

@@ -9,7 +9,7 @@
  app_base_auth_login:
  app_base_auth_pass:
  app_protocol: https
- app_host: testing.famous-smoke.com
+ app_host: www.famous-smoke.com
 
  def_test_user: test@test.com
  def_test_pass: "!Test_P@55woRD!"

@@ -4,7 +4,9 @@ require 'faker'
 require_relative '../../boot'
 
 World(Capybara::Settings)
+World(SearchApi::Helpers)
 World(FactoryGirl::Syntax::Methods)
+RestClient.log = $stdout
 
 # patched to not validate abstract pages
 class WebPage
@@ -23,7 +25,6 @@ DataStorage.store('sauce', :start_time, Time.now.utc)
 DataStorage.store('sauce', :status, true)
 
 if sauce_driver?
-
   Capybara.drivers[:sauce][].options[:desired_capabilities][:name] = Capybara::Settings.suite_name
 end
 

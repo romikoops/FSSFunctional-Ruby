@@ -1,4 +1,6 @@
 class SearchApi::Result
+  include SearchApi::Helpers
+
   attr_reader :items, :pagination, :filters, :sorts, :status, :suggested_keyword, :message, :selected_filters_url_string
 
   def initialize(raw_fields)
@@ -19,22 +21,10 @@ class SearchApi::Result
   end
 
   def items_product_ids
-    @items.map {|i| i[:PRODUCT_IDd].to_s}
+    @items.map {|i| i[:PRODUCT_ID].to_s}
   end
 
   def selected_filters
     params_to_hash(selected_filters_url_string)
-  end
-
-  def hash_to_params(hash={})
-    hash.map { |k, v| "#{k}=#{v.join(',')}" }.join('&')
-  end
-
-  def params_to_hash(params='')
-    params.split(/&/).inject({}) do |hash, pair|
-      key = pair.gsub(/=[^=]*$/, '')
-      values = pair.gsub(/^[^=]*=/, '').split(/,/)
-      hash.tap { |h| h[key] ? h[key] << values : h[key] = values }
-    end.with_indifferent_access
   end
 end
