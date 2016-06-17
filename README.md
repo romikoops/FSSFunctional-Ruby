@@ -11,6 +11,7 @@
 1. docker exec -it 86d54aab3fd7 bash
 2. cd 1ffd0b46334bd0026dd33b2d1ed6d3d60e649f4c/
 3. OPTS="driver=phantomjs" bundle exec rake features
+4. watch it run!
 
 #what does it do?
 1. See the test cases here - https://github.com/drewbroc/FSSFunctional-Ruby/blob/master/features/search/cigar_search.feature
