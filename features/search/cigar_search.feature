@@ -157,19 +157,6 @@ Feature: Cigar search filtering basic
       | Tube,Flavor                   | Tube                          |
 
 
-  Scenario Outline: Check all filters clearing
-    When I open 'cigar_search' page
-    And search items by random '<filter_group>' filter on 'cigar_search' page with 'cigar-search' filter set
-    And clear all filters on 'cigar_search' page with 'cigar-search' filter set
-    Then I should see correctly filtered items on 'cigar_search' page
-
-    Examples:
-      | filter_group                  |
-      | Price                         |
-      | Promo,Promo                   |
-      | Brand,Country                 |
-
-
   Scenario Outline: Check range filtering
     When I open 'cigar_search' page
     And search items by following '<filter_group>' filters on 'cigar_search' page with 'cigar-search' filter set:
@@ -179,8 +166,114 @@ Feature: Cigar search filtering basic
 
     Examples:
       | filter_group | min_key        | min_value | max_key        | max_value |
-      | Price        | min_price      | 0         | max_price      | 10        |
-      | Rating       | min_avg_rating | 0         | max_avg_rating | 10        |
-      | Quantity     | min_qty        | 0         | max_qty        | 10        |
-      | Ring Gauge   | min_ring_gauge | 0         | max_ring_gauge | 10        |
-      | Length       | min_length     | 0         | max_length     | 10        |
+      | Price        | min_price      | 0         | max_price      | 1         |
+      | Price        | min_price      | 99999     | max_price      | 999999    |
+      | Price        | min_price      | 30        | max_price      | 50        |
+      | Price        | min_price      | 0         | max_price      | 999999    |
+      | Rating       | min_avg_rating | 0         | max_avg_rating | 1         |
+      | Rating       | min_avg_rating | 99999     | max_avg_rating | 999999    |
+      | Rating       | min_avg_rating | 40        | max_avg_rating | 70        |
+      | Rating       | min_avg_rating | 0         | max_avg_rating | 999999    |
+      | Quantity     | min_qty        | 0         | max_qty        | 1         |
+      | Quantity     | min_qty        | 99999     | max_qty        | 999999    |
+      | Quantity     | min_qty        | 5         | max_qty        | 20        |
+      | Quantity     | min_qty        | 0         | max_qty        | 999999    |
+      | Ring Gauge   | min_ring_gauge | 0         | max_ring_gauge | 1         |
+      | Ring Gauge   | min_ring_gauge | 99999     | max_ring_gauge | 999999    |
+      | Ring Gauge   | min_ring_gauge | 5         | max_ring_gauge | 20        |
+      | Ring Gauge   | min_ring_gauge | 0         | max_ring_gauge | 999999    |
+      | Length       | min_length     | 0         | max_length     | 1         |
+      | Length       | min_length     | 99999     | max_length     | 999999    |
+      | Length       | min_length     | 10        | max_length     | 30        |
+      | Length       | min_length     | 0         | max_length     | 999999    |
+
+
+  Scenario Outline: Check results per page functionality
+    When I open 'cigar_search' page
+    And select results per page '<count>' on page 'cigar_search' with 'cigar-search' filter set
+    Then I should see '<count>' items on 'cigar_search' page
+    And should see correctly filtered items on 'cigar_search' page
+
+    Examples:
+      | count |
+      | 60    |
+      | 120   |
+      | 180   |
+      | 240   |
+
+
+  Scenario Outline: Check sorting functionality
+    When I open 'cigar_search' page
+    And select sorting '<sorting>' on page 'cigar_search' with 'cigar-search' filter set
+    Then I should see correctly filtered items on 'cigar_search' page
+
+    Examples:
+      | sorting          |
+      | best_desc        |
+      | price_asc        |
+      | price_desc       |
+      | name_asc         |
+      | name_desc        |
+      | percent_off_desc |
+      | avg_rating_asc   |
+      | avg_rating_desc  |
+      | tsaled_asc       |
+
+
+  Scenario Outline: Check sorting filtering and results per page combinations
+    When I open 'cigar_search' page
+    And search items by random '<filter_group>' filter on 'cigar_search' page with 'cigar-search' filter set
+    And select results per page '<count>' on page 'cigar_search' with 'cigar-search' filter set
+    And select sorting '<sorting>' on page 'cigar_search' with 'cigar-search' filter set
+    Then I should see correctly filtered items on 'cigar_search' page
+
+    Examples:
+      | filter_group           | sorting          | count |
+      | Promo                  | price_asc        | 120   |
+      | Brand                  | price_desc       | 180   |
+      | Rating                 | name_asc         | 240   |
+      | Type                   | name_desc        | 120   |
+      | Country                | percent_off_desc | 180   |
+      | Strength               | avg_rating_asc   | 240   |
+      | Package Type           | avg_rating_desc  | 120   |
+      | Quantity               | tsaled_asc       | 180   |
+      | Price,Ring Gauge       | price_asc        | 240   |
+      | Promo,Shape            | price_desc       | 120   |
+      | Brand,Length           | name_asc         | 180   |
+      | Rating,Wrapper Leaf    | name_desc        | 240   |
+      | Type,Color             | percent_off_desc | 120   |
+      | Country,Wrapper Origin | avg_rating_asc   | 180   |
+      | Strength,Flavor        | avg_rating_desc  | 240   |
+
+
+  Scenario Outline: Check clearing all filters
+    When I open 'cigar_search' page
+    And search items by random '<filter_group>' filter on 'cigar_search' page with 'cigar-search' filter set
+    And clear all filters on 'cigar_search' page with 'cigar-search' filter set
+    Then I should see correctly filtered items on 'cigar_search' page
+
+    Examples:
+      | filter_group  |
+      | Price         |
+      | Promo,Promo   |
+      | Brand,Country |
+
+
+  Scenario Outline: Check clearing all sorting filtering and results per page
+    When I open 'cigar_search' page
+    And search items by random '<filter_group>' filter on 'cigar_search' page with 'cigar-search' filter set
+    And select results per page '<count>' on page 'cigar_search' with 'cigar-search' filter set
+    And select sorting '<sorting>' on page 'cigar_search' with 'cigar-search' filter set
+    And clear all filters on 'cigar_search' page with 'cigar-search' filter set
+    Then I should see correctly filtered items on 'cigar_search' page
+
+    Examples:
+      | filter_group           | sorting          | count |
+      | Promo                  | price_asc        | 120   |
+      | Brand                  | price_desc       | 180   |
+      | Rating                 | name_asc         | 240   |
+      | Type                   | name_desc        | 120   |
+      | Rating,Wrapper Leaf    | percent_off_desc | 180   |
+      | Type,Color             | avg_rating_asc   | 240   |
+      | Country,Wrapper Origin | avg_rating_desc  | 120   |
+      | Strength,Flavor        | avg_rating_desc  | 120   |

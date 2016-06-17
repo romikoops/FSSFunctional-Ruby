@@ -120,7 +120,7 @@
 
  timeout_tiny: 1
  timeout_short: 3
- timeout_small: 30
+ timeout_small: 50
  timeout_medium: 60
 
 ############################################################

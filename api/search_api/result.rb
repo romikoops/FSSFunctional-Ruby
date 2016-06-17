@@ -1,18 +1,15 @@
 class SearchApi::Result
   include SearchApi::Helpers
 
-  attr_reader :items, :pagination, :filters, :sorts, :status, :suggested_keyword, :message, :selected_filters_url_string
+  attr_reader :items, :filters, :sorts, :results_per_page, :selected_filters_url_string
 
   def initialize(raw_fields)
     fields = JSON.parse(raw_fields).with_indifferent_access
 
     @items = fields[:items]
-    @pagination = fields[:pagination]
     @filters = fields[:filters]
     @sorts = fields[:sorts]
-    @status = fields[:status]
-    @suggested_keyword = fields[:suggested_keyword]
-    @message = fields[:message]
+    @results_per_page = fields[:pagination][:results_per_page_filter]
     @selected_filters_url_string = fields[:selected_filters_url_string]
   end
 
