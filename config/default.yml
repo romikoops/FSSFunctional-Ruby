@@ -61,23 +61,24 @@
  tb_url: "http://${tb_api_key}:${tb_api_secret}@hub.testingbot.com:80/wd/hub"
  tb_platform: :WIN8
  tb_browser_name: firefox
- tb_browser_version: 8
+ tb_browser_version: 43
  tb_selenium_version: "2.18.0"
  tb_max_duration: '1800'
  tb_idle_timeout: '180'
  tb_record_screenshot: false
 
  # -BrowserStack
- bs_user_name: bs_user
- bs_password: bs_password
+ bs_user_name: andrew612
+ bs_password: y2dy4i95xZ7ZRsCZfKpb
  bs_url: "http://${bs_user_name}:${bs_password}@hub.browserstack.com/wd/hub"
  bs_os_name: 'Windows'
  bs_os_version: '8'
  bs_browser_name: 'Firefox'
- bs_browser_version: '16.0'
+ bs_browser_version: '43.0'
  bs_resolution: '1024x768'
  bs_max_duration: '1800'
  bs_idle_timeout: '180'
+ bs_accept_ssl_certs: 'true'
 
  # Run tests on mobile browsers
  bs_mobile: false

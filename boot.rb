@@ -7,8 +7,6 @@ end
 require 'rest_client'
 require 'howitzer'
 
-
-
 require File.join(File.dirname(__FILE__), 'api', 'search_api')
 
 Dir[File.join(File.dirname(__FILE__), './sections/**/*.rb')].each { |f| require f }
@@ -22,3 +20,5 @@ require File.join(File.dirname(__FILE__), 'prerequisites/factory_girl')
 def api
   SearchApi::CigarSearch
 end
+
+require_relative 'patches/howitzer-patches'
