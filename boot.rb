@@ -5,7 +5,15 @@ def settings
 end
 
 require 'rest_client'
-require 'howitzer'
+require 'howitzer/version'
+require 'howitzer/settings'
+require_relative 'patches/capybara-settings-patch'
+require 'howitzer/utils'
+require 'howitzer/helpers'
+require 'howitzer/email'
+require 'howitzer/web_page'
+require 'howitzer/blank_page'
+
 
 require File.join(File.dirname(__FILE__), 'api', 'search_api')
 
@@ -20,5 +28,3 @@ require File.join(File.dirname(__FILE__), 'prerequisites/factory_girl')
 def api
   SearchApi::CigarSearch
 end
-
-require_relative 'patches/howitzer-patches'
