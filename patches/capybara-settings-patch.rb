@@ -19,6 +19,7 @@ module Capybara
       profile['network.automatic-ntlm-auth.allow-non-fqdn'] = true
       profile['network.ntlm.send-lm-response'] = true
       profile['network.automatic-ntlm-auth.trusted-uris'] = settings.app_host
+      profile['general.useragent.override'] = 'captcha_bypass_fam0us'
       profile
     end
 
@@ -89,6 +90,8 @@ module Capybara
         Capybara.register_driver :selenium do |app|
           params = { browser: settings.sel_browser.to_s.to_sym }
           params[:profile] = base_ff_profile_settings if ff_browser?
+          params[:args] = ['-user-agent=captcha_bypass_fam0us'] if chrome_browser?
+
           Capybara::Selenium::Driver.new app, params
         end
       end
