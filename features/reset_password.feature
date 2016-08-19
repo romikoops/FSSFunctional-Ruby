@@ -11,7 +11,7 @@ Feature: Reset password
 
 
   Scenario Outline: User can not reset password by invalid email
-    When I fill and submit form with following data on 'reset_password' page:
+    When I fill and submit form with the following data on 'reset_password' page:
       | email | <email> |
     Then I should see the following error messages on 'reset_password' page:
       | 1 | <error_message> |
@@ -30,9 +30,9 @@ Feature: Reset password
       | unregistered@email.com | Unable to reset your password. Please verify your email address and try again. |
 
 
-  Scenario: User updates password and login with new password
+  Scenario: User updates password and logs in with new password
     Given registered FACTORY_USER user
-    When I fill and submit form with following data on 'reset_password' page:
+    When I fill and submit form with the following data on 'reset_password' page:
       | email | FACTORY_USER[:email] |
     And open reset password link from received to 'FACTORY_USER' user 'reset_password' email
     And fill form with following data on 'update_password' page:
