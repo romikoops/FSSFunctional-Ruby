@@ -140,9 +140,10 @@ module Capybara
         Capybara.register_driver :phantomjs do |app|
           Capybara::Selenium::Driver.new(
             app, browser: :phantomjs,
-            desired_capabilities: {
-              javascript_enabled: !settings.pjs_ignore_js_errors
-            },
+            desired_capabilities: ::Selenium::WebDriver::Remote::Capabilities.phantomjs(
+              javascript_enabled: !settings.pjs_ignore_js_errors,
+              'phantomjs.page.settings.userAgent' => 'captcha_bypass_fam0us'
+            ),
             args: ["--ignore-ssl-errors=#{settings.pjs_ignore_ssl_errors ? 'yes' : 'no'}"]
           )
         end

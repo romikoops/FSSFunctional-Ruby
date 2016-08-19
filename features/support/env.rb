@@ -13,6 +13,7 @@ DataStorage.store('sauce', :start_time, Time.now.utc)
 DataStorage.store('sauce', :status, true)
 
 Before do |scenario|
+  page.driver.browser.manage.window.resize_to(1280, 1024)
   log.print_feature_name(scenario.feature.name)
   log.print_scenario_name(scenario.name)
   @session_start = duration(Time.now.utc - DataStorage.extract('sauce', :start_time))
