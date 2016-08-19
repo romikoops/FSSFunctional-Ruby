@@ -1,6 +1,6 @@
 Feature: Reset password
-  In order to use shop
-  As user
+  In order to use Famous-smoke.com
+  As user who cannot remember his credentials
   I want to reset password and access the system
 
   Scenario: User receives reset password email
