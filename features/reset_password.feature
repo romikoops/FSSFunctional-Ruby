@@ -1,13 +1,13 @@
 Feature: Reset password
   In order to use Famous-smoke.com
-  As user who cannot remember his credentials
-  I want to reset password and access the system
+  As a user who cannot remember credentials
+  I want to my reset password and access the system
 
   Scenario: User receives reset password email
     Given registered FACTORY_USER user
-    When I fill and submit form with following data on 'reset_password' page:
+    When I fill and submit form with the following data on 'reset_password' page:
       | email | FACTORY_USER[:email] |
-    Then I should see that user 'FACTORY_USER' receive 'reset_password' email
+    Then I should see that the user 'FACTORY_USER' receives 'reset_password' email
 
 
   Scenario Outline: User can not reset password by invalid email
