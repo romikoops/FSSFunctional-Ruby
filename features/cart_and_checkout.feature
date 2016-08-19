@@ -1,7 +1,7 @@
 Feature: Cart and Checkout
   In order to use shop
   As user
-  I want to add items to the cart, remove items from cart, add promotions, remove promotions, and place orders
+  I want to add items to the cart from random sale pages, remove items from cart, add promotion/coupon, remove promotion/coupon, and place orders
 
   @wip
   Scenario: Add item to cart on product page
