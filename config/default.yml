@@ -30,8 +30,8 @@
  maximized_window: true
 
  # Specify one of the following drivers: selenium, selenium_dev, selenium_grid, webkit, poltergeist, phantomjs, sauce,
- # testingbot, browserstack, crossbrowsertesting
- driver: crossbrowsertesting
+ # testingbot, browserstack
+ driver: phantomjs
 
  # -Selenium-
  # specify one of next browsers: iexplore (ie), firefox (ff), chrome, safari

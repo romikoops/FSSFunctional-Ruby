@@ -1,6 +1,7 @@
 # BasePage class is abstract page class which describes common elements locators
 # and methods to communicate with elements on search pages
 class BasePage < WebPage
+  include HeaderSection
   include EmailModalBlockerSection
 
   # elements locators

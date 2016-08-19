@@ -1,10 +1,11 @@
 class RegistrationPage < WebPage
+  include HeaderSection
   include EmailModalBlockerSection
 
   url '/register'
 
   validate :url, pattern: /\/register$/
-  validate :title, pattern: /^Create An Account | Famous Smoke$/
+  validate :title, pattern: /^Create An Account \| Famous Smoke$/
 
   add_locator :title_select,           '[name=sal]'
   add_locator :state_select,           '[name=st]'
@@ -32,10 +33,14 @@ class RegistrationPage < WebPage
   add_field_locator :password_field,          'passw'
   add_field_locator :retype_password_field,   'passw2'
 
-  def fill_fields(fields)
+  def self.register_user(user)
+    open.close_email_modal_blocker.fill_form(user.attributes).submit_form
+  end
+
+  def fill_form(fields)
+    log.info "Fill Registration form with following data: #{fields}"
     fill_select_box(:title_select, fields[:title]) if fields[:title]
     fill_select_box(:state_select, fields[:state]) if fields[:state]
-
     fill_in(field_locator(:first_name_field), with: fields[:first_name]) if fields[:first_name]
     fill_in(field_locator(:last_name_field), with: fields[:last_name]) if fields[:first_name]
     fill_in(field_locator(:company_field), with: fields[:company]) if fields[:company]
@@ -47,16 +52,15 @@ class RegistrationPage < WebPage
     fill_in(field_locator(:retype_email_field), with: fields[:retype_email]) if fields[:retype_email]
     fill_in(field_locator(:password_field), with: fields[:password]) if fields[:password]
     fill_in(field_locator(:retype_password_field), with: fields[:retype_password]) if fields[:retype_password]
-
     fill_date_of_birth(fields[:date_of_birth]) if fields[:date_of_birth]
     fill_home_phone(fields[:home_phone]) if fields[:home_phone]
     fill_business_phone(fields[:business_phone]) if fields[:business_phone]
-
     find(locator :announcements_checkbox).set(fields[:announcements].present?)
+    self
   end
 
   def fill_date_of_birth(date_of_birth)
-    date = Time.parse(date_of_birth)
+    date = Time.parse(date_of_birth.to_s)
 
     fill_select_box(:month_of_birth_select, date.strftime('%m'))
     fill_select_box(:day_of_birth_select, date.strftime('%d'))
@@ -80,6 +84,7 @@ class RegistrationPage < WebPage
   end
 
   def submit_form
+    log.info 'Submit Registration form'
     find(locator :register_button).click
   end
 

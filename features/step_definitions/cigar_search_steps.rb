@@ -16,7 +16,7 @@ end
 When(/^(?:I |)clear '([, \w]+)' filters on '(\w+)' page with '([^']*)' filter set$/) do |groups, page, set|
   selected_filters = DataStorage::extract(:filters, :params) || api.selected_filters(set)
   groups.split(',').map { |g| page.given.clear_filters(g) }
-  removed_filters = groups.split(',').inject([]) { |r, g| r + api.filter_names_by_group(set, g) }
+  removed_filters = groups.split(',').inject([]) { |r, g| r + api.filter_names_from_group(set, g) }
   DataStorage.store(:filters, :params, selected_filters.delete_if { |k, _| removed_filters.include?(k) })
 end
 
