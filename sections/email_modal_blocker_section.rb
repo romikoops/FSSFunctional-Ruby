@@ -6,8 +6,10 @@ module EmailModalBlockerSection
   end
 
   def close_email_modal_blocker
-    sleep 3
-    find(locator :close_modal_button).click if first(locator :close_modal_button)
+    settings.tries_small.times do
+      sleep settings.timeout_tiny
+      find(locator :close_modal_button).click if first(locator :close_modal_button)
+    end
     self
   end
 end

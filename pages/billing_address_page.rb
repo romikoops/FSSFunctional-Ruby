@@ -4,7 +4,7 @@ class BillingAddressPage < WebPage
 
   url '/account/billing-address'
 
-  validate :url, pattern: /\/account\/billing-address$/
+  validate :url, pattern: /\/account\/billing-address/
   validate :title, pattern: /^Billing Address \| Famous Smoke$/
 
   def fill_form(fields)
