@@ -1,7 +1,7 @@
 Feature: Reset password
   In order to use Famous-smoke.com
-  As a user who cannot remember credentials
-  I want to my reset password and access the system
+  As a user who cannot remember their credentials
+  I want to  reset my password and access the system
 
   Scenario: User receives reset password email
     Given registered FACTORY_USER user
@@ -10,7 +10,7 @@ Feature: Reset password
     Then I should see that the user 'FACTORY_USER' receives 'reset_password' email
 
 
-  Scenario Outline: User can not reset password by invalid email
+  Scenario Outline: User can not reset password by using an invalid email
     When I fill and submit form with the following data on 'reset_password' page:
       | email | <email> |
     Then I should see the following error messages on 'reset_password' page:
@@ -30,7 +30,7 @@ Feature: Reset password
       | unregistered@email.com | Unable to reset your password. Please verify your email address and try again. |
 
 
-  Scenario: User updates password and logs in with new password
+  Scenario: User updates their password and logs in with new password
     Given registered FACTORY_USER user
     When I fill and submit form with the following data on 'reset_password' page:
       | email | FACTORY_USER[:email] |
@@ -43,4 +43,4 @@ Feature: Reset password
       | email    | FACTORY_USER[:email] |
       | password | NewPa55w0rc1         |
     And open 'Billing Address' page from main drop down menu on 'landing' page
-    Then I should be on 'billing_address' page
+    Then I should be on the 'billing_address' page
