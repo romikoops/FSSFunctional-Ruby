@@ -17,11 +17,11 @@ When /^(?:I |)add to cart item on opened '(product)' page$/ do |page|
   page.given.add_to_cart
 end
 
-When /^(?:I |)fill and submit form with following data on '(\w+)' page:$/ do |page, data_table|
+When /^(?:I |)fill and submit form with the following data on '(\w+)' page:$/ do |page, data_table|
   page.open.close_email_modal_blocker.fill_form(data_table).submit_form
 end
 
-When /^(?:I |)fill form with following data on '(\w+)' page:$/ do |page, data_table|
+When /^(?:I |)fill form with the following data on '(\w+)' page:$/ do |page, data_table|
   page.given.fill_form(data_table)
 end
 
@@ -49,7 +49,7 @@ Then /^(?:I |)should be on '([\w]+)' page$/ do |page|
   page.given
 end
 
-Then /^(?:I |)should see that user '(\w+)' receive ('\w+' email)$/ do |user, email|
+Then /^(?:I |)should see that the user '(\w+)' receives ('\w+' email)$/ do |user, email|
   expect(email.find(user)).to be_valid
 end
 

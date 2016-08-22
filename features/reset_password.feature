@@ -35,11 +35,11 @@ Feature: Reset password
     When I fill and submit form with the following data on 'reset_password' page:
       | email | FACTORY_USER[:email] |
     And open reset password link from received to 'FACTORY_USER' user 'reset_password' email
-    And fill form with following data on 'update_password' page:
+    And fill form with the following data on 'update_password' page:
       | password        | NewP@55w0rc! |
       | retype_password | NewP@55w0rc! |
     And submit form on 'update_password' page
-    And fill and submit form with following data on 'login' page:
+    And fill and submit form with the following data on 'login' page:
       | email    | FACTORY_USER[:email] |
       | password | NewP@55w0rc!         |
     Then I should be on 'landing' page
