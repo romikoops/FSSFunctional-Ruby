@@ -5,7 +5,7 @@ Feature: Registration
 
   Scenario: register with valid credentials
     When I open 'registration' page
-    And fill form with following data on 'registration' page:
+    And fill form with the following data on 'registration' page:
       | title           | FACTORY_USER[:title]           |
       | first_name      | FACTORY_USER[:first_name]      |
       | last_name       | FACTORY_USER[:last_name]       |
