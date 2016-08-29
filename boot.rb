@@ -16,7 +16,8 @@ require 'howitzer/blank_page'
 
 require 'howitzer/mail_adapters/abstract'
 require 'howitzer/mail_adapters/mailgun'
-require_relative 'patches/howitzer-email-patches'
+require_relative 'patches/howitzer-web-page-patch'
+require_relative 'patches/howitzer-email-patch'
 
 require File.join(File.dirname(__FILE__), 'api', 'search_api')
 
