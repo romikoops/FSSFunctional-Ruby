@@ -6,18 +6,20 @@ Feature: Registration
   Scenario: register with valid credentials
     When I open 'registration' page
     And fill form with the following data on 'registration' page:
-      | email           | FACTORY_USER[:email]           |
-      | password        | FACTORY_USER[:password]        |
-      | retype_password | FACTORY_USER[:retype_password] |
       | country         | FACTORY_USER[:country]         |
       | first_name      | FACTORY_USER[:first_name]      |
       | last_name       | FACTORY_USER[:last_name]       |
+      | company         | FACTORY_USER[:company]         |
       | address1        | FACTORY_USER[:address1]        |
       | address2        | FACTORY_USER[:address2]        |
       | city            | FACTORY_USER[:city]            |
-      | state           | FACTORY_USER[:state]           |
+      | region          | FACTORY_USER[:region]          |
       | zip             | FACTORY_USER[:zip]             |
-      | phone           | FACTORY_USER[:phone]           |
+      | phone_number    | FACTORY_USER[:phone_number]    |
+      | cell_number     | FACTORY_USER[:cell_number]     |
+      | email           | FACTORY_USER[:email]           |
+      | password        | FACTORY_USER[:password]        |
+      | retype_password | FACTORY_USER[:retype_password] |
       | date_of_birth   | FACTORY_USER[:date_of_birth]   |
       | terms           | FACTORY_USER[:terms]           |
     And submit form on 'registration' page
