@@ -22,7 +22,7 @@ class RegistrationPage < WebPage
   add_locator :password_field,        '.register_form [name=pass_confirmation]'
   add_locator :retype_password_field, '.register_form [name=pass]'
   add_locator :date_of_birth_field,   '.register_form [name=dob]'
-  add_locator :terms_checkbox,        '.register_form [name=terms]'
+  add_locator :terms_checkbox,        '.register_form [for*="terms"] .fakecheck'
   add_locator :register_button,       '.register_form button.submitter'
 
   def self.register_user(user)
@@ -46,7 +46,7 @@ class RegistrationPage < WebPage
     find(locator :password_field).set(fields[:password]) if fields[:password]
     find(locator :retype_password_field).set(fields[:retype_password]) if fields[:retype_password]
     find(locator :date_of_birth_field).set(fields[:date_of_birth]) if fields[:date_of_birth]
-    find(locator :terms_checkbox).set(fields[:terms].present?)
+    find(locator :terms_checkbox).click if fields[:terms].present?
     self
   end
 
