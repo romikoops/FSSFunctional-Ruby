@@ -2,14 +2,14 @@ FactoryGirl.define do
   factory :user do
     ident           { Time.now.utc.to_i.to_s(36) }
 
-    country         { User::COUNTRIES.sample }
+    country         { User::COUNTRY }
     first_name      { Faker::Name.first_name }
     last_name       { Faker::Name.last_name }
     company         { Faker::Company.name }
     address1        { Faker::Address.street_address }
     address2        { Faker::Address.secondary_address }
     city            { Faker::Address.city }
-    region          { Faker::Address.state_abbr }
+    state           { User::STATES.sample }
     zip             { Faker::Number.number(5) }
     phone_number    { "(#{Faker::Number.number(3)}) #{Faker::Number.number(3)}-#{Faker::Number.number(4)}" }
     cell_number     { "(#{Faker::Number.number(3)}) #{Faker::Number.number(3)}-#{Faker::Number.number(4)}" }

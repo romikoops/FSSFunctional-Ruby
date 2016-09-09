@@ -13,7 +13,7 @@ Feature: Registration
       | address1        | FACTORY_USER[:address1]        |
       | address2        | FACTORY_USER[:address2]        |
       | city            | FACTORY_USER[:city]            |
-      | region          | FACTORY_USER[:region]          |
+      | state           | FACTORY_USER[:state]          |
       | zip             | FACTORY_USER[:zip]             |
       | phone_number    | FACTORY_USER[:phone_number]    |
       | cell_number     | FACTORY_USER[:cell_number]     |
@@ -23,7 +23,10 @@ Feature: Registration
       | date_of_birth   | FACTORY_USER[:date_of_birth]   |
       | terms           | FACTORY_USER[:terms]           |
     And submit form on 'registration' page
-    Then I should be on 'successful_registration' page
+    Then I should see the following message on 'registration' page:
+      """
+      Welcome and thank you for joining our family of Famous Smokers.
+      """
 
   Scenario: register with blank form
     When I open 'registration' page

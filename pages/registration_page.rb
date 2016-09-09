@@ -14,7 +14,7 @@ class RegistrationPage < WebPage
   add_locator :address1_field,        '.register_form [name=adr1]'
   add_locator :address2_field,        '.register_form [name=adr2]'
   add_locator :city_field,            '.register_form [name=city]'
-  add_locator :region_field,          '.register_form [name=region]'
+  add_locator :state_select,          '.register_form [name=state]'
   add_locator :zip_field,             '.register_form [name=zip]'
   add_locator :phone_number_field,    '.register_form [name=phone]'
   add_locator :cell_number_field,     '.register_form [name=phone2]'
@@ -24,9 +24,15 @@ class RegistrationPage < WebPage
   add_locator :date_of_birth_field,   '.register_form [name=dob]'
   add_locator :terms_checkbox,        '.register_form [for*="terms"] .fakecheck'
   add_locator :register_button,       '.register_form button.submitter'
+  add_locator :registration_form,     '.register_form'
 
   def self.register_user(user)
     open.close_email_modal_blocker.fill_form(user.attributes).submit_form
+
+    # we need to comunicate with page to wait while form submitted before doing something
+    if first(locator :registration_form)
+      raise "User can not be registered with the following fields: #{user.attributes}"
+    end
   end
 
   def fill_form(fields)
@@ -38,7 +44,7 @@ class RegistrationPage < WebPage
     find(locator :address1_field).set(fields[:address1]) if fields[:address1]
     find(locator :address2_field).set(fields[:address2]) if fields[:address2]
     find(locator :city_field).set(fields[:city]) if fields[:city]
-    find(locator :region_field).set(fields[:region]) if fields[:region]
+    fill_select_box(:state_select, fields[:state]) if fields[:state]
     find(locator :zip_field).set(fields[:zip]) if fields[:zip]
     find(locator :phone_number_field).set(fields[:phone_number]) if fields[:phone_number]
     find(locator :cell_number_field).set(fields[:cell_number]) if fields[:cell_number]
@@ -57,6 +63,6 @@ class RegistrationPage < WebPage
 
   private
   def fill_select_box(locator_label, value)
-    find(locator locator_label).find("[value='#{value}']").select_option
+    find(locator locator_label).first("[value='#{value}']").select_option
   end
 end

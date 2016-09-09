@@ -41,6 +41,10 @@ When(/^(?:I |)logout from account by direct link$/) do
   visit "#{WebPage.app_url}/logout.cfm"
 end
 
+Then /^(?:I |)should see the following message on '([\w]+)' page:$/ do |page, text|
+  expect(page.given.text).to include text
+end
+
 Then /^(?:I |)should see the following error messages on '([\w]+)' page:$/ do |page, data_table|
   expect(page.given.error_messages.sort).to eql(data_table.values.sort)
 end
