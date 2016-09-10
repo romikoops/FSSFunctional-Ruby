@@ -11,8 +11,8 @@ FactoryGirl.define do
     city            { Faker::Address.city }
     state           { User::STATES.sample }
     zip             { Faker::Number.number(5) }
-    phone_number    { "(#{Faker::Number.number(3)}) #{Faker::Number.number(3)}-#{Faker::Number.number(4)}" }
-    cell_number     { "(#{Faker::Number.number(3)}) #{Faker::Number.number(3)}-#{Faker::Number.number(4)}" }
+    phone_number    { "#{Faker::Number.number(10)}" }
+    cell_number     { "#{Faker::Number.number(10)}" }
     email           { "u#{ident}@#{settings.mailgun_domain}" }
     password        { settings.def_test_pass }
     retype_password { password }
