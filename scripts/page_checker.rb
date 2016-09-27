@@ -56,6 +56,6 @@ class PageChecker
 
   def write_result(status, link)
     puts "#{status.ljust(50)}: #{link}"
-    open(RESULT_FILE, 'a') { |f| f.puts "#{status},#{link}" }
+    File.open(RESULT_FILE, 'a') { |f| f.puts "#{status},#{link}" }
   end
 end
