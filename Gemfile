@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'howitzer', github: 'strongqa/howitzer', branch: 'v2.0'
 
+gem 'bundler'
+gem 'ffi'
+gem 'capybara'
 gem 'rest-client'
 gem 'repeater'
 gem 'her'
