@@ -139,6 +139,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bundler
   capybara (= 2.7.1)
   cucumber
   factory_girl
@@ -152,4 +153,4 @@ DEPENDENCIES
   syntax
 
 BUNDLED WITH
-   1.12.5
+   1.13.3
