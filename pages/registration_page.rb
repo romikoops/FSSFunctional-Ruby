@@ -7,6 +7,9 @@ class RegistrationPage < WebPage
   validate :url, pattern: /\/register$/
   validate :title, pattern: /^Create An Account \| Famous Smoke$/
 
+  add_locator :email_field,           '.register_form [name=email]'
+  add_locator :password_field,        '.register_form [name=pass_confirmation]'
+  add_locator :retype_password_field, '.register_form [name=pass]'
   add_locator :country_select,        '.register_form [name=country]'
   add_locator :first_name_field,      '.register_form [name=fname]'
   add_locator :last_name_field,       '.register_form [name=lname]'
