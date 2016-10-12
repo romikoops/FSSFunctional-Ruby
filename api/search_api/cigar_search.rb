@@ -48,7 +48,7 @@ class SearchApi::CigarSearch
     def get(base_url=search_url, params={})
       url = "#{base_url}?#{hash_to_params(params)}" # adds params to url
       # get - sends GET request to API and returns JSON responce and creating object from responce
-      SearchApi::Result.new(RestClient.get(url))
+      SearchApi::Result.new(RestClient::Request.execute(method: :get, url: url, verify_ssl: false))
     end
   end
 end
