@@ -5,6 +5,8 @@ def settings
 end
 
 require 'rest_client'
+require 'pry'
+require 'pry-byebug'
 require 'howitzer/version'
 require 'howitzer/settings'
 require_relative 'patches/capybara-settings-patch'

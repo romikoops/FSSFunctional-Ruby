@@ -37,7 +37,7 @@ class SearchApi::CigarSearch
     private
 
     def api_url(type)
-      "http://#{settings.app_host}/#{type}"
+      "#{settings.app_protocol}://#{settings.app_host}/#{type}"
     end
 
     def search_url

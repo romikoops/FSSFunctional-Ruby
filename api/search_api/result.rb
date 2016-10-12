@@ -35,7 +35,7 @@ class SearchApi::Result
   end
 
   def items_product_ids
-    items.map {|i| i[:PRODUCT_ID].to_s}
+    items.select {|el| el['QTY_IN_STOCK'].positive?}.map {|i| i[:PRODUCT_ID].to_s}
   end
 
   def random_item
