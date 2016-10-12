@@ -6,7 +6,7 @@ class SearchApi::CigarSearch
     include SearchApi::Helpers
 
     def default_filters
-      { json: true, results_per_page: 60, sort: 'best_desc' }
+      { json: true, results_per_page: 60, sort: 'best_desc', min_qty_in_stock: 1, max_qty_in_stock: 10000 }
     end
 
     # send GET request to site api and parse responce
@@ -37,7 +37,7 @@ class SearchApi::CigarSearch
     private
 
     def api_url(type)
-      "#{settings.app_protocol}://#{settings.app_host}/#{type}"
+      "#{settings.api_protocol}://#{settings.app_host}/#{type}"
     end
 
     def search_url
