@@ -1,40 +1,36 @@
 # BasePage class is abstract page class which describes common elements locators
 # and methods to communicate with elements on search pages
-class BasePage < WebPage
-  include HeaderSection
-  include EmailModalBlockerSection
+class BasePage < Howitzer::Web::Page
+  section :header
+  section :email_modal_blocker
 
-  # elements locators
-  add_locator :filter_link,  ->(g, f) { { xpath: "//*[div[text()=\"#{g}\"]]//a[translate(text(), ' ', '')=translate(\"#{f}\", ' ', '')]" } }
-  add_locator :filter_links, ->(g) { { xpath: "//*[div[text()=\"#{g}\"]]//a[@class='filterlink']" } }
-  add_locator :clear_filters_button, ->(g) { { xpath: "//*[div[text()=\"#{g}\"]]//a[@class='clearbutton']" } }
-  add_locator :clear_all_filters_button, xpath: '//*[@class="clearbutton"][translate(text(), " ", "")="ClearAllFilters"]'
-  add_locator :items, '.allitems a[data-ihdnum]'
-  add_locator :search_field, '.searchfield [name=kw]'
-  add_locator :range_filter_field, ->(n) { { css: ".filterinput[type='number'][name='#{n}']" } }
-  add_locator :apply_range_filter_button, ->(g) { { xpath: "//*[div[text()=\"#{g}\"]]//*[contains(@class,'filterbutton')]" } }
-  add_locator :results_per_page_expander, '[for="results1"]'
-  add_locator :results_per_page_link, ->(c) { { xpath: "//*[contains(@class,'resultselect')][.//*[@id='results1']]//a[text()='#{c}']"} }
-  add_locator :results_per_page_links, '[for="results1"] ~ .filterlist a'
-  add_locator :sorting_expander, '[for="sort1"]'
-  add_locator :sorting_link, ->(s) { { xpath: "//*[contains(@class,'sortselect')][.//*[@id='sort1']]//a[contains(@href, '#{s}')]"} }
-  add_locator :sorting_links, '[for="sort1"] ~ .filterlist a'
+  element :filter_link, :xpath, ->(g, f) { "//*[div[text()=\"#{g}\"]]//a[translate(text(), ' ', '')=translate(\"#{f}\", ' ', '')]" }
+  element :filter_links, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//a[@class='filterlink']" }
+  element :clear_filters_button, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//a[@class='clearbutton']" }
+  element :clear_all_filters_button, :xpath, '//*[@class="clearbutton"][translate(text(), " ", "")="ClearAllFilters"]'
+  element :item, '.allitems a[data-ihdnum]'
+  element :search_field, '.searchfield [name=kw]'
+  element :range_filter_field, :css, ->(n) { ".filterinput[type='number'][name='#{n}']" }
+  element :apply_range_filter_button, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//*[contains(@class,'filterbutton')]" }
+  element :results_per_page_expander, '[for="results1"]'
+  element :results_per_page_link, :xpath, ->(c) { "//*[contains(@class,'resultselect')][.//*[@id='results1']]//a[text()='#{c}']" }
+  element :results_per_page_links, '[for="results1"] ~ .filterlist a'
+  element :sorting_expander, '[for="sort1"]'
+  element :sorting_link, xpath, ->(s) { "//*[contains(@class,'sortselect')][.//*[@id='sort1']]//a[contains(@href, '#{s}')]" }
+  element :sorting_links, '[for="sort1"] ~ .filterlist a'
 
   # selects 'results per page' item by 'count' on search page
   def select_results_per_page(count)
     log.info "Select results per page: '#{count}'"
-    # 'find...' method to find element on page by given locator
-    # 'locator :results_per_page_expander' returns locator by name 'results_per_page_expander'
-    #    in current case it is - '[for="results1"]'
-    find(locator :results_per_page_expander).click # expands 'results per page' select box
-    find(apply(locator(:results_per_page_link), count)).click # find and click item in expanded 'results per page' select box
+    results_per_page_expander_element.click # expands 'results per page' select box
+    results_per_page_link_element(count).click # find and click item in expanded 'results per page' select box
   end
 
   # selects 'sorting' item by 'sorting' on search page
   def select_sorting(sorting)
     log.info "Select sorting: '#{sorting}'"
-    find(locator :sorting_expander).click # expands 'sorting' select box
-    find(apply(locator(:sorting_link), sorting)).click # find and click item in expanded 'sorting' select box
+    sorting_expander_element.click # expands 'sorting' select box
+    sorting_link_element(sorting).click # find and click item in expanded 'sorting' select box
   end
 
   # clicks random filter from given filter group
@@ -58,41 +54,39 @@ class BasePage < WebPage
     #      if method 'all' returned empty array (when there are no needed elements on page),
     #          method sample will return 'nil' object with doesn't have method text
     #          so, 'try :text' returns 'nil' instead of exception
-    all(apply(locator(:filter_links), group)).sample.try :text
+    filter_links_elements(group).sample.try :text
   end
 
   # returns array of product ids
   def items_product_ids
-    # 'all(locator :items)' - returns array of elements
-    # 'map { |i| i[:'data-ihdnum'] }' - gets attribute 'data-ihdnum' value from each element and return array of got attribute values
-    all(locator :items).map { |i| i[:'data-ihdnum'] }
+    item_elements.map { |i| i[:'data-ihdnum'] } # gets attribute 'data-ihdnum' value from each element and return array of got attribute values
   end
 
   # clicks filter link by given text ('label' variable) in filter group
   def filter_by(group, label)
     log.info "Filter items by '#{group}' -> '#{label}'"
-    find(apply(locator(:filter_link), group, label)).click
+    filter_link_element(group, label).click
   end
 
   def fill_range_filter_by_name(name, value)
     log.info "Fill range filter '#{name}' with '#{value}'"
-    find(apply(locator(:range_filter_field), name)).set(value)
+    range_filter_field_element(name).set(value)
   end
 
   def apply_range_filter(group)
     log.info 'Apply filter'
-    find(apply(locator(:apply_range_filter_button), group)).click
+    apply_range_filter_button_element(group).click
   end
 
   # clicks clear filter link in given group
   def clear_filters(group)
     log.info "Clear filter group '#{group}'"
-    find(apply(locator(:clear_filters_button), group)).click
+    clear_filters_button_element(group).click
   end
 
   # clicks clear all filters
   def clear_all_filters
     log.info 'Clear all filters'
-    find(locator :clear_all_filters_button).click
+    clear_all_filters_button_element.click
   end
 end

@@ -1,4 +1,7 @@
-class ResetPasswordEmail < Email
+require_relative 'base_email'
+
+class ResetPasswordEmail < BaseEmail
+  subject 'Your :app_host password has been reset.'
   add_anchor 'Forgot your password? Oops.'
   add_anchor "No biggie - we're giving you a new one, so you can log in and get back to shopping."
   add_anchor "After all, it's not like you forgot Mother's Day."
@@ -11,13 +14,18 @@ class ResetPasswordEmail < Email
   add_anchor 'NOTE: Password must be 6 to 15 characters, have one number, one letter, and no spaces.'
   add_anchor /https?:\/\/[^\/]+\/update-password\/[^\/">\s]+/
 
-  def self.find(user)
-    retryable(timeout: 120, sleep: 5, silent: true, logger: log, on: ::Howitzer::EmailNotFoundError) do
-      super(user.email, "Your #{settings.app_host} password has been reset.")
-    end
-  end
-
   def reset_password_link
     text[/https?:\/\/[^\/]+\/update-password\/[^\/">\s]+/]
+  end
+
+  def token
+    # TODO: Fix me
+    reset_password_link[/reset_password_token=(.+)/, 1]
+  end
+
+  def reset_password
+    # TODO: implement me
+    ConfirmationEmailPage.open(validate: false, token: token)
+    # visit reset_password_link
   end
 end

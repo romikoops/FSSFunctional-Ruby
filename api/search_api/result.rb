@@ -14,28 +14,28 @@ class SearchApi::Result
   end
 
   def filter_names_from_group(group)
-    filters.find { |f| f[:title].to_s.strip.downcase == group.downcase}[:filters]
-      .map { |f| f[:key].to_sym }
+    filters.find { |f| f[:title].to_s.strip.casecmp(group.downcase).zero? }[:filters]
+           .map { |f| f[:key].to_sym }
   end
 
   def filter_by_title_from_group(group, title)
-    filter = filters.find { |f| f[:title].to_s.strip.downcase == group.downcase }[:filters]
-               .find { |f| f[:title].to_s.strip.downcase == sanitize_filter_label(title).downcase }
+    filter = filters.find { |f| f[:title].to_s.strip.casecmp(group.downcase).zero? }[:filters]
+                    .find { |f| f[:title].to_s.strip.casecmp(sanitize_filter_label(title).downcase).zero? }
 
     { filter[:key].to_sym => filter[:value].to_s.strip }
   end
 
   def non_empty_brands
-    filters.find { |f| f[:title].to_s.strip.downcase == 'brand' }[:filters]
-      .select { |f| f[:COUNT] > 0 }.map { |f| f[:value].to_sym }
+    filters.find { |f| f[:title].to_s.strip.casecmp('brand').zero? }[:filters]
+           .select { |f| (f[:COUNT]).positive? }.map { |f| f[:value].to_sym }
   end
 
   def items_names
-    items.map {|i| i[:NAME].to_s}
+    items.map { |i| i[:NAME].to_s }
   end
 
   def items_product_ids
-    items.select {|el| el['QTY_IN_STOCK'].positive?}.map {|i| i[:PRODUCT_ID].to_s}
+    items.select { |el| el['QTY_IN_STOCK'].positive? }.map { |i| i[:PRODUCT_ID].to_s }
   end
 
   def random_item

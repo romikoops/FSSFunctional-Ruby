@@ -1,13 +1,21 @@
+#############################################################
+#                      PREREQUISITES                        #
+#############################################################
+
 Given /^registered (.*) user$/ do |user|
   RegistrationPage.register_user(user)
 end
+
+####################################
+#              ACTIONS             #
+####################################
 
 When /^(?:I |)open '([\w]+)' page$/ do |page|
   page.open.close_email_modal_blocker
 end
 
 When /^(?:I |)open random '(product)' page in '([^']*)' filter set$/ do |page, set|
-  cart_items = DataStorage::extract(:cart, :items) || []
+  cart_items = DataStorage.extract(:cart, :items) || []
   item = api.search(api.selected_filters(set)).random_item
   DataStorage.store(:cart, :items, cart_items << item[:PRODUCT_ID].to_s)
   page.open(product_url: item[:PRODUCT_URL]).close_email_modal_blocker
@@ -34,12 +42,16 @@ When /^(?:I |)open '([\w ]+)' page from main drop down menu on '(\w+)' page$/ do
 end
 
 When(/^(?:I |)open reset password link from received to '(\w+)' user ('\w+' email)$/) do |user, email|
-  visit email.find(user).reset_password_link
+  visit email.find_by_recipient(user.email, app_host: Howitzer.app_host).reset_password_link
 end
 
 When(/^(?:I |)logout from account by direct link$/) do
-  visit "#{WebPage.app_url}/logout.cfm"
+  visit "#{WebPage.app_uri.site}/logout.cfm" # TODO: reimplement in better way
 end
+
+####################################
+#              CHECKS              #
+####################################
 
 Then /^(?:I |)should see the following message on '([\w]+)' page:$/ do |page, text|
   expect(page.given.text).to include text
@@ -49,15 +61,13 @@ Then /^(?:I |)should see the following error messages on '([\w]+)' page:$/ do |p
   expect(page.given.error_messages.sort).to eql(data_table.values.sort)
 end
 
-Then /^(?:I |)should be on '([\w]+)' page$/ do |page|
-  page.given
-end
+Then /^(?:I |)should be on '([\w]+)' page$/, &:given
 
 Then /^(?:I |)should see that the user '(\w+)' receives ('\w+' email)$/ do |user, email|
   expect(email.find(user)).to be_valid
 end
 
 Then /^(?:I |)should see selected items on '(cart)' page$/ do |page|
-  cart_items = DataStorage::extract(:cart, :items) || []
+  cart_items = DataStorage.extract(:cart, :items) || []
   expect(page.open.close_email_modal_blocker.items_product_ids).to eql cart_items
 end

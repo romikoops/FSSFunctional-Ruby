@@ -1,15 +1,15 @@
 require 'capybara'
 require 'capybara/dsl'
-require_relative '../boot'
+require_relative '../config/boot'
 
 class PageChecker
   include Capybara::DSL
 
   RESULT_FILE = "page_checker_result_#{Time.now.utc.strftime('%Y-%m-%d_%H-%M-%S')}.csv".freeze
-  SITE_MAP_URL = "#{settings.app_protocol}://#{settings.app_host}/sitemap".freeze
+  SITE_MAP_URL = "#{Howitzer.app_protocol}://#{Howitzer.app_host}/sitemap".freeze
 
   def self.perform
-    self.new.check_links
+    new.check_links
   end
 
   def check_links
@@ -53,7 +53,7 @@ class PageChecker
     []
   end
 
-  def links(page_url=SITE_MAP_URL)
+  def links(page_url = SITE_MAP_URL)
     open_page page_url
     page_links + site_map_links.inject([]) { |r, u| r + links(u) }
   end
