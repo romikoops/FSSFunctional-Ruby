@@ -63,8 +63,8 @@ When /^(?:I |)open '([\w ]+)' page from main drop down menu on '(\w+)' page$/ do
   page.open.expand_account_menu.click_account_link(text)
 end
 
-When(/^(?:I |)open reset password link from received to '(\w+)' user ('\w+' email)$/) do |user, email|
-  email.find_by_recipient(user.email, app_host: Howitzer.app_host).reset_password
+When(/^(?:I |)open reset password link from received to '(\w+)' user 'reset_password' email$/) do |user|
+  ResetPasswordEmail.find_by_recipient(user.email, app_host: Howitzer.app_host).reset_password
 end
 
 When(/^(?:I |)logout from account by direct link$/) do

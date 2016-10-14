@@ -24,5 +24,6 @@ class ResetPasswordEmail < BaseEmail
 
   def reset_password
     UpdatePasswordPage.open(token: token)
+    Capybara.screenshot_and_open_image
   end
 end
