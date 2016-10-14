@@ -34,7 +34,7 @@ class RegistrationPage < Howitzer::Web::Page
     [
       :country, :first_name, :last_name, :company, :address1, :address2, :city, :state, :zip,
       :phone_number, :cell_number, :email, :password, :retype_password, :date_of_birth, :terms
-    ].each { |field| public_send("fill_#{field}", fields) }
+    ].each { |field| send("fill_#{field}", fields) }
     self
   end
 
