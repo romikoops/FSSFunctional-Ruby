@@ -46,7 +46,7 @@ Capybara.register_driver :selenium do |app|
       profile['network.automatic-ntlm-auth.allow-non-fqdn'] = true
       profile['network.ntlm.send-lm-response'] = true
       profile['network.automatic-ntlm-auth.trusted-uris'] = Howitzer.app_host
-      profile['general.useragent.override'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' /
+      profile['general.useragent.override'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' \
                                               'Gecko/20121026 Firefox/16.0; captcha_bypass_fam0us'
     end
     params[:profile] = ff_profile
@@ -84,7 +84,7 @@ Capybara.register_driver :phantomjs do |app|
     app, browser: :phantomjs,
          desired_capabilities: {
            javascript_enabled: !Howitzer.phantom_ignore_js_errors,
-           'phantomjs.page.settings.userAgent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' /
+           'phantomjs.page.settings.userAgent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' \
                                                   'Gecko/20121026 Firefox/16.0; captcha_bypass_fam0us'
          },
          args: ["--ignore-ssl-errors=#{Howitzer.phantom_ignore_ssl_errors ? 'yes' : 'no'}"]
