@@ -1,13 +1,13 @@
 ###########################################################
 # APPLICATION SETTINGS                                    #
 ###########################################################
- app_base_auth_login: login
- app_base_auth_pass: pass
+ app_base_auth_login:
+ app_base_auth_pass:
  app_protocol: https
  app_host: testing.famous-smoke.com
 
  app_test_user: test@test.com
- app_test_pass: mypass
+ app_test_pass: "!Test_P@55woRD!"
  app_test_user_name: Auto Tester
 
  app_api_token:
@@ -82,8 +82,8 @@
 # MAIL SETTINGS                                           #
 ###########################################################
  mail_adapter: mailgun
- mailgun_key: mailgun_account_private_key
- mailgun_domain: mailgun_domain_with_stored_method
+ mailgun_key: key-fdc7dfaf228e6c6827ebe94da27125b6
+ mailgun_domain: mg.strongqa.com
  mailgun_idle_timeout: 60
  mailgun_sleep_time: 3
 

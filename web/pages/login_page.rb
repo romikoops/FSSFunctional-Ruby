@@ -13,8 +13,8 @@ class LoginPage < Howitzer::Web::Page
   element :password_field, '#loginform [name=pwd]'
   element :submit_button, '#login-submit'
 
-  def fill_form(fields)
-    log.info "Fill Login form with following data: #{fields}"
+  def fill_form(fields) # rubocop:disable Metrics/AbcSize
+    Howitzer::Log.info "Fill Login form with following data: #{fields}"
     email_field_element.set(fields[:email]) if fields[:email]
     password_field_element.set(fields[:password]) if fields[:password]
     existing_user_radiobutton_element.click if fields[:existing_user]
@@ -23,7 +23,7 @@ class LoginPage < Howitzer::Web::Page
   end
 
   def submit_form
-    log.info 'Submit Login form'
+    Howitzer::Log.info 'Submit Login form'
     submit_button_element.click
   end
 end

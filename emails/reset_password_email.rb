@@ -12,20 +12,17 @@ class ResetPasswordEmail < BaseEmail
   add_anchor '2. When the web page is displayed, enter your new password twice.'
   add_anchor '3. Click on the Submit button.'
   add_anchor 'NOTE: Password must be 6 to 15 characters, have one number, one letter, and no spaces.'
-  add_anchor /https?:\/\/[^\/]+\/update-password\/[^\/">\s]+/
+  add_anchor %r{https?://[^/]+/update-password/[^/">\s]+}
 
   def reset_password_link
-    text[/https?:\/\/[^\/]+\/update-password\/[^\/">\s]+/]
+    text[%r{https?://[^/]+/update-password/[^/">\s]+}]
   end
 
   def token
-    # TODO: Fix me
-    reset_password_link[/reset_password_token=(.+)/, 1]
+    reset_password_link[%r{update-password/(.+)}, 1]
   end
 
   def reset_password
-    # TODO: implement me
-    ConfirmationEmailPage.open(validate: false, token: token)
-    # visit reset_password_link
+    UpdatePasswordPage.open(token: token)
   end
 end

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :user do
-    ident { Time.now.utc.to_i.to_s(36) }
+    ident           { Time.now.utc.to_i.to_s(36) }
     country         { 'USA' }
     first_name      { Faker::Name.first_name }
     last_name       { Faker::Name.last_name }

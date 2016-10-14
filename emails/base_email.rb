@@ -19,7 +19,7 @@ class BaseEmail < Howitzer::Email
   end
 
   def valid?
-    log.warn "Email does not match to the following anchors:\n #{errors.join(", \n")}" if errors.present?
+    Howitzer::Log.warn "Email does not match to the following anchors:\n #{errors.join(", \n")}" if errors.present?
     errors.blank?
   end
 end

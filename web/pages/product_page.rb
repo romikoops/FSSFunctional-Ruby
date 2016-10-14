@@ -1,7 +1,7 @@
 class ProductPage < Howitzer::Web::Page
-  path '{product_url}' # TODO
+  path '{product_url}'
 
-  validate :url, /#{Regexp.escape(Howitzer.app_uri.site)}\/[^\/]+\/item\+\d+$/
+  validate :url, %r{#{Regexp.escape(Howitzer.app_uri.site)}/[^/]+/item\+\d+$}
 
   section :header
   section :email_modal_blocker

@@ -1,16 +1,9 @@
 class EmailModalBlockerSection < Howitzer::Web::Section
-  me 'Specify me' # TODO
+  me '.emailmodalblocker'
 
-  element :close_modal_button, '.emailmodalblocker a.closebutton.trackEvent'
+  element :close_modal_button, 'a.closebutton.trackEvent'
 
-  def close_email_modal_blocker
-    Howitzer.tries_small.times do
-      sleep 1
-      unless has_no_close_modal_button_element?
-        close_modal_button_element.click
-        break
-      end
-    end
-    self
+  def close
+    close_modal_button_element.click
   end
 end

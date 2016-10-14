@@ -4,7 +4,8 @@ class BasePage < Howitzer::Web::Page
   section :header
   section :email_modal_blocker
 
-  element :filter_link, :xpath, ->(g, f) { "//*[div[text()=\"#{g}\"]]//a[translate(text(), ' ', '')=translate(\"#{f}\", ' ', '')]" }
+  element :filter_link,
+          :xpath, ->(g, f) { "//*[div[text()=\"#{g}\"]]//a[translate(text(), ' ', '')=translate(\"#{f}\", ' ', '')]" }
   element :filter_links, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//a[@class='filterlink']" }
   element :clear_filters_button, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//a[@class='clearbutton']" }
   element :clear_all_filters_button, :xpath, '//*[@class="clearbutton"][translate(text(), " ", "")="ClearAllFilters"]'
@@ -13,29 +14,31 @@ class BasePage < Howitzer::Web::Page
   element :range_filter_field, :css, ->(n) { ".filterinput[type='number'][name='#{n}']" }
   element :apply_range_filter_button, :xpath, ->(g) { "//*[div[text()=\"#{g}\"]]//*[contains(@class,'filterbutton')]" }
   element :results_per_page_expander, '[for="results1"]'
-  element :results_per_page_link, :xpath, ->(c) { "//*[contains(@class,'resultselect')][.//*[@id='results1']]//a[text()='#{c}']" }
+  element :results_per_page_link,
+          :xpath, ->(c) { "//*[contains(@class,'resultselect')][.//*[@id='results1']]//a[text()='#{c}']" }
   element :results_per_page_links, '[for="results1"] ~ .filterlist a'
   element :sorting_expander, '[for="sort1"]'
-  element :sorting_link, :xpath, ->(s) { "//*[contains(@class,'sortselect')][.//*[@id='sort1']]//a[contains(@href, '#{s}')]" }
+  element :sorting_link,
+          :xpath, ->(s) { "//*[contains(@class,'sortselect')][.//*[@id='sort1']]//a[contains(@href, '#{s}')]" }
   element :sorting_links, '[for="sort1"] ~ .filterlist a'
 
   # selects 'results per page' item by 'count' on search page
   def select_results_per_page(count)
-    log.info "Select results per page: '#{count}'"
+    Howitzer::Log.info "Select results per page: '#{count}'"
     results_per_page_expander_element.click # expands 'results per page' select box
     results_per_page_link_element(count).click # find and click item in expanded 'results per page' select box
   end
 
   # selects 'sorting' item by 'sorting' on search page
   def select_sorting(sorting)
-    log.info "Select sorting: '#{sorting}'"
+    Howitzer::Log.info "Select sorting: '#{sorting}'"
     sorting_expander_element.click # expands 'sorting' select box
     sorting_link_element(sorting).click # find and click item in expanded 'sorting' select box
   end
 
   # clicks random filter from given filter group
   def random_filter_label(group)
-    log.info "Get random filter by type: '#{group}'"
+    Howitzer::Log.info "Get random filter by type: '#{group}'"
     # 'all...' method to find all elements (as array) on page by given locator
     # 'apply...' method to apply some variables for given locator and returns generated locator
     #    in current case 'apply(locator(:filter_links), group)'
@@ -59,34 +62,34 @@ class BasePage < Howitzer::Web::Page
 
   # returns array of product ids
   def items_product_ids
-    item_elements.map { |i| i[:'data-ihdnum'] } # gets attribute 'data-ihdnum' value from each element and return array of got attribute values
+    item_elements.map { |i| i[:'data-ihdnum'] }
   end
 
   # clicks filter link by given text ('label' variable) in filter group
   def filter_by(group, label)
-    log.info "Filter items by '#{group}' -> '#{label}'"
+    Howitzer::Log.info "Filter items by '#{group}' -> '#{label}'"
     filter_link_element(group, label).click
   end
 
   def fill_range_filter_by_name(name, value)
-    log.info "Fill range filter '#{name}' with '#{value}'"
+    Howitzer::Log.info "Fill range filter '#{name}' with '#{value}'"
     range_filter_field_element(name).set(value)
   end
 
   def apply_range_filter(group)
-    log.info 'Apply filter'
+    Howitzer::Log.info 'Apply filter'
     apply_range_filter_button_element(group).click
   end
 
   # clicks clear filter link in given group
   def clear_filters(group)
-    log.info "Clear filter group '#{group}'"
+    Howitzer::Log.info "Clear filter group '#{group}'"
     clear_filters_button_element(group).click
   end
 
   # clicks clear all filters
   def clear_all_filters
-    log.info 'Clear all filters'
+    Howitzer::Log.info 'Clear all filters'
     clear_all_filters_button_element.click
   end
 end

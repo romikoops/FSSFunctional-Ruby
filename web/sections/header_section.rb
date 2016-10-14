@@ -1,9 +1,9 @@
 class HeaderSection < Howitzer::Web::Section
-  me 'Please specify me' # TODO
+  me '.pagebar'
 
-  element :account_menu_expander, '.pagebar .account:not(.hover)'
-  element :account_menu_collapser, '.pagebar .account.hover'
-  element :account_menu_item, '.pagebar .accountlinks a'
+  element :account_menu_expander, '.account:not(.hover)'
+  element :account_menu_collapser, '.account.hover'
+  element :account_menu_item, '.accountlinks a'
   element :account_menu_link, :xpath, ->(t) { "//*[contains(@class,'topmenu')]//a[normalize-space()='#{t}']" }
 
   def account_menu_links

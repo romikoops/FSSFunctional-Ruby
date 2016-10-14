@@ -34,7 +34,7 @@ Transform /^table:.*$/ do |table|
   end
   location = Cucumber::Core::Ast::Location.of_caller
   ast_table = Cucumber::Core::Ast::DataTable.new(raw, location)
-  Cucumber::MultilineArgument::DataTable.new(ast_table).tap |ml_table|
+  Cucumber::MultilineArgument::DataTable.new(ast_table).tap do |ml_table|
     ml_table.instance_eval do
       def rows_hash
         super.symbolize_keys

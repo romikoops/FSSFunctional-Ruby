@@ -2,8 +2,26 @@
 #                      PREREQUISITES                        #
 #############################################################
 
+def handle_blocked_email_popup
+  Howitzer.tries_small.times do
+    sleep 1
+    next if has_no_email_modal_blocker_section?
+    email_modal_blocker_section.close
+    break
+  end
+end
+
 Given /^registered (.*) user$/ do |user|
-  RegistrationPage.register_user(user)
+  RegistrationPage.open
+  RegistrationPage.on(&:handle_blocked_email_popup)
+  RegistrationPage.on do
+    fill_form(user.attributes)
+    submit_form
+    unless has_no_registration_form_element?
+      Capybara.screenshot_and_open_image
+      raise "User can not be registered with the following fields: #{user.attributes}"
+    end
+  end
 end
 
 ####################################
@@ -11,14 +29,16 @@ end
 ####################################
 
 When /^(?:I |)open '([\w]+)' page$/ do |page|
-  page.open.close_email_modal_blocker
+  page.open
+  page.on(&:handle_blocked_email_popup)
 end
 
 When /^(?:I |)open random '(product)' page in '([^']*)' filter set$/ do |page, set|
-  cart_items = DataStorage.extract(:cart, :items) || []
+  cart_items = Howitzer::Cache.extract(:cart, :items) || []
   item = api.search(api.selected_filters(set)).random_item
-  DataStorage.store(:cart, :items, cart_items << item[:PRODUCT_ID].to_s)
-  page.open(product_url: item[:PRODUCT_URL]).close_email_modal_blocker
+  Howitzer::Cache.store(:cart, :items, cart_items << item[:PRODUCT_ID].to_s)
+  page.open(product_url: item[:PRODUCT_URL])
+  page.on(&:handle_blocked_email_popup)
 end
 
 When /^(?:I |)add to cart item on opened '(product)' page$/ do |page|
@@ -26,11 +46,13 @@ When /^(?:I |)add to cart item on opened '(product)' page$/ do |page|
 end
 
 When /^(?:I |)fill and submit form with the following data on '(\w+)' page:$/ do |page, data_table|
-  page.open.close_email_modal_blocker.fill_form(data_table).submit_form
+  page.open
+  page.on(&:handle_blocked_email_popup)
+  page.on { fill_form(data_table.rows_hash).submit_form }
 end
 
 When /^(?:I |)fill form with the following data on '(\w+)' page:$/ do |page, data_table|
-  page.given.fill_form(data_table)
+  page.given.fill_form(data_table.rows_hash)
 end
 
 When /^(?:I |)submit form on '(\w+)' page$/ do |page|
@@ -42,11 +64,11 @@ When /^(?:I |)open '([\w ]+)' page from main drop down menu on '(\w+)' page$/ do
 end
 
 When(/^(?:I |)open reset password link from received to '(\w+)' user ('\w+' email)$/) do |user, email|
-  visit email.find_by_recipient(user.email, app_host: Howitzer.app_host).reset_password_link
+  email.find_by_recipient(user.email, app_host: Howitzer.app_host).reset_password
 end
 
 When(/^(?:I |)logout from account by direct link$/) do
-  visit "#{WebPage.app_uri.site}/logout.cfm" # TODO: reimplement in better way
+  Capybara.current_session.visit "#{WebPage.app_uri.site}/logout.cfm" # TODO: reimplement in better way
 end
 
 ####################################
@@ -58,16 +80,22 @@ Then /^(?:I |)should see the following message on '([\w]+)' page:$/ do |page, te
 end
 
 Then /^(?:I |)should see the following error messages on '([\w]+)' page:$/ do |page, data_table|
-  expect(page.given.error_messages.sort).to eql(data_table.values.sort)
+  expect(page.given.error_messages.sort).to eql(data_table.rows_hash.values.sort)
 end
 
-Then /^(?:I |)should be on '([\w]+)' page$/, &:given
+Then /^(?:I |)should be on '([\w]+)' page$/ do |page| # rubocop:disable Style/SymbolProc
+  page.given
+end
 
-Then /^(?:I |)should see that the user '(\w+)' receives ('\w+' email)$/ do |user, email|
-  expect(email.find(user)).to be_valid
+Then /^I should see that the user '(\w+)' receives 'reset_password' email$/ do |user|
+  expect(ResetPasswordEmail.find_by_recipient(user.email, app_host: Howitzer.app_host)).to be_valid
 end
 
 Then /^(?:I |)should see selected items on '(cart)' page$/ do |page|
-  cart_items = DataStorage.extract(:cart, :items) || []
-  expect(page.open.close_email_modal_blocker.items_product_ids).to eql cart_items
+  cart_items = Howitzer::Cache.extract(:cart, :items) || []
+  page.open
+  page.on(&:handle_blocked_email_popup)
+  page.on do
+    expect(items_product_ids).to eql cart_items
+  end
 end
