@@ -84,8 +84,8 @@
  mail_adapter: mailgun
  mailgun_key: key-fdc7dfaf228e6c6827ebe94da27125b6
  mailgun_domain: mg.strongqa.com
- mailgun_idle_timeout: 60
- mailgun_sleep_time: 3
+ mailgun_idle_timeout: 900
+ mailgun_sleep_time: 15
 
 ################################
 # PROJECT SPECIFIC SETTINGS    #
