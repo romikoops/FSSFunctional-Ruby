@@ -1,5 +1,5 @@
 class ProductPage < Howitzer::Web::Page
-  path '{product_url}'
+  path '{product_path}'
 
   validate :url, %r{#{Regexp.escape(Howitzer.app_uri.site)}/[^/]+/item\+\d+$}
 

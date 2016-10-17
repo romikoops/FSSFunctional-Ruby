@@ -37,12 +37,8 @@ When /^(?:I |)open random '(product)' page in '([^']*)' filter set$/ do |page, s
   cart_items = Howitzer::Cache.extract(:cart, :items) || []
   item = api.search(api.selected_filters(set)).random_item
   Howitzer::Cache.store(:cart, :items, cart_items << item[:PRODUCT_ID].to_s)
-  page.open(product_url: item[:PRODUCT_URL])
+  page.open(product_path: item[:PRODUCT_URL], url_processor: UrlProcessor)
   page.on(&:handle_blocked_email_popup)
-end
-
-When /^(?:I |)add to cart item on opened '(product)' page$/ do |page|
-  page.given.add_to_cart
 end
 
 When /^(?:I |)fill and submit form with the following data on '(\w+)' page:$/ do |page, data_table|
@@ -89,13 +85,4 @@ end
 
 Then /^I should see that the user '(\w+)' receives 'reset_password' email$/ do |user|
   expect(ResetPasswordEmail.find_by_recipient(user.email, app_host: Howitzer.app_host)).to be_valid
-end
-
-Then /^(?:I |)should see selected items on '(cart)' page$/ do |page|
-  cart_items = Howitzer::Cache.extract(:cart, :items) || []
-  page.open
-  page.on(&:handle_blocked_email_popup)
-  page.on do
-    expect(items_product_ids).to eql cart_items
-  end
 end

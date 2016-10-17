@@ -1,7 +1,7 @@
 class CartPage < Howitzer::Web::Page
   path '/cart'
 
-  validate :title, /^Shopping Cart \| Famous Smoke$/
+  validate :url, %r{/cart}
 
   section :header
   section :email_modal_blocker
