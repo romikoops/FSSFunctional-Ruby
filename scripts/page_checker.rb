@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/dsl'
 require_relative '../config/boot'
+require_relative '../config/capybara'
 
 class PageChecker
   include Capybara::DSL
