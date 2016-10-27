@@ -4,7 +4,8 @@
  app_base_auth_login:
  app_base_auth_pass:
  app_protocol: https
- app_host: testing.famous-smoke.com
+# app_host: testing.famous-smoke.com
+ app_host: www.famous-smoke.com
 
  app_test_user: test@test.com
  app_test_pass: "!Test_P@55woRD!"
@@ -22,18 +23,18 @@
 
  # Specify one of the following drivers: selenium, selenium_grid, webkit, poltergeist, phantomjs, sauce,
  # testingbot, browserstack
- driver: phantomjs
+ driver: poltergeist
 
  # -Selenium-
  # specify one of next browsers: iexplore (ie), firefox (ff), chrome, safari
- selenium_browser: ff
+ selenium_browser: chrome
 
  # -Selenium Grid-
  selenium_hub_url: "http://example.com:4444/wd/hub"
 
  # -PhantomJS/Poltergeist-
  # specify settings for poltergeist
- phantom_ignore_js_errors: false
+ phantom_ignore_js_errors: true
  phantom_ignore_ssl_errors: true
 
 ###########################################################
