@@ -70,9 +70,9 @@ When /^I see that my cart is empty$/ do
   CartPage.on { is_expected.to have_empty_cart_element }
 end
 
-When /^I proceed with checkout using pay-pal$/ do
+When /^I proceed with checkout using pay-pal by (.+) user$/ do |user|
   CartPage.on { checkout }
-  LoginPage.on { login_as_existing_user('uofvr3w@mg.strongqa.com', '!Test_P@55woRD!') }
+  LoginPage.on { login_as_existing_user(user.email, user.password) }
   CheckoutPage.on do
     fill_credit_card('5555555555554444', '1020', '123')
     agree_terms
@@ -108,5 +108,5 @@ Then /^I cannot proceed with checkout$/ do
 end
 
 Then /^I see order 'phone verifecation' message$/ do
-  CheckoutPage.on { is_expected.to have_phone_verification_element }
+  CheckoutPage.on { is_expected.to have_phone_verification_element(wait: 60) }
 end

@@ -1,7 +1,4 @@
-Feature: Cart and Checkout
-  In order to use shop
-  As user
-  I want to add items to the cart from random sale pages, remove items from cart, add promotion/coupon, remove promotion/coupon, and place orders
+Feature: Cart
 
   Background:
     Given I am logged on famous-smoke.com
@@ -81,9 +78,3 @@ Feature: Cart and Checkout
     And I see that my cart is empty
     Then I cannot proceed with checkout
 
-  Scenario: User can proceed with checkout using pay-pal
-    When I go to 'gifts' segment
-    And I add to cart first available gift card
-    And I go to my cart
-    And I proceed with checkout using pay-pal
-    Then I see order 'phone verifecation' message

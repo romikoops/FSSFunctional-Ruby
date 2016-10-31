@@ -14,6 +14,10 @@ Howitzer::Cache.store(:cloud, :status, true)
 
 Before do |scenario|
   Capybara.use_default_driver
+  if Howitzer.driver.to_sym == :poltergeist
+    Capybara.current_session.driver.headers = { "User-Agent" => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' \
+                                                  'Gecko/20121026 Firefox/16.0; captcha_bypass_fam0us' }
+  end
   Howitzer::Log.print_feature_name(scenario.feature.name)
   Howitzer::Log.print_scenario_name(scenario.name)
   @session_start = CapybaraHelpers.duration(Time.now.utc - Howitzer::Cache.extract(:cloud, :start_time))

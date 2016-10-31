@@ -19,8 +19,6 @@ class CartPage < Howitzer::Web::Page
   element :free_item,             :xpath,  "//*[@class='price pay-price'][contains(.,'FREE')]"
   element :proceed_to_checkout,   '.buttonleft'
 
-  element :continue,              :xpath, "//a[text()='continue']"
-
   def move_to_favorites
     Howitzer::Log.info 'Move item to favorites'
     quantity_element
@@ -56,6 +54,5 @@ class CartPage < Howitzer::Web::Page
 
   def checkout
     proceed_to_checkout_elements.last.click
-    continue_element.click
   end
 end

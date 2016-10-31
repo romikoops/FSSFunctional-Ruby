@@ -3,12 +3,16 @@
 #############################################################
 
 def handle_blocked_email_popup
-  Howitzer.tries_small.times do
-    sleep 1
-    next if has_no_email_modal_blocker_section?
-    email_modal_blocker_section.close
-    break
-  end
+#   Howitzer.tries_small.times do
+#     sleep 1
+#     next if has_no_email_modal_blocker_section?
+#     email_modal_blocker_section.close
+#     break
+#   end
+# rescue => e
+#   Capybara::Screenshot.screenshot_and_open_image
+#   raise e
+  Capybara.current_session.execute_script("$('.emailmodalblocker').remove();")
 end
 
 Given /^registered (.*) user$/ do |user|

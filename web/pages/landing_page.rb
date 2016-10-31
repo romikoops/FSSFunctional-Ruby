@@ -7,15 +7,14 @@ class LandingPage < Howitzer::Web::Page
   section :email_modal_blocker
 
   element :department, :xpath, "//*[@class='arrow arrowdown whitearrow']"
-  element :gifts, :xpath, ->(el) { "//*[@href='https://newdev2.famous-smoke.com/#{el}']" }
+  element :gifts, :xpath, ->(el) { "//ul[@data-section='#{el}']/.." }
   element :dropdown_item,   :xpath, ->(el) { "//a[text()='#{el}']" }
   element :advertisement,   :xpath, "//span[text()='X']"
   element :first_item_grid, 'a.dealitembox', match: :first
   element :first_offer,     '.dealsku', match: :first
   element :item_grid,       :xpath, ->(el) { "(.//*[@class='dealsku'])[#{el}]" }
   element :add_to_cart,     :xpath, "//a[text()='add to cart']"
-
-  element :ssl_certificate, '.norton>table>tbody>tr>td>a'
+  element :ssl_certificate, '#a2apage_show_more_less' #'.norton>table>tbody>tr>td>a'
   element :item_details,    :xpath, "//a[text()='see item details']"
   element :first_quickview, '.hoveritem.oswald', match: :first
   element :first_item_name, '.dealitembrand', match: :first
@@ -32,7 +31,9 @@ class LandingPage < Howitzer::Web::Page
   element :item_is_added,    :xpath,  "//*[@class='cart_title'][contains(.,'added to cart')]"
 
   def dropdown_menu(el)
-    advertisement_element.click
+    if has_advertisement_element?
+      advertisement_element.click
+    end
     department_element.hover
     gifts_element(el).hover
   end
@@ -70,7 +71,7 @@ class LandingPage < Howitzer::Web::Page
 
   def add_item(number)
     Howitzer::Cache.store(:present, :item, number)
-    has_ssl_certificate_element?(visible: true)
+    has_ssl_certificate_element?(present: true)
     # has_first_item_name_element?(visible: true)
     item_grid_element(number).hover
     first_quickview_element.click
