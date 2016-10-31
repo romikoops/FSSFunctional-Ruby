@@ -50,3 +50,40 @@ Feature: Cart and Checkout
     And I preorder cigars item
     And I go to my cart
     Then Item should be in my cart
+
+  Scenario: User can buy "free shipping" items
+    When I go to 'coupons' segment
+    And I add free shipping item to the cart
+    And I go to my cart
+    Then Item should be in my cart
+
+  Scenario: User can choose offers in coupons list
+    When I go to 'coupons' segment
+    And I buy one of listed offers
+    And I go to my cart
+    Then Item should be in my cart
+
+  Scenario: User can receive free items
+    When I go to 'coupons' segment
+    And I add item with free stuff
+    And I go to my cart
+    Then I see free item in my cart
+
+#  Scenario: Free items quantity recalculate automatically
+#    When I go to 'coupons' segment
+#    And I add item with free stuff
+#    And I go to my cart
+#    And I change first item quantity to '3'
+#    Then I see free item in my cart
+
+  Scenario: User cannot proceed with checkout if the cart is empty
+    When I go directly to my cart
+    And I see that my cart is empty
+    Then I cannot proceed with checkout
+
+  Scenario: User can proceed with checkout using pay-pal
+    When I go to 'gifts' segment
+    And I add to cart first available gift card
+    And I go to my cart
+    And I proceed with checkout using pay-pal
+    Then I see order 'phone verifecation' message

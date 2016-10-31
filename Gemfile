@@ -9,6 +9,7 @@ gem 'howitzer', '~>2.0'
 # Uncomment it if you are going to use 'poltergeist' driver. PhantomJS should be installed.
 # See https://github.com/jnicklas/capybara#poltergeist
 gem 'poltergeist', github: 'teampoltergeist/poltergeist', branch: :master
+gem 'selenium-webdriver', '~> 2.0'
 gem 'rest-client'
 gem 'repeater'
 gem 'factory_girl'

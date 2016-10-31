@@ -1,6 +1,6 @@
 require 'cucumber'
-# TODO should be uncommented after fixing bug with CapybaraScreenhot integration in Howitzer
-#require 'capybara-screenshot/cucumber'
+# TODO: should be uncommented after fixing bug with CapybaraScreenhot integration in Howitzer
+# require 'capybara-screenshot/cucumber'
 require_relative '../../config/boot'
 require_relative '../../config/capybara'
 

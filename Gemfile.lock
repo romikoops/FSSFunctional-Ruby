@@ -170,6 +170,7 @@ DEPENDENCIES
   repeater
   rest-client
   rubocop
+  selenium-webdriver (~> 2.0)
   syntax
 
 BUNDLED WITH
