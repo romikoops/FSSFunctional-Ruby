@@ -18,7 +18,7 @@
 ###########################################################
 # TEST ENVIRONMENTS SETTINGS                              #
 ###########################################################
- page_load_idle_timeout: 20
+ page_load_idle_timeout: 30
  maximized_window: true # Specify maximized browser window size
 
  # Specify one of the following drivers: selenium, selenium_grid, webkit, poltergeist, phantomjs, sauce,
@@ -67,7 +67,7 @@
 ###########################################################
 # CAPYBARA SETTINGS                                       #
 ###########################################################
- capybara_wait_time: 20
+ capybara_wait_time: 40
 
 ###########################################################
 # LOGGER SETTINGS                                         #

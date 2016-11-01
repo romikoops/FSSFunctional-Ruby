@@ -108,5 +108,5 @@ Then /^I cannot proceed with checkout$/ do
 end
 
 Then /^I see order 'phone verifecation' message$/ do
-  CheckoutPage.on { is_expected.to have_phone_verification_element(wait: 60) }
+  CheckoutPage.on { is_expected.to have_phone_verification_element(wait: 120) }
 end
