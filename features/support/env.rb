@@ -42,6 +42,10 @@ After do |scenario|
   Capybara.reset_sessions!
 end
 
+AfterStep do |scenario|
+  Howitzer::Log.info "Current url:#{Capybara.current_session.current_url}"
+end
+
 at_exit do
   if CapybaraHelpers.cloud_driver?
     Howitzer::Log.info "CLOUD SERVER LOG URL: #{CapybaraHelpers.cloud_resource_path(:server_log)}"

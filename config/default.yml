@@ -23,7 +23,7 @@
 
  # Specify one of the following drivers: selenium, selenium_grid, webkit, poltergeist, phantomjs, sauce,
  # testingbot, browserstack
- driver: poltergeist
+ driver: browserstack
 
  # -Selenium-
  # specify one of next browsers: iexplore (ie), firefox (ff), chrome, safari
@@ -40,8 +40,8 @@
 ###########################################################
 # Cloud-based Cross-browser Services                      #
 ###########################################################
- cloud_auth_login: famoussmokeshop2
- cloud_auth_pass: 47hbCH8m7G7VhWTfMqZL
+ cloud_auth_login: andrew1133
+ cloud_auth_pass: n4UsPjUQWoB7fsExknx8
  cloud_platform: Windows
  cloud_browser_name: Firefox
  cloud_browser_version: '43.0'
@@ -59,7 +59,7 @@
 
  # -BrowserStack (https://www.browserstack.com/automate/capabilities)
  cloud_bstack_resolution: '1024x768'
- cloud_bstack_project: 'Howitzer Example'
+ cloud_bstack_project: 'test'
  cloud_bstack_build: 'v1'
  cloud_bstack_mobile_device: #'iPhone'
  cloud_bstack_accept_ssl_certs: 'true'

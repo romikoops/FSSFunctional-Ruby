@@ -11,7 +11,7 @@ class LandingPage < Howitzer::Web::Page
   element :dropdown_item,   :xpath, ->(el) { "//a[text()='#{el}']" }
   element :advertisement,   :xpath, "//span[text()='X']"
   element :first_item_grid, 'a.dealitembox', match: :first
-  element :first_offer,     '.dealsku', match: :first
+  element :offer,           '.dealsku'
   element :item_grid,       :xpath, ->(el) { "(.//*[@class='dealsku'])[#{el}]" }
   element :add_to_cart,     :xpath, "//a[text()='add to cart']"
   element :ssl_certificate, '#a2apage_show_more_less' #'.norton>table>tbody>tr>td>a'
@@ -104,7 +104,8 @@ class LandingPage < Howitzer::Web::Page
 
   def buy_offer
     dropdown_item_element('Offers').click
-    first_offer_element.click
+    has_offer_element?(visible: true)
+    offer_elements.last.click
     buy_offer_button_element.click
     advertisement_element.click
     add_offer_element.click

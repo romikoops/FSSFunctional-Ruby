@@ -46,7 +46,7 @@ Capybara.register_driver :selenium do |app|
       profile['network.automatic-ntlm-auth.allow-non-fqdn'] = true
       profile['network.ntlm.send-lm-response'] = true
       profile['network.automatic-ntlm-auth.trusted-uris'] = Howitzer.app_host
-      profile['general.useragent.override'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' \
+      profile['general.userAgent.override'] = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:16.0) ' \
                                               'Gecko/20121026 Firefox/16.0; captcha_bypass_fam0us'
     end
     params[:profile] = ff_profile
@@ -123,6 +123,8 @@ Capybara.register_driver :browserstack do |app|
     project: Howitzer.cloud_bstack_project,
     build: Howitzer.cloud_bstack_build
   )
+  caps['browserstack.local'] = 'true'
+  caps['acceptSslCerts'] = 'true'
   caps[:resolution] = Howitzer.cloud_bstack_resolution if Howitzer.cloud_bstack_resolution.present?
   caps[:device] = Howitzer.cloud_bstack_mobile_device if Howitzer.cloud_bstack_mobile_device.present?
   url = "http://#{Howitzer.cloud_auth_login}:#{Howitzer.cloud_auth_pass}@hub.browserstack.com/wd/hub"
