@@ -40,7 +40,11 @@ class RegistrationPage < Howitzer::Web::Page
 
   def submit_form
     Howitzer::Log.info 'Submit Registration form'
-    register_button_element.trigger('click')
+    if Howitzer.driver.to_sym == :browsestack
+      register_button_element.trigger('click')
+    else
+      register_button_element.click
+    end
   end
 
   private
@@ -106,7 +110,11 @@ class RegistrationPage < Howitzer::Web::Page
   end
 
   def fill_terms(fields)
-    terms_checkbox_element.trigger('click') if fields[:terms].present?
+    if Howitzer.driver.to_sym == :browsestack
+      terms_checkbox_element.trigger('click') if fields[:terms].present?
+    else
+      terms_checkbox_element.click if fields[:terms].present?
+    end
   end
 
   def fill_select_box(element, value)

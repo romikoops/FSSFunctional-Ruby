@@ -10,7 +10,7 @@ When /^I am logged on famous-smoke.com$/ do
   LandingPage.open
 end
 
-When /^I go to '(.*)' segment$/ do |el|
+When /^I go to '(.*)' search page/ do |el|
   LandingPage.on { dropdown_menu(el) }
 end
 
@@ -22,7 +22,7 @@ When /^I go directly to my cart$/ do
   LandingPage.on { visit_my_cart }
 end
 
-When /^I add to cart first available gift card$/ do
+When /^I add the first listed item to my cart$/ do
   LandingPage.on { add_first_giftcard }
 end
 
@@ -70,7 +70,7 @@ When /^I see that my cart is empty$/ do
   CartPage.on { is_expected.to have_empty_cart_element }
 end
 
-When /^I proceed with checkout using pay-pal by (.+) user$/ do |user|
+When /^I proceed with checkout using the test credit card by (.+) user$/ do |user|
   CartPage.on { checkout }
   LoginPage.on { login_as_existing_user(user.email, user.password) }
   CheckoutPage.on do
@@ -107,6 +107,6 @@ Then /^I cannot proceed with checkout$/ do
   CartPage.on { is_expected.to have_no_proceed_to_checkout_element }
 end
 
-Then /^I see order 'phone verifecation' message$/ do
+Then /^I see the order 'phone verification' page$/ do
   CheckoutPage.on { is_expected.to have_phone_verification_element(wait: 120) }
 end

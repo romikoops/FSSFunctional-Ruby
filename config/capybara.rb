@@ -124,9 +124,11 @@ Capybara.register_driver :browserstack do |app|
     build: Howitzer.cloud_bstack_build
   )
   caps['browserstack.local'] = 'true'
+  caps['bbrowserstack.debug'] = 'true'
   caps['acceptSslCerts'] = 'true'
   caps[:resolution] = Howitzer.cloud_bstack_resolution if Howitzer.cloud_bstack_resolution.present?
   caps[:device] = Howitzer.cloud_bstack_mobile_device if Howitzer.cloud_bstack_mobile_device.present?
+  caps['chromeOptions'] = {'args': ['--user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2427.7 Safari/537.36; captcha_bypass_fam0us'], 'extensions': []}
   url = "http://#{Howitzer.cloud_auth_login}:#{Howitzer.cloud_auth_pass}@hub.browserstack.com/wd/hub"
   CapybaraHelpers.cloud_driver(app, caps, url)
 end

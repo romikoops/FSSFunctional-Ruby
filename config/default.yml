@@ -43,7 +43,7 @@
  cloud_auth_login: andrew1133
  cloud_auth_pass: n4UsPjUQWoB7fsExknx8
  cloud_platform: Windows
- cloud_browser_name: Firefox
+ cloud_browser_name: chrome
  cloud_browser_version: '43.0'
  cloud_max_duration: '1800'
  cloud_http_idle_timeout: 180
