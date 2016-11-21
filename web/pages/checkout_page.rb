@@ -1,6 +1,6 @@
 class CheckoutPage < Howitzer::Web::Page
   path '/checkout'
-  validate :title, /^Place Order \| Famous Smoke Shop$/
+  validate :title, /^Review Your Order \| Famous Smoke Shop$/
 
   iframe :card_number,            '#braintree-hosted-field-number'
   iframe :card_expiration,        '#braintree-hosted-field-expirationDate'
