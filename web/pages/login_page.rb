@@ -15,6 +15,10 @@ class LoginPage < Howitzer::Web::Page
 
   element :existing_password,     :xpath,  "//*[@class='notnew']"
   element :existing_username,     :xpath,  "//input[@placeholder='enter your email address']"
+  element :proceed_with_checkout  :xpath,  "//input[@value='Proceed to Checkout']"
+  element :first_name,            '#to_fname1'
+  element :last_name,             '#to_lname1'
+  element :gift_note,             '#giftnote1'
 
   def fill_form(fields) # rubocop:disable Metrics/AbcSize
     Howitzer::Log.info "Fill Login form with following data: #{fields}"
@@ -34,5 +38,13 @@ class LoginPage < Howitzer::Web::Page
     existing_username_element.set(login)
     existing_password_element.set(pass)
     submit_button_element.click
+    fill_gift_form
+  end
+
+  def fill_gift_form
+    first_name_element.set('Drew')
+    last_name_element.set('Brocker')
+    gift_note.set('congrats')
+    proceed_with_checkout_element.click
   end
 end

@@ -59,7 +59,7 @@
 
  # -BrowserStack (https://www.browserstack.com/automate/capabilities)
  cloud_bstack_resolution: '1024x768'
- cloud_bstack_project: 'test'
+ cloud_bstack_project: 'Windows 7 - Chrome - Checkout'
  cloud_bstack_build: 'v1'
  cloud_bstack_mobile_device: #'iPhone'
  cloud_bstack_accept_ssl_certs: 'true'
