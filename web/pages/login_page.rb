@@ -44,7 +44,7 @@ class LoginPage < Howitzer::Web::Page
   def fill_gift_form
     first_name_element.set('Drew')
     last_name_element.set('Brocker')
-    gift_note.set('congrats')
+    gift_note_element.set('congrats')
     proceed_with_checkout_element.click
   end
 end
