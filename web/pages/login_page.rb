@@ -15,7 +15,7 @@ class LoginPage < Howitzer::Web::Page
 
   element :existing_password,     :xpath,  "//*[@class='notnew']"
   element :existing_username,     :xpath,  "//input[@placeholder='enter your email address']"
-  element :proceed_with_checkout  :xpath,  "//input[@value='Proceed to Checkout']"
+  element :proceed_with_checkout,  :xpath,  "//input[@value='Proceed to Checkout']"
   element :first_name,            '#to_fname1'
   element :last_name,             '#to_lname1'
   element :gift_note,             '#giftnote1'
