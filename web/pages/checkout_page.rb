@@ -1,6 +1,7 @@
 class CheckoutPage < Howitzer::Web::Page
   path '/checkout'
-  validate :title, /^Review Your Order \| Famous Smoke Shop$/
+  # validate :title, /^Review Your Order \| Famous Smoke Shop$/  #staging
+  validate :title, /^Shopping Cart | Famous Smoke$/  #tag
 
   iframe :card_number,            '#braintree-hosted-field-number'
   iframe :card_expiration,        '#braintree-hosted-field-expirationDate'
@@ -9,6 +10,7 @@ class CheckoutPage < Howitzer::Web::Page
   element :agree_terms,           "[for='terms'] .fakecheck"
   element :place_order,           :xpath, "//button[text()='place order']", visible: true, match: :first
   element :phone_verification,    '.infotitle.oswald.cred'
+  element :new_price,             :xpath, "//b[contains(.,'new price')]"
 
   def fill_credit_card(number, expiration, cvv)
     card_number_iframe { |frame| frame.fill_card_number(number) }

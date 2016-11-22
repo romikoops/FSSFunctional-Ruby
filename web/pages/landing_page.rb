@@ -19,7 +19,9 @@ class LandingPage < Howitzer::Web::Page
   element :first_quickview, '.hoveritem.oswald', match: :first
   element :first_item_name, '.dealitembrand', match: :first
   element :cigars_menu,     :xpath,  "//li[@data-submenu='cigars']//li[*[normalize-space(.)='New']]"
+  element :cigars_menu_type,:xpath,  "//li[@data-submenu='cigars']//li[*[normalize-space(.)='Type']]"
   element :preorder,        :xpath,  "//a[text()='Preorder']"
+  element :premium_cigars,  :xpath,  "//a[text()='Premium Cigars']"
   element :preorder_button, '.basic-button.oswald.cartbtn.yellowwhite'
   element :na_item,         :xpath, "//div[text()='Item not available']"
   element :close_details,   '.closedetails'
@@ -119,5 +121,11 @@ class LandingPage < Howitzer::Web::Page
   def visit_my_cart
     advertisement_element.click
     my_cart_element.click
+  end
+
+  def preorder_prem_cigars
+    cigars_menu_type_element.hover
+    premium_cigars_element.click
+    add_item(1)
   end
 end

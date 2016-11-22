@@ -7,7 +7,7 @@ class CartPage < Howitzer::Web::Page
   section :email_modal_blocker
 
   element :item,                  '.cartadditem'
-  element :promo_code,            '.cart_promo>input'
+  # element :promo_code,            '.cart_promo>input'
   element :invalid_promo,         '.txterror'
   element :empty_cart,            '.cartbigcol>h3'
   element :quantity,              :xpath,  "//*[@class='cartqty']"
@@ -18,6 +18,8 @@ class CartPage < Howitzer::Web::Page
   element :redeem,                :xpath,  "//button[contains(.,'redeem')]"
   element :free_item,             :xpath,  "//*[@class='price pay-price'][contains(.,'FREE')]"
   element :proceed_to_checkout,   '.buttonleft'
+  element :continue,              :xpath,        '//a'
+  element :promo_code,            :xpath,  "//input[@name='coupon_code']"
 
   def move_to_favorites
     Howitzer::Log.info 'Move item to favorites'
@@ -54,5 +56,15 @@ class CartPage < Howitzer::Web::Page
 
   def checkout
     proceed_to_checkout_elements.last.click
+    if Capybara.current_session.current_url.include? "tag"
+      if current_url_element.present?
+        current_url_element.click
+      end
+    end
+  end
+
+  def use_promo_code(code)
+    promo_code_element.set(code)
+    redeem_element.click
   end
 end

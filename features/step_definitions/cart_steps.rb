@@ -79,6 +79,14 @@ When /^I proceed with checkout using the test credit card by (.+) user$/ do |use
     place_order
   end
 end
+
+When /^I preorder premium cigars$/ do
+  LandingPage.on { preorder_prem_cigars }
+end
+
+When /^I use '(.+)' promo code$/ do |code|
+  CartPage.on { use_promo_code(code) }
+end
 ####################################
 #              CHECKS              #
 ####################################
@@ -109,4 +117,8 @@ end
 
 Then /^I see the order 'phone verification' page$/ do
   CheckoutPage.on { is_expected.to have_phone_verification_element(wait: 120) }
+end
+
+Then /^New price is recalculated$/ do
+  CheckoutPage.on { is_expected.to have_new_price_element(wait: 120) }
 end
